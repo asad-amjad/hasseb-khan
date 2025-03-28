@@ -10,11 +10,11 @@ export default function StoryCard({ item }) {
             alt="review-pfp"
             className="w-[75px] h-[75px] rounded-full object-cover"
           />
-          <div className="flex flex-col justify-start items-start space-y-[16px] ">
+          <div className="flex flex-col justify-start items-start space-y-[10px] ">
             <h5 className="text-[#E55D48]">
               {item.name}
             </h5>
-            <p className="tag body-2">
+            <p className="body-2">
             {item.role}
             </p>
           </div>

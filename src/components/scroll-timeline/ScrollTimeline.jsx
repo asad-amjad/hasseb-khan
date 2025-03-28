@@ -1,8 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-
-const Timeline = ({title, timelineData}) => {
+const Timeline = ({ title, timelineData }) => {
   return (
     <div className="w-full overflow-hidden  px-[16px] md:ps-[100px] my-[100px]">
       <div className="w-full mb-[40px] md:mb-[50px]">

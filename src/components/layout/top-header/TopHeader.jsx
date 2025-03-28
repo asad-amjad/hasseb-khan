@@ -25,7 +25,7 @@ export default function TopHeader() {
         <div className="w-1/2 flex items-center justify-center gap-2">
           <FontAwesomeIcon icon={faEnvelope} className="text-white text-sm" />
           <p className="text-[#F4F6F9]  sm:text-[10px]  md:text-[12px] lg:text-[13px] text-sans tracking-wide ">
-            abdull.haseebkhan@gmail.com
+            admin@gmail.com
           </p>
         </div>
       </div>

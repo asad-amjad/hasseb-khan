@@ -1,0 +1,5 @@
+body {
+    @apply bg-background-1; /* This applies your #F9F9F9 color */
+    @apply text-black; /* Optional: sets default text color */
+    @apply font-figtree; /* Optional: sets default font */
+  }

@@ -1,35 +1,18 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const Heading = ({ 
-  as: Tag = 'h1', 
-  children, 
-  className = '',
-  variant = 'primary', // 'primary' or 'alternative'
-  ...props 
-}) => {
-  const primaryVariants = {
-    h1: 'font-figtree font-extrabold text-[56px] tracking-[0px] mb-6',
-    h2: 'font-figtree font-extrabold text-[46px] tracking-[0px] mb-5',
-    h3: 'font-figtree font-normal text-[34px] tracking-[0px] mb-4',
-    h4: 'font-figtree font-normal text-[30px] tracking-[0px] mb-4',
-    h5: 'font-figtree font-normal text-[26px] tracking-[0px] mb-3',
-    h6: 'font-figtree font-medium text-[22px] tracking-[0px] mb-3'
+const Heading = ({ as: Tag = "h1", children, className = "", ...props }) => {
+  const headingStyles = {
+    h1: "font-extrabold text-[36px] md:text-[56px] tracking-[0px]", // Mobile: 36px, Desktop: 56px
+    h2: "font-extrabold text-[30px] md:text-[46px] tracking-[0px]",
+    h3: "font-regular text-[24px] md:text-[34px] tracking-[0px]",
+    h4: "font-regular text-[20px] md:text-[30px] tracking-[0px]",
+    h5: "font-regular text-[18px] md:text-[26px] tracking-[0px]",
+    h6: "font-medium text-[16px] md:text-[22px] tracking-[0px]",
   };
-
-  const alternativeVariants = {
-    h1: 'font-figtree font-normal text-[36px] tracking-[0px] mb-6',
-    h2: 'font-figtree font-normal text-[30px] tracking-[0px] mb-5',
-    h3: 'font-figtree font-normal text-[20px] tracking-[0px] mb-4',
-    h4: 'font-figtree font-normal text-[20px] tracking-[0px] mb-4',
-    h5: 'font-figtree font-normal text-[20px] tracking-[0px] mb-3',
-    h6: 'font-figtree font-medium text-[14px] tracking-[0px] mb-3'
-  };
-
-  const variants = variant === 'alternative' ? alternativeVariants : primaryVariants;
 
   return (
-    <Tag 
-      className={`${variants[Tag]} ${className}`}
+    <Tag
+      className={`font-figtree leading-tight ${headingStyles[Tag]} ${className}`}
       {...props}
     >
       {children}
@@ -38,10 +21,9 @@ const Heading = ({
 };
 
 Heading.propTypes = {
-  as: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']),
-  variant: PropTypes.oneOf(['primary', 'alternative']),
+  as: PropTypes.oneOf(["h1", "h2", "h3", "h4", "h5", "h6"]),
   className: PropTypes.string,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
 };
 
 export default Heading;

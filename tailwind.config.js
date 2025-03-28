@@ -1,4 +1,3 @@
-// tailwind.config.js
 module.exports = {
   content: [
     "./index.html",
@@ -8,7 +7,22 @@ module.exports = {
     extend: {
       fontFamily: {
         figtree: ['Figtree', 'sans-serif'],
-        // sans: ['Figtree', 'sans-serif'], // Set as default
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#E55D48',
+          dark: '#D45643',
+        },
+        secondary: {
+          DEFAULT: '#1F385F', // Fixed typo from IF to 1F
+          dark: '#122A4E',
+        },
+        black: '#111111',
+        white: '#FFFFFF',
+        background: {
+          1: '#F9F9F9',
+          2: 'rgba(31, 56, 95, 0.06)', // #1F385F with 6% opacity
+        },
       },
     },
   },

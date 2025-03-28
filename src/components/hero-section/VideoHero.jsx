@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import BannerVideo from "../../assets/Videos/BannerVideo.mp4";
 
 import Button from "../button/Button";
 import ButtonSecondary from "../button/ButtonSecondary";
@@ -16,7 +15,11 @@ export default function VideoHero() {
           muted
           playsInline
         >
-          <source src={BannerVideo} type="video/mp4" />
+          <source 
+          // src={BannerVideo}
+          
+          src={'/hero-section/banner-video.mp4'}
+          type="video/mp4" />
         </video>
 
         {/* Navbar Component */}

@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import Image1 from "../../assets/hero-section/image-1.png";
 
-import Button from "../button/Button";
-import ButtonSecondary from "../button/ButtonSecondary";
 import Navbar from "../layout/navbar.jsx/Navbar";
 import Breadcrumb from "../breadcrumb/Breadcrumb";
 
@@ -21,7 +18,7 @@ export default function PageHero({ title, description }) {
         </video> */}
 
         <img
-          src={Image1}
+          src={"/hero-section/banner-image.png"}
           alt="review-pfp"
           // className="w-[50px] h-[50px] rounded-[100%]"
           className="absolute inset-0 w-full h-full object-cover z-0"

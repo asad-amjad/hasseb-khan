@@ -1,54 +1,27 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Heading, Text } from "../ui";
 
-const steps = [
-  {
-    heading: "01",
-    title: "Choose your treatment",
-    description:
-      "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
-  },
-  {
-    heading: "02",
-    title: "Get a Free Quote",
-    description:
-      "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
-  },
-  {
-    heading: "03",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-  },
-  {
-    heading: "04",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-  },
-];
 
-const Timeline = () => {
+const Timeline = ({title, timelineData}) => {
   return (
-    <div className="w-full overflow-hidden  px-[16px] md:ps-[100px] my-[80px]">
+    <div className="w-full overflow-hidden  px-[16px] md:ps-[100px] my-[100px]">
       <div className="w-full mb-[40px] md:mb-[50px]">
-        <Heading as="h2"> When Will I See Results?</Heading>
+        <h2>{title}</h2>
       </div>
 
       <motion.div
         className="flex cursor-grab active:cursor-grabbing"
-        dragConstraints={{ left: -((steps.length - 3) * 420), right: 0 }}
+        dragConstraints={{ left: -((timelineData.length - 3) * 420), right: 0 }}
         drag="x"
       >
         {/* <div className="w-[100px] min-w-[100px]"></div> */}
-        {steps.map((step, index) => (
+        {timelineData.map((step, index) => (
           <div
             key={index}
             className="relative flex flex-col w-[500px] min-w-[500px] pe-[200px]"
           >
             {/* Number */}
-            <Text>{step.heading}</Text>
+            <p>{step.heading}</p>
 
             {/* Connecting Line */}
             {index !== 0 && (
@@ -59,12 +32,10 @@ const Timeline = () => {
             <div className="my-[50px] w-4 h-4 bg-[#E55D48] rounded-full z-10"></div>
 
             {/* Title */}
-            <Heading as="h5">{step.title}</Heading>
+            <h5>{step.title}</h5>
 
             {/* Description */}
-            <Text variant="body2" className="mt-[10px]">
-              {step.description}
-            </Text>
+            <p className="body-2 mt-[10px]">{step.description}</p>
           </div>
         ))}
       </motion.div>

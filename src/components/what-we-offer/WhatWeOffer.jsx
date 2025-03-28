@@ -1,23 +1,18 @@
 import React from "react";
-import { Heading, Text } from "../ui";
 import Button from "../button/Button";
 
 const WhatWeOffer = ({ badge, title, description, buttonText, buttonLink }) => {
   return (
     <div className="flex flex-col items-center text-center w-full">
       <div className="mt-[60px]">
-        {badge &&
-        <div className="flex justify-center w-full">
-          <Text variant="tag" className="bg-white px-4 py-1 w-fit">
-            {badge}
-          </Text>
-        </div>
-        }
+        {badge && (
+          <div className="flex justify-center w-full">
+            <p className="body-2 tag">{badge}</p>
+          </div>
+        )}
         <div className="mb-[60px] mt-[40px]">
-          <Heading as="h2">{title}</Heading>
-          <Text variant="body2" className="max-w-[1012px]">
-            {description}
-          </Text>
+          <h2>{title}</h2>
+          <p className="body-2 max-w-[1012px]">{description}</p>
         </div>
       </div>
 

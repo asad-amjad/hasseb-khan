@@ -1,6 +1,4 @@
 import { motion } from "framer-motion";
-import { Heading } from "../ui";
-// import { Heading } from "../components/ui";
 
 const scrollingTexts = [
   "Lorem ipsum dolor sit",
@@ -27,9 +25,9 @@ const ScrollingText = ({ direction = "left" }) => {
         }}
       >
         {scrollingTexts.map((text, index) => (
-          <Heading as="h6" key={index} className="w-fit">
+          <h6 key={index} className="w-fit">
             {text}
-          </Heading>
+          </h6>
         ))}
       </motion.div>
     </div>

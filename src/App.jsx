@@ -1,11 +1,22 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./App.css";
 
-import './App.css'
-import Page1 from "./screens/Page1";
+import Home from "./screens/Home";
+import Layout from "./components/layout/Layout";
+import AboutUs from "./screens/AboutUs";
+
+const routes = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />, // Wrap pages inside the Layout
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/about-us", element: <AboutUs /> },
+    ],
+  },
+]);
 
 function App() {
-  const routes = createBrowserRouter([{ path: "/", element: <Page1 /> }]);
-
   return <RouterProvider router={routes} />;
 }
 

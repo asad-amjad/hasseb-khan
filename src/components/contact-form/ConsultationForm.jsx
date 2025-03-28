@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Heading, Text } from "../components/ui";
 import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 // import { FaWhatsapp, FaPhone, FaEnvelope } from "react-icons/fa";
 
@@ -38,14 +37,12 @@ export default function ConsultationForm() {
       {/* Contact Form Section */}
       <section className="max-w-4xl mx-auto my-10 p-6">
         <div className="text-center">
-          <Heading as="h2">
-            UNLOCK YOUR PERSONALIZED CONSULTATION TODAY!
-          </Heading>
+          <h2>UNLOCK YOUR PERSONALIZED CONSULTATION TODAY!</h2>
 
-          <Text as="body2">
+          <p className="body-2">
             Down to earth through instruction in yoga and mindfulness for the
             benefits of all bodies
-          </Text>
+          </p>
         </div>
 
         <form className="space-y-4">

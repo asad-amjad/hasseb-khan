@@ -1,57 +1,30 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Heading, Text } from "../ui";
-export default function OurServices() {
+
+export default function OurServices({ourServicesData}) {
   const [showImage, setShowImage] = useState(false);
   const [index, setIndex] = useState("");
 
-  const data = [
-    {
-      rotate: 12,
-      service: "Dentistry",
-      url: "https://placehold.co/341x511",
-    },
-    {
-      rotate: -12,
-      service: "Facial aesthetics",
 
-      url: "https://placehold.co/341x511",
-    },
-    {
-      rotate: 12,
-      service: "Breast aesthetics",
-      url: "https://placehold.co/341x511",
-    },
-    {
-      rotate: -12,
-      service: "Body aesthetics",
-      url: "https://placehold.co/341x511",
-    },
-    {
-      rotate: 12,
-      service: "Genital aesthetics",
-      url: "https://placehold.co/341x511",
-    },
-  ];
   return (
-    <div className="flex flex-col gap-[50px] bg-[#FFF] min-w-[360px] p-[100px]">
+    <div className="flex flex-col gap-[50px] bg-[#FFF] min-w-[360px] p-[16px] md:p-[100px]">
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
-      <Heading as="h2">OUR SERVICES </Heading>
-      <Text variant="body2">
+      <h2>OUR SERVICES </h2>
+      <p className="body-2">
         Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh
         fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo
         tincidunt nunc tempor
-      </Text>
+      </p>
       {/* </div> */}
-      <div className="w-full flex flex-col gap-[20px] px-[16px] md:hidden">
-        {data.map(({ service, url }) => {
+      <div className="w-full flex flex-col gap-[20px] md:px-[16px] md:hidden">
+        {ourServicesData.map(({ service, url }) => {
           return (
             <div
               className="w-full height-[492px] flex flex-col gap-[15px] "
               key={service}
             >
               <img src={url} alt={`${service} image`} />
-              <Heading as="h3">{service}</Heading>
+              <h3>{service}</h3>
             </div>
           );
         })}
@@ -64,7 +37,7 @@ export default function OurServices() {
           }, 500);
         }}
       >
-        {data.map(({ service, url, rotate }) => {
+        {ourServicesData.map(({ service, url, rotate }) => {
           return (
             <div
               className="md:relative border-b-[1px] w-full flex justify-start items-start h-14 hover:bg-opacity-[0.2] "
@@ -74,9 +47,7 @@ export default function OurServices() {
               }}
               key={service}
             >
-              <Heading as="h3" className="">
-                {service}
-              </Heading>
+              <h3 className="">{service}</h3>
 
               <AnimatePresence>
                 {index === service && showImage && (

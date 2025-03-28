@@ -6,13 +6,13 @@ import {
   faInstagram,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-import espWave from "../../assets/Flags/espWave.png";
-import rusWave from "../../assets/Flags/rusWave.png";
-import engWave from "../../assets/Flags/engWave.png";
-import ksaWave from "../../assets/Flags/ksaWave.png";
+import espWave from "../../../assets/Flags/espWave.png";
+import rusWave from "../../../assets/Flags/rusWave.png";
+import engWave from "../../../assets/Flags/engWave.png";
+import ksaWave from "../../../assets/Flags/ksaWave.png";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-export default function TopNavbar() {
+export default function TopHeader() {
   return (
     <div className="w-full bg-[#1F385F] px-2 flex justify-between items-center h-5 py-5">
       <div className="hidden items-center md:flex  sm:w-2/5 md:justify-around md:gap-4  lg:gap-2 ">

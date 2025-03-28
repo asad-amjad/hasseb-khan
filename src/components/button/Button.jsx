@@ -1,13 +1,12 @@
 import React from "react";
-import { Text } from "../ui";
 
 const Button = ({ buttonText, onClick, className = "" }) => {
   return (
     <button
       onClick={onClick}
-      className={`bg-primary hover:bg-primary-dark text-white px-6 py-3 transition duration-300 ${className}`}
+      className={`btn-primary bg-primary hover:bg-primary-dark text-white px-6 h-[51px] transition duration-300 ${className}`}
     >
-      <Text variant="body2">{buttonText}</Text>
+      <p className="body-2">{buttonText}</p>
     </button>
   );
 };

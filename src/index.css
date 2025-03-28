@@ -1,12 +1,19 @@
-/* src/index.css
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+  @apply bg-background-1; /* This applies your #F9F9F9 color */
+  @apply text-black; /* Optional: sets default text color */
+  /* @apply font-figtree; Optional: sets default font */
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.input-field {
+  @apply w-full  px-[14px] h-[59px]  bg-white;
+}
 
-@layer base {
-  html {
-    font-family: 'Figtree', sans-serif;
-  }
-} */
+.tag {
+  @apply h-[31px] bg-white px-4 w-fit flex items-center;
+}
+
+select {
+  @apply w-full  px-[14px]  bg-white h-[59px] font-normal text-[14px] md:text-[16px] tracking-[0px];
+}
+
+

@@ -1,12 +1,11 @@
 import React from "react";
-import { Heading, Text } from "../ui";
 
 const Breadcrumb = ({ title, description }) => {
   return (
-    <div className="justify-center flex my-[65px]">
+    <div className="justify-center flex my-[65px] z-20">
       <header className="max-w-[689px] text-center">
-        <Heading as="h1">{title}</Heading>
-        <Text variant="body2">{description}</Text>
+        <h1>{title}</h1>
+        <p className="body-2">{description}</p>
       </header>
     </div>
   );

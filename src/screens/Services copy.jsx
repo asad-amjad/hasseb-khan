@@ -1,10 +1,9 @@
 import React from "react";
 import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
 import WhatWeOffer from "../components/what-we-offer/WhatWeOffer";
-import { Heading, Text } from "../components/ui";
 import Button from "../components/button/Button";
-import TopNavbar from "../components/Navbar.jsx/TopNavbar";
-import SectionOne from "../components/navbar.jsx/NavigationMenu";
+import TopNavbar from "../components/layout/TopNavbar";
+import SectionOne from "../components/layout/header/NavigationMenu";
 // import Navbar from "../components/navbar.jsx/TopNavbar";
 
 const Services = () => {
@@ -48,24 +47,23 @@ const Services = () => {
           <div>
             {/* Tag */}
             <div className="mb-[40px] inline-block bg-white px-4 py-1">
-              <Text variant="tag">Why Facial Aesthetics</Text>
+              <p className="tag">Why Facial Aesthetics</p>
             </div>
 
             {/* Heading */}
-            <Heading as="h2">BENEFITS OF FACIAL AESTHETICS</Heading>
-
+            <h2>BENEFITS OF FACIAL AESTHETICS</h2>
             {/* Description */}
-            <Text variant="body2" className="mt-[10px]">
+            <p className="body-2 mt-[10px]">
               Achieve a radiant, youthful look with tailored treatments that
               enhance facial contours, smooth skin, and restore volume.
-            </Text>
+            </p>
 
             {/* List */}
             <ul className="mt-[30px] space-y-[20px] mb-[40px]">
               {benefits.map((benefit, index) => (
                 <li key={index} className="flex items-start gap-2">
                   <img src="/tick.svg" alt="tick" />
-                  <Text variant="body2">{benefit}</Text>
+                  <p className="body-2">{benefit}</p>
                 </li>
               ))}
             </ul>

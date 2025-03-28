@@ -18,7 +18,8 @@ export default function VideoHero() {
           <source 
           // src={BannerVideo}
           
-          src={'/hero-section/banner-video.mp4'}
+          // src={'/hero-section/banner-video.mp4'}
+          src={'https://dl.dropboxusercontent.com/scl/fi/td3o4wbu7d30q7fog4irb/bidsgae-video-last-changing-done_2.mp4?rlkey=kdc2qbgjn0viudm8ohi0f3pto&st=ik3iprxu&dl=0'}
           type="video/mp4" />
         </video>
 

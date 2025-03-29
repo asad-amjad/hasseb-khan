@@ -3,22 +3,24 @@ import Button from "../button/Button";
 
 const ConsultationForm = () => {
   return (
-    <div className="flex justify-center items-center py-[100px] px-[16px] md:px-0">
+    <div className="flex justify-center items-center py-[150px] px-[16px] md:px-0">
       <div className="md:w-[812px]">
-        <div className="md:mt-[60px]">
-          <div className="flex justify-start md:justify-center w-full">
+        <div className="">
+          <div className="flex justify-start md:justify-center w-full mb-[40px]">
             <p className="body-2 tag">Contact Us</p>
           </div>
 
-          <div className=" my-[30px] md:my-[60px] md:text-center">
+          <div className="md:text-center space-y-[10px]">
             <h2>Unlock Your Personalized Consultation Today!</h2>
             <p className="body-2 w-full">
-            Down to earth through instruction in yoga and mindfulness for the benefits of all bodies
+              {" "}
+              Down to earth through instruction in yoga and mindfulness for the
+              benefits of all bodies
             </p>
           </div>
         </div>
 
-        <form className="space-y-[16px]">
+        <form className="space-y-[16px] my-[40px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
             <input
               type="text"

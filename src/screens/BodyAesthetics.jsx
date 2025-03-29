@@ -35,11 +35,13 @@ const BodyAesthetics = () => {
         buttonText="Schedule Free Consultation"
         onButtonClick={() => console.log("Consultation Scheduled!")}
       />
-      
+
       <TextWithImage
         badge="Why Hair Removal"
         title="Benefits of Body Aesthetics"
-        descriptions={["Achieve a contoured, youthful appearance with personalized treatments that enhance body shape, boost confidence, and improve overall well-being."]}
+        descriptions={[
+          "Achieve a contoured, youthful appearance with personalized treatments that enhance body shape, boost confidence, and improve overall well-being.",
+        ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
         imageSrc="/services/image-2.png"
@@ -67,7 +69,6 @@ const BodyAesthetics = () => {
       <OurServices
         title="Comprehensive Services"
         description="We offer a range of advanced body aesthetic procedures tailored to enhance your shape and confidence. From targeted fat reduction to full-body contouring, our expert team ensures natural, long-lasting results with cutting-edge techniques and personalized treatment plans designed to meet your unique needs."
-        
         ourServicesData={[
           {
             rotate: 12,
@@ -116,6 +117,7 @@ const BodyAesthetics = () => {
           },
         ]}
       />
+
       <ScrollTimeline
         title="When will I see results?"
         timelineData={[
@@ -142,8 +144,8 @@ const BodyAesthetics = () => {
       {/* Partners */}
       {/* <Partners /> */}
       <ImageComparisonSlider
-        before="https://placehold.co/960x456?text=Hello+World"
-        after="https://placehold.co/960x456?text=Hiiiii+World"
+        before="https://placehold.co/1312x642?text=Hello+World"
+        after="https://placehold.co/1312x642?text=Hiiiii+World"
       />
       <HorizontalStories
         storiesData={[

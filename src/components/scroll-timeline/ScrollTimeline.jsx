@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Timeline = ({ title, timelineData }) => {
   return (
-    <div className="w-full overflow-hidden  px-[16px] md:ps-[100px] my-[100px]">
+    <div className="w-full overflow-hidden  px-[16px] md:px-[100px] my-[150px]">
       <div className="w-full mb-[40px] md:mb-[50px]">
         <h2>{title}</h2>
       </div>

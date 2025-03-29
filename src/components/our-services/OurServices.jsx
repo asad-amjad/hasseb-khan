@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-export default function OurServices({ ourServicesData, title, description, bgColor="#FFF" }) {
+export default function OurServices({
+  ourServicesData,
+  title,
+  description,
+  bgColor = "#FFF",
+}) {
   const [showImage, setShowImage] = useState(false);
   const [index, setIndex] = useState("");
 
   return (
-    <div className={`flex flex-col gap-[50px] bg-[${bgColor}] min-w-[360px] p-[16px] md:p-[100px]`}>
+    <div className={`flex flex-col bg-[${bgColor}] min-w-[360px] p-[100px]`}>
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
       <h2>{title}</h2>
       <p className="body-2">{description}</p>
@@ -24,31 +29,33 @@ export default function OurServices({ ourServicesData, title, description, bgCol
           );
         })}
       </div>
+
+      {/* Desktop view */}
       <div
-        className="hidden  md:w-full md:flex md:flex-col md:gap-[20px] cursor-pointer"
+        className="hidden  md:w-full md:flex md:flex-col  mt-[50px]"
         onMouseLeave={() => {
           setTimeout(() => {
             setShowImage(false);
           }, 500);
         }}
       >
-        {ourServicesData.map(({ service, url, rotate }) => {
-          return (
+        {ourServicesData.map(({ service, url, rotate }) => (
+          <div key={service}>
             <div
-              className="md:relative border-b-[1px] w-full flex justify-start items-start h-14 hover:bg-opacity-[0.2] "
+              className="md:relative border-b-[1px] cursor-pointer  w-full flex hover:bg-opacity-[0.2]" // Added margin-bottom
               onMouseEnter={() => {
                 setIndex(service);
                 setShowImage(true);
               }}
-              key={service}
+              onMouseLeave={() => setShowImage(false)}
             >
-              <h3 className="">{service}</h3>
+              <h3 className="leading-[36px] mb-[25px] ">{service}</h3>
 
               <AnimatePresence>
                 {index === service && showImage && (
                   <motion.img
                     key={service}
-                    className="md:h-[400px] md:w-[275px] absolute right-20 top-[-100%]  rotate-12 z-20"
+                    className="md:h-[400px] md:w-[275px] absolute right-20 top-[-100%] rotate-12 z-20"
                     src={url}
                     initial={{
                       opacity: 0.5,
@@ -66,8 +73,9 @@ export default function OurServices({ ourServicesData, title, description, bgCol
                 )}
               </AnimatePresence>
             </div>
-          );
-        })}
+            <div className="mb-[25px] pointer-events-none "></div>
+          </div>
+        ))}
       </div>
     </div>
   );

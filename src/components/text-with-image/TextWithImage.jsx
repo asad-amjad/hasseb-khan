@@ -14,11 +14,7 @@ const TextWithImage = ({
   items = [],
 }) => {
   return (
-    <div
-      className={`flex flex-col ${
-        reverse ? "md:flex-row-reverse" : "md:flex-row"
-      } w-full my-[100px]`}
-    >
+    <div className={`flex flex-col md:flex-row w-full`}>
       {/* Left Side Content */}
       <div className="flex items-center justify-center w-full my-[80px] md:w-1/2 px-[16px] md:pl-[100px] md:pe-[50px]">
         <div>
@@ -27,33 +23,32 @@ const TextWithImage = ({
               <p className="tag body-2">{badge}</p>
             </div>
           )}
-          <h2 className="uppercase mt-[40px]">{title}</h2>
+          <div className="my-[40px]">
+            <h2 className="uppercase">{title}</h2>
 
-          {/* Descriptions */}
-          {descriptions.map((desc, index) => (
-            <p
-              key={index}
-              className={`body-2 mt-[${index === 0 ? "10px" : "10px"}]`}
-            >
-              {desc}
-            </p>
-          ))}
-          {items?.length > 0 && (
-            <ul className="mt-6 text-left space-y-2">
-              {items?.map((item, index) => (
-                <li key={index} className="flex items-center gap-2">
-                  ✓ <p className="body-2 my-[5px]">{item}</p>
-                </li>
-              ))}
-            </ul>
-          )}
+            {/* Descriptions */}
+            {descriptions.map((desc, index) => (
+              <p key={index} className={`body-2 mt-[10px]`}>
+                {desc}
+              </p>
+            ))}
+            {items?.length > 0 && (
+              <ul className="text-left space-y-[20px] mt-[30px]">
+                {items?.map((item, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    ✓ <p className="body-2">{item}</p>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
 
           {/* Button */}
           {buttonText && (
             <Button
               buttonText={buttonText}
               onClick={buttonAction}
-              className="md:mt-[40px] mt-[50px]"
+              className=""
             />
           )}
         </div>

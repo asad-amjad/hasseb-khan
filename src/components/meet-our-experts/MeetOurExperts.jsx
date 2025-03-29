@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../button/Button";
+// import Button from "../button/Button";
 import Image2 from "../../assets/about-us/image-2.png";
 
 const MeetOurExperts = () => {

@@ -40,7 +40,6 @@ const AboutUs = () => {
         imageAlt="Facial Aesthetics"
       />
 
-      {/* Patient Stories */}
       <HorizontalStories
         storiesData={[
           {
@@ -132,39 +131,6 @@ const AboutUs = () => {
           },
         ]}
       />
-
-      {/* Parallax Images Section*/}
-      {/* <div className="my-[80px] md:my-[250px]">
-        <TextAndDescription
-          title="Your Health Journey Starts Here"
-          description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
-        />
-        <div className="mt-[40px] md:mt-[60px]  space-y-[10px]">
-          <ScrollingText direction="left" />
-          <ScrollingText direction="right" />
-        </div>
-      </div> */}
-
-      {/* Our Services */}
-      {/* <OurServices ourServicesData={ourServicesData} /> */}
-
-      {/* Partners */}
-      {/* <Partners /> */}
-
-      {/* <WhatWeOffer
-        badge="What we offer"
-        title="REFINE, REJUVENATE & RESTORE"
-        description="Our expert facial aesthetic treatments include contouring, skin tightening, and volume restoration, delivering natural, youthful, and long-lasting results with precision."
-        buttonText="Schedule Free Consultation"
-        buttonLink="#"
-      />
-
-      <ConsultationForm />
-
-      <Breadcrumb
-        title="FACIAL AESTHETICS"
-        description="Enhance facial harmony, symmetry, and youthful appearance with advanced aesthetic procedures designed to refine features, restore volume, and improve skin texture."
-      /> */}
     </>
   );
 };

@@ -1,102 +1,13 @@
 import React from "react";
-// import Breadcrumb from "../components/Breadcrumbs/Breadcrumb";
-import WhatWeOffer from "../components/what-we-offer/WhatWeOffer";
-import Button from "../components/button/Button";
-import TextAndDescription from "../components/text-and-description/TextAndDescription";
+
 import OurServices from "../components/our-services/OurServices";
-import ScrollingText from "../components/scrolling-text/ScrollingText";
 import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
-import Partners from "../components/partners/Partners";
-import ConsultationForm from "../components/consultation-form/ConsultationForm";
 
-import Breadcrumb from "../components/breadcrumb/Breadcrumb";
 import TextWithImage from "../components/text-with-image/TextWithImage";
 import PageHero from "../components/hero-section/PageHero";
 import Image1 from "../assets/about-us/image-1.jpeg";
 import MeetOurExperts from "../components/meet-our-experts/MeetOurExperts";
-// import image1 from "../assets/about-us/";
-// import Image1 from "../assets/hero-section/image-1.png";
-
-const ourServicesData = [
-  {
-    rotate: 12,
-    service: "Dentistry",
-    url: "https://placehold.co/341x511",
-  },
-  {
-    rotate: -12,
-    service: "Facial aesthetics",
-    url: "https://placehold.co/341x511",
-  },
-  {
-    rotate: 12,
-    service: "Breast aesthetics",
-    url: "https://placehold.co/341x511",
-  },
-  {
-    rotate: -12,
-    service: "Body aesthetics",
-    url: "https://placehold.co/341x511",
-  },
-  {
-    rotate: 12,
-    service: "Genital aesthetics",
-    url: "https://placehold.co/341x511",
-  },
-];
-
-const storiesData = [
-  {
-    name: "Frankie",
-    role: "New Parents",
-    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-    image: "https://placehold.co/383x330",
-    type: "story",
-  },
-  {
-    image: "https://placehold.co/383x330",
-    type: "image",
-  },
-  {
-    name: "John Doe",
-    role: "New Parents",
-    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-    image: "https://placehold.co/383x330",
-    type: "story",
-  },
-  {
-    image: "https://placehold.co/383x330",
-    type: "image",
-  },
-];
-
-const timelineData = [
-  {
-    heading: "01",
-    title: "Choose your treatment",
-    description:
-      "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
-  },
-  {
-    heading: "02",
-    title: "Get a Free Quote",
-    description:
-      "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
-  },
-  {
-    heading: "03",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-  },
-  {
-    heading: "04",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-  },
-];
 
 const AboutUs = () => {
   return (
@@ -110,7 +21,7 @@ const AboutUs = () => {
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
           src={Image1}
-          // alt={imageAlt}
+          alt="image"
         />
       </div>
 
@@ -130,7 +41,32 @@ const AboutUs = () => {
       />
 
       {/* Patient Stories */}
-      <HorizontalStories storiesData={storiesData} />
+      <HorizontalStories
+        storiesData={[
+          {
+            name: "Frankie",
+            role: "New Parents",
+            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
+            image: "https://placehold.co/383x330",
+            type: "story",
+          },
+          {
+            image: "https://placehold.co/383x330",
+            type: "image",
+          },
+          {
+            name: "John Doe",
+            role: "New Parents",
+            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
+            image: "https://placehold.co/383x330",
+            type: "story",
+          },
+          {
+            image: "https://placehold.co/383x330",
+            type: "image",
+          },
+        ]}
+      />
 
       <MeetOurExperts />
 
@@ -138,12 +74,63 @@ const AboutUs = () => {
       <OurServices
         title="Our Services"
         description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
-        ourServicesData={ourServicesData}
+        ourServicesData={[
+          {
+            rotate: 12,
+            service: "Dentistry",
+            url: "https://placehold.co/341x511",
+          },
+          {
+            rotate: -12,
+            service: "Facial aesthetics",
+            url: "https://placehold.co/341x511",
+          },
+          {
+            rotate: 12,
+            service: "Breast aesthetics",
+            url: "https://placehold.co/341x511",
+          },
+          {
+            rotate: -12,
+            service: "Body aesthetics",
+            url: "https://placehold.co/341x511",
+          },
+          {
+            rotate: 12,
+            service: "Genital aesthetics",
+            url: "https://placehold.co/341x511",
+          },
+        ]}
       />
 
       <ScrollTimeline
         title={"What’s Next? Your Health, Our Priority!"}
-        timelineData={timelineData}
+        timelineData={[
+          {
+            heading: "01",
+            title: "Choose your treatment",
+            description:
+              "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
+          },
+          {
+            heading: "02",
+            title: "Get a Free Quote",
+            description:
+              "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
+          },
+          {
+            heading: "03",
+            title: "Plan Your Stay",
+            description:
+              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+          },
+          {
+            heading: "04",
+            title: "Plan Your Stay",
+            description:
+              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+          },
+        ]}
       />
 
       {/* Parallax Images Section*/}

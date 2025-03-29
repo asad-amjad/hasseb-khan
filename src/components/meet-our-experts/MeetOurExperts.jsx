@@ -5,7 +5,7 @@ import Image2 from "../../assets/about-us/image-2.png";
 const MeetOurExperts = () => {
   return (
     <div className="flex justify-center items-center py-[100px] px-[16px] md:px-0 ">
-      <div className="md:w-[1312px]">
+      <div className="md:w-[1312px] w-full">
         <div className="w-full flex justify-center ">
           <div className="mb-[30px] md:text-center w-[1012px]">
             <h2>Meet our experts</h2>

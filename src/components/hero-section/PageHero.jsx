@@ -6,7 +6,7 @@ import Breadcrumb from "../breadcrumb/Breadcrumb";
 export default function PageHero({ title, description }) {
   return (
     <>
-      <div className="relative h-[97vh] md:h-[418px] w-full flex flex-col">
+      <div className="relative  md:h-[418px] w-full flex flex-col">
         {/* <video
           className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay

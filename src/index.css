@@ -9,7 +9,7 @@ body {
 }
 
 .tag {
-  @apply h-[31px] bg-white px-4 w-fit flex items-center;
+  @apply h-[31px] bg-white px-[16px] w-fit flex items-center;
 }
 
 select {

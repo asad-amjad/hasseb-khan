@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { createPortal } from "react-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logoWhite from "../../../assets/Logos/logo-white.png";
 import logoBlack from "../../../assets/Logos/logo-black.png";
 import { menuLinks } from "../../../constants/common";
 import { Link } from "react-router-dom";
+import TopHeader from "../top-header/TopHeader";
 
 export default function Navbar({ lightMode = false }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -50,44 +52,48 @@ export default function Navbar({ lightMode = false }) {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-          {/* Slide-in Panel */}
-          <div className="fixed left-0 top-[40px] h-[98vh] w-[374px] bg-white  p-6 transform translate-x-0 transition-transform duration-300 ease-in-out">
-            {/* Close Button */}
-            <button
-              onClick={() => setMobileMenuOpen(false)}
-              aria-label="Close Menu"
-              className="absolute top-0 right-0 text-2xl"
-            >
-              <FontAwesomeIcon icon={faTimes} />
-            </button>
+      {/* Mobile Menu Full-Screen */}
+      {mobileMenuOpen &&
+        createPortal(
+          <div className="fixed z-50 flex justify-end">
+            {/* Slide-in Panel */}
+            <div className="fixed inset-0 bg-white   flex flex-col items-start transition-transform duration-300 ease-in-out">
+              <TopHeader />
+              {/* Close Button */}
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                aria-label="Close Menu"
+                className="absolute top-[70px] right-5 text-2xl"
+              >
+                <FontAwesomeIcon icon={faTimes} />
+              </button>
 
-            {/* Logo */}
-            <img
-              src={lightMode ? logoWhite : logoBlack}
-              alt="Prime Med Logo"
-              className="w-[180px] mb-6"
-            />
-
-            {/* Menu Links */}
-            <ul className="space-y-4">
-              {menuLinks.map(({ href, label }) => (
-                <li key={href}>
-                  <Link
-                    to={href}
-                    className="text-black text-lg font-medium block border-b pb-2"
-                    onClick={() => setMobileMenuOpen(false)} // Close menu on click
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      )}
+              {/* Logo */}
+              <Link to={"/"}>
+                <img
+                  src={logoBlack}
+                  alt="Prime Med Logo"
+                  className="w-[170px] my-[24px] ms-[16px] z-[200]"
+                />
+              </Link>
+              {/* Menu Links */}
+              <ul className="space-y-4 w-full px-[16px] mt-[30px]">
+                {menuLinks.map(({ href, label }) => (
+                  <li key={href} className="w-full">
+                    <Link
+                      to={href}
+                      className="text-black text-lg font-medium block border-b pb-4 w-full text-left"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>,
+          document.body // Renders outside the Navbar for full-screen effect
+        )}
     </>
   );
 }

@@ -3,10 +3,10 @@ import Button from "../button/Button";
 
 const ConsultationForm = () => {
   return (
-    <div className="flex justify-center items-center py-[150px] px-[16px] md:px-0">
+    <div className="flex justify-center items-center py-[80px] md:py-[150px] px-[16px] md:px-0">
       <div className="md:w-[812px]">
         <div className="">
-          <div className="flex justify-start md:justify-center w-full mb-[40px]">
+          <div className="flex justify-start md:justify-center w-full mb-[30px] md:mb-[40px]">
             <p className="body-2 tag">Contact Us</p>
           </div>
 
@@ -20,7 +20,7 @@ const ConsultationForm = () => {
           </div>
         </div>
 
-        <form className="space-y-[16px] my-[40px]">
+        <form className="space-y-[16px] my-[30px] md:my-[40px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[16px]">
             <input
               type="text"

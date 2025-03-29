@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-export default function OurServices({ourServicesData}) {
+export default function OurServices({ ourServicesData, title, description }) {
   const [showImage, setShowImage] = useState(false);
   const [index, setIndex] = useState("");
-
 
   return (
     <div className="flex flex-col gap-[50px] bg-[#FFF] min-w-[360px] p-[16px] md:p-[100px]">
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
-      <h2>OUR SERVICES </h2>
-      <p className="body-2">
-        Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh
-        fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo
-        tincidunt nunc tempor
-      </p>
+      <h2>{title}</h2>
+      <p className="body-2">{description}</p>
       {/* </div> */}
       <div className="w-full flex flex-col gap-[20px] md:px-[16px] md:hidden">
         {ourServicesData.map(({ service, url }) => {

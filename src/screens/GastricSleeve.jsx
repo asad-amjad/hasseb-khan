@@ -19,27 +19,47 @@ import Image1 from "../assets/about-us/image-1.jpeg";
 const ourServicesData = [
   {
     rotate: 12,
-    service: "Dentistry",
+    service: "Abdomnioplasty",
     url: "https://placehold.co/341x511",
   },
   {
     rotate: -12,
-    service: "Facial aesthetics",
+    service: "360 Abdomnioplasty",
     url: "https://placehold.co/341x511",
   },
   {
     rotate: 12,
-    service: "Breast aesthetics",
+    service: "Mini Abdomnioplasty",
     url: "https://placehold.co/341x511",
   },
   {
     rotate: -12,
-    service: "Body aesthetics",
+    service: "Arm lift",
     url: "https://placehold.co/341x511",
   },
   {
     rotate: 12,
-    service: "Genital aesthetics",
+    service: "Back lift",
+    url: "https://placehold.co/341x511",
+  },
+  {
+    rotate: -12,
+    service: "Gynecomastia",
+    url: "https://placehold.co/341x511",
+  },
+  {
+    rotate: 12,
+    service: "Back lift",
+    url: "https://placehold.co/341x511",
+  },
+  {
+    rotate: -12,
+    service: "Vaser Liposuction I reagion",
+    url: "https://placehold.co/341x511",
+  },
+  {
+    rotate: 12,
+    service: "BBL",
     url: "https://placehold.co/341x511",
   },
 ];
@@ -71,29 +91,27 @@ const storiesData = [
 
 const timelineData = [
   {
-    heading: "01",
-    title: "Choose your treatment",
-    description:
-      "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
+    heading: "Week 1",
+    // title: "Choose your treatment",
+    description: "Initial healing phase with mild swelling and sensitivity.",
   },
   {
-    heading: "02",
-    title: "Get a Free Quote",
-    description:
-      "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
+    heading: "Week 2-3",
+    // title: "Get a Free Quote",
+    description: "Visible reduction in swelling, early shape improvements.",
   },
   {
-    heading: "03",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+    heading: "Week 4-6",
+    // title: "Plan Your Stay",
+    description: "Noticeable contouring, firmer skin, and improved body shape.",
   },
-  {
-    heading: "04",
-    title: "Plan Your Stay",
-    description:
-      "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-  },
+];
+const benefits = [
+  "Enhanced Body Shape – Sculpt and define your physique.",
+  "Fat Reduction – Target stubborn fat areas.",
+  "Toned & Firm Skin – Improve skin elasticity.",
+  "Long-Lasting Results – Enjoy lasting improvements.",
+  "Minimal Downtime – Quick recovery, faster results.",
 ];
 
 const GastricSleeve = () => {
@@ -115,13 +133,13 @@ const GastricSleeve = () => {
           // alt={imageAlt}
         />
 
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <div className="w-[1012px] flex justify-center flex-col items-center">
             <div className="flex justify-center w-full md:my-[80px]">
-              <p className="tag body-2">What we offer</p>
+              <p className="tag body-2">Why Hair Removal</p>
             </div>
-            <TextAndDescription
-              title="Your Health Journey Starts Here"
+            <TextWithBullets
+              title="Benefits of Body Aesthetics"
               description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
             />
             <Button
@@ -130,24 +148,22 @@ const GastricSleeve = () => {
               className="mt-[50px] w-fit"
             />
           </div>
-        </div>
+        </div> */}
       </div>
 
       <TextWithImage
         badge="Welcome to Primemed"
         title="A Great Health Experience Awaits You"
-        descriptions={[
-          "At Primed, we redefine medical tourism with excellence, offering world-class healthcare solutions tailored to your needs. Whether you seek aesthetic enhancements, specialized surgeries, or advanced medical treatments, our team of expert doctors and medical professionals ensures a seamless, safe, and comfortable journey from consultation to recovery.",
-          "We believe that healthcare should be both effective and stress-free. That’s why we provide personalized treatment plans, cutting-edge technology, and top-tier medical expertise in a warm and welcoming environment.",
-        ]}
+        descriptions={[]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
         imageSrc="/services/image-2.png"
         imageAlt="Facial Aesthetics"
+        items={benefits}
       />
 
       {/* Parallax Images Section*/}
-      <div className="my-[80px] md:my-[250px]">
+      {/* <div className="my-[80px] md:my-[250px]">
         <TextAndDescription
           title="Your Health Journey Starts Here"
           description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
@@ -156,20 +172,27 @@ const GastricSleeve = () => {
           <ScrollingText direction="left" />
           <ScrollingText direction="right" />
         </div>
-      </div>
+      </div> */}
 
       {/* Our Services */}
-      <OurServices ourServicesData={ourServicesData} />
-
-      {/* Partners */}
-      <Partners />
-
-      <HorizontalStories storiesData={storiesData} />
-
+      <OurServices
+        title="Comprehensive Services"
+        description="We offer a range of advanced body aesthetic procedures tailored to enhance your shape and confidence. From targeted fat reduction to full-body contouring, our expert team ensures natural, long-lasting results with cutting-edge techniques and personalized treatment plans designed to meet your unique needs."
+        ourServicesData={ourServicesData}
+      />
       <ScrollTimeline
-        title="When Will I See Results?"
+        title="When will I see results?"
         timelineData={timelineData}
       />
+      {/* Partners */}
+      {/* <Partners /> */}
+
+      <HorizontalStories storiesData={storiesData} />
+      <ConsultationForm />
+      {/* <ScrollTimeline
+        title="When Will I See Results?"
+        timelineData={timelineData}
+      /> */}
 
       {/* <WhatWeOffer
         badge="What we offer"

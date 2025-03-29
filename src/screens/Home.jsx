@@ -97,7 +97,7 @@ const timelineData = [
 const Home = () => {
   return (
     <>
-    {/* Video Hero section */}
+      {/* Video Hero section */}
 
       <VideoHero />
       <TextWithImage
@@ -126,14 +126,21 @@ const Home = () => {
       </div>
 
       {/* Our Services */}
-      <OurServices ourServicesData={ourServicesData} />
+      <OurServices
+        title="Our Services"
+        description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
+        ourServicesData={ourServicesData}
+      />
 
       {/* Partners */}
       <Partners />
 
       <HorizontalStories storiesData={storiesData} />
 
-      <ScrollTimeline title="When Will I See Results?" timelineData={timelineData} />
+      <ScrollTimeline
+        title="When Will I See Results?"
+        timelineData={timelineData}
+      />
 
       {/* <WhatWeOffer
         badge="What we offer"

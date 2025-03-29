@@ -132,12 +132,19 @@ const AboutUs = () => {
       {/* Patient Stories */}
       <HorizontalStories storiesData={storiesData} />
 
-      <MeetOurExperts/>
+      <MeetOurExperts />
 
-        {/* Our Services */}
-      <OurServices ourServicesData={ourServicesData} />
+      {/* Our Services */}
+      <OurServices
+        title="Our Services"
+        description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
+        ourServicesData={ourServicesData}
+      />
 
-      <ScrollTimeline title={"What’s Next? Your Health, Our Priority!"} timelineData={timelineData} />
+      <ScrollTimeline
+        title={"What’s Next? Your Health, Our Priority!"}
+        timelineData={timelineData}
+      />
 
       {/* Parallax Images Section*/}
       {/* <div className="my-[80px] md:my-[250px]">
@@ -156,7 +163,6 @@ const AboutUs = () => {
 
       {/* Partners */}
       {/* <Partners /> */}
-
 
       {/* <WhatWeOffer
         badge="What we offer"

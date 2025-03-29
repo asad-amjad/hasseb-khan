@@ -1,27 +1,33 @@
 import { motion } from "framer-motion";
-import { useState, useRef } from "react";
-import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import { ReactCompareSlider, ReactCompareSliderImage } from "react-compare-slider";
+
+const scrollingTexts = ["Happy Clients", "-", "Happy Clients"];
 
 const ImageComparisonSlider = ({ before, after }) => {
   return (
-    <div
-      //   ref={containerRef}
-      className="relative w-[1312px] mx-auto h-[645px] overflow-hidden rounded-lg shadow-lg"
-    >
+    <div className="relative">
+      {/* Scrolling Text Animation */}
+      <div className="overflow-hidden w-full">
+        <motion.div
+          className="flex gap-[100px] w-max"
+          animate={{ x: ["100%", "-100%"] }}
+          transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+        >
+          {scrollingTexts.map((text, index) => (
+            <p key={`${index}-image`} className="text-[90px] w-fit text-[#E55D48]">
+              {text}
+            </p>
+          ))}
+        </motion.div>
+      </div>
 
-<ReactCompareSlider
-      itemOne={<ReactCompareSliderImage src={before} srcSet={before} alt="Image one" />}
-      itemTwo={<ReactCompareSliderImage src={after} srcSet={after} alt="Image two" />}
-    />
-
-      {/* <ImageSlider
-        image1={img1}
-        image2={img2}
-        sliderWidth={3}
-        sliderColor="red"
-        handleColor="red"
-        handleBackgroundColor="white"
-      /> */}
+      {/* Image Comparison Slider */}
+      <div className="relative w-[1312px] mx-auto h-[645px] overflow-hidden mt-[60px]">
+        <ReactCompareSlider
+          itemOne={<ReactCompareSliderImage src={before} alt="Before Image" />}
+          itemTwo={<ReactCompareSliderImage src={after} alt="After Image" />}
+        />
+      </div>
     </div>
   );
 };

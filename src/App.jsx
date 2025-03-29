@@ -5,8 +5,9 @@ import Home from "./screens/Home";
 import Layout from "./components/layout/Layout";
 import AboutUs from "./screens/AboutUs";
 import ContactUs from "./screens/ContactUs";
-import GastricSleeve from "./screens/GastricSleeve";
+// import GastricSleeve from "./screens/GastricSleeve";
 import ScheduleFreeConsultation from "./screens/ScheduleFreeConsultation";
+import BodyAesthetics from "./screens/BodyAesthetics";
 
 const routes = createBrowserRouter([
   {
@@ -16,8 +17,11 @@ const routes = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/about-us", element: <AboutUs /> },
       { path: "/contact-us", element: <ContactUs /> },
-      { path: "/gastric-sleeve", element: <GastricSleeve /> },
-      { path: "/schedule-free-consultation", element: <ScheduleFreeConsultation /> },
+      { path: "/body-aesthetics", element: <BodyAesthetics /> },
+      {
+        path: "/schedule-free-consultation",
+        element: <ScheduleFreeConsultation />,
+      },
     ],
   },
 ]);

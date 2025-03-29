@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-export default function OurServices({ ourServicesData, title, description }) {
+export default function OurServices({ ourServicesData, title, description, bgColor="#FFF" }) {
   const [showImage, setShowImage] = useState(false);
   const [index, setIndex] = useState("");
 
   return (
-    <div className="flex flex-col gap-[50px] bg-[#FFF] min-w-[360px] p-[16px] md:p-[100px]">
+    <div className={`flex flex-col gap-[50px] bg-[${bgColor}] min-w-[360px] p-[16px] md:p-[100px]`}>
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
       <h2>{title}</h2>
       <p className="body-2">{description}</p>

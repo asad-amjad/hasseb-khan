@@ -3,7 +3,7 @@ import StoryCard from "./StoryCard";
 
 export default function HorizontalStories({ storiesData }) {
   return (
-    <div className="w-full bg-background-2 overflow-hidden px-[16px] md:py-[100px] md:px-[100px]">
+    <div className="w-full bg-background-2 overflow-hidden px-[16px] py-[80px] md:py-[100px] md:px-[100px]">
       <div className="w-full mb-[10px] md:mb-[10px]">
         <h2> Patient Stories</h2>
       </div>

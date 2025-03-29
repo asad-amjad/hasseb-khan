@@ -15,6 +15,7 @@ import TextWithImage from "../components/text-with-image/TextWithImage";
 import VideoHero from "../components/hero-section/VideoHero";
 import PageHero from "../components/hero-section/PageHero";
 import Image1 from "../assets/about-us/image-1.jpeg";
+import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
 
 const ourServicesData = [
   {
@@ -189,6 +190,11 @@ const GastricSleeve = () => {
 
       <HorizontalStories storiesData={storiesData} />
       <ConsultationForm />
+
+      <ImageComparisonSlider
+        before="https://placehold.co/960x456?text=Hello+World"
+        after="https://placehold.co/960x456?text=Hiiiii+World"
+      />
       {/* <ScrollTimeline
         title="When Will I See Results?"
         timelineData={timelineData}

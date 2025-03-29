@@ -3,7 +3,7 @@ import Button from "../button/Button";
 
 const ConsultationForm = () => {
   return (
-    <div className="flex justify-center items-center py-[150px] px-[16px] md:px-0">
+    <div className="flex justify-center items-center py-[10px] px-[16px] md:px-0">
       <div className="md:w-[812px]">
         <div className="md:mt-[60px]">
           <div className="flex justify-start md:justify-center w-full">
@@ -11,10 +11,9 @@ const ConsultationForm = () => {
           </div>
 
           <div className=" my-[30px] md:my-[60px] md:text-center">
-            <h2>UNLOCK YOUR PERSONALIZED CONSULTATION TODAY!</h2>
+            <h2>Unlock Your Personalized Consultation Today!</h2>
             <p className="body-2 w-full">
-              Down to earth through instruction in yoga and mindfulness for the
-              benefits of all bodies
+            Down to earth through instruction in yoga and mindfulness for the benefits of all bodies
             </p>
           </div>
         </div>

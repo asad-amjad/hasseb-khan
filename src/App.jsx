@@ -6,6 +6,7 @@ import Layout from "./components/layout/Layout";
 import AboutUs from "./screens/AboutUs";
 import ContactUs from "./screens/ContactUs";
 import GastricSleeve from "./screens/GastricSleeve";
+import ScheduleFreeConsultation from "./screens/ScheduleFreeConsultation";
 
 const routes = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const routes = createBrowserRouter([
       { path: "/about-us", element: <AboutUs /> },
       { path: "/contact-us", element: <ContactUs /> },
       { path: "/gastric-sleeve", element: <GastricSleeve /> },
+      { path: "/schedule-free-consultation", element: <ScheduleFreeConsultation /> },
     ],
   },
 ]);

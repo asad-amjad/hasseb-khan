@@ -8,18 +8,14 @@ export default function StoryCard({ item }) {
           <img
             src={item.image}
             alt="review-pfp"
-            className="w-[75px] h-[75px] rounded-full object-cover"
+            className="w-[70px] h-[70px] rounded-full object-cover"
           />
           <div className="flex flex-col justify-start items-start space-y-[10px] ">
-            <h5 className="text-[#E55D48]">
-              {item.name}
-            </h5>
-            <p className="body-2">
-            {item.role}
-            </p>
+            <h5 className="text-[#E55D48]">{item.name}</h5>
+            <p className="body-2">{item.role}</p>
           </div>
         </div>
-        <p className="body-2 tag mt-[30px]">{item.des}</p>
+        <p className="body-2 mt-[16px] md:mt-[30px] leading-[25px]">{item.des}</p>
       </div>
     );
   }

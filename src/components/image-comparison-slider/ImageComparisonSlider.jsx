@@ -22,7 +22,7 @@ const ImageComparisonSlider = ({ before, after }) => {
       </div>
 
       {/* Image Comparison Slider */}
-      <div className="relative w-[1312px] mx-auto h-[646px] overflow-hidden mt-[60px]">
+      <div className="relative md:w-[1312px] mx-auto h-[646px]  mt-[60px]">
         <ReactCompareSlider
           itemOne={<ReactCompareSliderImage className="object-cover h-[642px]" src={before} alt="Before Image" />}
           itemTwo={<ReactCompareSliderImage src={after} className="object-cover h-[642px]" alt="After Image" />}

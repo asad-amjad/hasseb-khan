@@ -8,6 +8,10 @@ import ContactUs from "./screens/ContactUs";
 // import GastricSleeve from "./screens/GastricSleeve";
 import ScheduleFreeConsultation from "./screens/ScheduleFreeConsultation";
 import BodyAesthetics from "./screens/BodyAesthetics";
+import GenitalAesthetics from "./screens/GenitalAesthetics";
+import BreastAesthetics from "./screens/BreastAesthetics";
+import FacialAesthetics from "./screens/FacialAesthetics";
+import Dentistry from "./screens/Dentistry";
 
 const routes = createBrowserRouter([
   {
@@ -18,6 +22,11 @@ const routes = createBrowserRouter([
       { path: "/about-us", element: <AboutUs /> },
       { path: "/contact-us", element: <ContactUs /> },
       { path: "/body-aesthetics", element: <BodyAesthetics /> },
+      { path: "/genital-aesthetics", element: <GenitalAesthetics /> },
+      { path: "/breast-aesthetics", element: <BreastAesthetics /> },
+      { path: "/facial-aesthetics", element: <FacialAesthetics /> },
+      { path: "/dentistry", element: <Dentistry /> },
+
       {
         path: "/schedule-free-consultation",
         element: <ScheduleFreeConsultation />,

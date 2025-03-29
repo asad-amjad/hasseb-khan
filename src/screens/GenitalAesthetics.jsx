@@ -35,7 +35,7 @@ const GenitalAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc="/services/image-2.png"
+        imageSrc={Image1}
         imageAlt="Facial Aesthetics"
         items={[
           "Improved Appearance – Enhances symmetry and aesthetics.",

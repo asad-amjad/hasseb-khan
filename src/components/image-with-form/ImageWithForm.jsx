@@ -8,7 +8,7 @@ const ImageWithForm = ({}) => {
       {/* Left Side Content */}
       <div className="md:w-1/2">
         <img
-          className="object-cover h-[398px] md:h-[707px] md:max-h-[707px] w-[520px] mx-auto"
+          className="w-full  md:w-[520px] mx-auto"
           src={Image3}
           alt={"imageAlt"}
         />
@@ -29,7 +29,7 @@ const ImageWithForm = ({}) => {
             benefits of all bodies
           </p>
 
-          <form className="space-y-[16px]">
+          <form className="space-y-[16px] mt-[40px]">
             <input
               type="text"
               placeholder="Full Name"

@@ -35,7 +35,7 @@ const FacialAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc="/services/image-2.png"
+        imageSrc={Image1}
         imageAlt="Facial Aesthetics"
         items={[
           "Improved Facial Symmetry – Balanced and natural-looking contours.",

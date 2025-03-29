@@ -8,6 +8,7 @@ import TextWithImage from "../components/text-with-image/TextWithImage";
 import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import TextAndDescription from "../components/text-and-description/TextAndDescription";
+import Image1 from "../assets/about-us/image-1.jpeg";
 
 const Home = () => {
   return (
@@ -24,11 +25,11 @@ const Home = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc="/services/image-2.png"
+       imageSrc={Image1}
         imageAlt="Facial Aesthetics"
       />
 
-      <div className="my-[80px] md:my-[250px]">
+      <div className="my-[80px] md:py-[250px]">
         <TextAndDescription
           title="Your Health Journey Starts Here"
           description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."

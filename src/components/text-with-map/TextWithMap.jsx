@@ -1,10 +1,9 @@
 import React from "react";
 import Button from "../button/Button";
-// import Button from "../button/Button";
-import phone from "../../assets/contact-us/phone.png";
-import mail from "../../assets/contact-us/mail.png";
-import location from "../../assets/contact-us/location.png";
-import time from "../../assets/contact-us/time.png";
+import PhoneIcon from "../icons/PhoneIcon";
+import MailIcon from "../icons/MailIcon";
+import LocationIcon from "../icons/LocationIcon";
+import TimeIcon from "../icons/TimeIcon";
 
 const TextWithMap = ({
   badge,
@@ -17,10 +16,16 @@ const TextWithMap = ({
   reverse = false,
 }) => {
   const contactDetails = [
-    { icon: phone, text: "(+971) 52 123 4567" },
-    { icon: mail, text: "info@primemedistanbul.com" },
-    { icon: location, text: "123 Street, Dubai, United Arab Emirates" },
-    { icon: time, text: "Hours: Mon-Fri, 8:00 AM - 6:00 PM" },
+    { icon: <PhoneIcon fill="black" />, text: "(+971) 52 123 4567" },
+    { icon: <MailIcon fill="black" />, text: "info@primemedistanbul.com" },
+    {
+      icon: <LocationIcon fill="black" />,
+      text: "123 Street, Dubai, United Arab Emirates",
+    },
+    {
+      icon: <TimeIcon fill="black" />,
+      text: "Hours: Mon-Fri, 8:00 AM - 6:00 PM",
+    },
   ];
 
   return (
@@ -37,11 +42,17 @@ const TextWithMap = ({
               <p className="tag body-2">{badge}</p>
             </div>
           )}
-          <h2 className="uppercase mt-[40px]">{title}</h2>
-          <p className={`body-2`}>
-            Down to earth through instruction in yoga and mindfulness for the
-            benefits of all bodies
-          </p>
+
+          <div className="my-[40px]">
+            <h2 className="uppercase">{title}</h2>
+
+            {/* Descriptions */}
+            <p className={`body-2 mt-[10px]`}>
+              Down to earth through instruction in yoga and mindfulness for the
+              benefits of all bodies
+            </p>
+          </div>
+
           {/* Descriptions */}
 
           <div className="rounded-lg max-w-sm mt-[40px]">
@@ -50,12 +61,13 @@ const TextWithMap = ({
                 key={index}
                 className="flex items-center space-x-3 mb-[40px]"
               >
-                <img
+                {/* <img
                   className="object-contain w-[16px] "
                   // className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
                   src={item.icon}
                   // alt={imageAlt}
-                />
+                /> */}
+                {item.icon}
                 <p className="body-2">{item.text}</p>
                 {/* <span className="text-gray-800"></span> */}
               </div>

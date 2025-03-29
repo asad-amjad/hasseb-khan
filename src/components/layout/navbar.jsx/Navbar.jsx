@@ -7,6 +7,8 @@ import logoBlack from "../../../assets/Logos/logo-black.png";
 import { menuLinks } from "../../../constants/common";
 import { Link } from "react-router-dom";
 import TopHeader from "../top-header/TopHeader";
+import CrossIcon from "../../icons/CrossIcon";
+import MenuIcon from "../../icons/MenuIcon";
 
 export default function Navbar({ lightMode = false }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -35,7 +37,8 @@ export default function Navbar({ lightMode = false }) {
           aria-label="Open Menu"
           className="md:hidden text-3xl"
         >
-          <FontAwesomeIcon icon={faBars} />
+          {/* <FontAwesomeIcon icon={faBars} /> */}
+          <MenuIcon/>
         </button>
 
         {/* Desktop Navigation */}
@@ -57,7 +60,7 @@ export default function Navbar({ lightMode = false }) {
         createPortal(
           <div className="fixed z-50 flex justify-end">
             {/* Slide-in Panel */}
-            <div className="fixed inset-0 bg-white   flex flex-col items-start transition-transform duration-300 ease-in-out">
+            <div className="fixed inset-0 bg-white  flex flex-col items-start transition-transform duration-300 ease-in-out">
               <TopHeader />
               {/* Close Button */}
               <button
@@ -65,7 +68,8 @@ export default function Navbar({ lightMode = false }) {
                 aria-label="Close Menu"
                 className="absolute top-[70px] right-5 text-2xl"
               >
-                <FontAwesomeIcon icon={faTimes} />
+                {/* <FontAwesomeIcon icon={faTimes} /> */}
+                <CrossIcon/>
               </button>
 
               {/* Logo */}
@@ -82,10 +86,11 @@ export default function Navbar({ lightMode = false }) {
                   <li key={href} className="w-full">
                     <Link
                       to={href}
-                      className="text-black text-lg font-medium block border-b pb-4 w-full text-left"
+                      className="block border-b pb-4 w-full "
                       onClick={() => setMobileMenuOpen(false)}
                     >
-                      {label}
+                      <p className="body-2">{label}</p>
+                      {/* {label} */}
                     </Link>
                   </li>
                 ))}

@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../button/Button";
+import TickIcon from "../icons/TickIcon";
 // import Button from "../button/Button";
 
 const TextWithImage = ({
@@ -36,7 +37,7 @@ const TextWithImage = ({
               <ul className="text-left space-y-[20px] mt-[30px]">
                 {items?.map((item, index) => (
                   <li key={index} className="flex items-center gap-2">
-                    ✓ <p className="body-2">{item}</p>
+                    <TickIcon/> <p className="body-2">{item}</p>
                   </li>
                 ))}
               </ul>

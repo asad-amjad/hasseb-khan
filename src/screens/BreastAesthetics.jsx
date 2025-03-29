@@ -34,7 +34,7 @@ const BreastAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc="/services/image-2.png"
+    imageSrc={Image1}
         imageAlt="Facial Aesthetics"
         items={[
           "Enhanced Shape – Achieve a fuller, sculpted look.",

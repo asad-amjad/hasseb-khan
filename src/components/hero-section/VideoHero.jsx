@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Button from "../button/Button";
 import ButtonSecondary from "../button/ButtonSecondary";
 import Navbar from "../layout/navbar.jsx/Navbar";
+import BannerVideo from "../../assets/hero-section/banner-video.mp4";
 
 export default function VideoHero() {
   return (
@@ -16,8 +17,8 @@ export default function VideoHero() {
           playsInline
         >
           <source
-            // src={BannerVideo}
-            src={"/hero-section/banner-video.mp4"}
+            src={BannerVideo}
+            // src={"/hero-section/banner-video.mp4"}
             type="video/mp4"
           />
         </video>

@@ -11,20 +11,22 @@ export default function OurServices({
   const [index, setIndex] = useState("");
 
   return (
-    <div className={`flex flex-col bg-[${bgColor}] min-w-[360px] p-[100px]`}>
+    <div
+      className={`flex flex-col bg-[${bgColor}] min-w-[360px] px-[16px] py-[80px] md:p-[100px] `}
+    >
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
       <h2>{title}</h2>
       <p className="body-2">{description}</p>
       {/* </div> */}
-      <div className="w-full flex flex-col gap-[20px] md:px-[16px] md:hidden">
+      <div className="w-full flex flex-col gap-[50px] md:px-[16px] md:hidden mt-[50px]">
         {ourServicesData.map(({ service, url }) => {
           return (
-            <div
-              className="w-full height-[492px] flex flex-col gap-[15px] "
-              key={service}
-            >
-              <img src={url} alt={`${service} image`} />
-              <h3>{service}</h3>
+            <div key={service}>
+              {/* <div className="mb-[50px]" /> */}
+              <div className="w-full height-[492px] flex flex-col gap-[20px] ">
+                <img src={url} alt={`${service} image`} />
+                <h3 className="border-b-[1px] pb-[20px]">{service}</h3>
+              </div>
             </div>
           );
         })}
@@ -73,7 +75,7 @@ export default function OurServices({
                 )}
               </AnimatePresence>
             </div>
-            <div className="mb-[25px] pointer-events-none "></div>
+            <div className="mb-[25px]"></div>
           </div>
         ))}
       </div>

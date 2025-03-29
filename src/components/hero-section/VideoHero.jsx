@@ -15,16 +15,15 @@ export default function VideoHero() {
           muted
           playsInline
         >
-          <source 
-          // src={BannerVideo}
-          
-          // src={'/hero-section/banner-video.mp4'}
-          src={'https://dl.dropboxusercontent.com/scl/fi/td3o4wbu7d30q7fog4irb/bidsgae-video-last-changing-done_2.mp4?rlkey=kdc2qbgjn0viudm8ohi0f3pto&st=ik3iprxu&dl=0'}
-          type="video/mp4" />
+          <source
+            // src={BannerVideo}
+            src={"/hero-section/banner-video.mp4"}
+            type="video/mp4"
+          />
         </video>
 
         {/* Navbar Component */}
-        <Navbar lightMode/>
+        <Navbar lightMode />
 
         <section className="w-full max-w-[785px] px-[20px] md:px-0 mx-auto flex flex-col gap-2 text-center z-20 flex-grow justify-center items-center">
           <h1 className="text-white">

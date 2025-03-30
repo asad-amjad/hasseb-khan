@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const Timeline = ({ title, timelineData }) => {
-  const containerRef = useRef(null);
-  const [constraints, setConstraints] = useState({ left: 0, right: 0 });
-  const [cardWidth, setCardWidth] = useState(382);
-  const gapSize = 20;
+  // const containerRef = useRef(null);
+  // const [constraints, setConstraints] = useState({ left: 0, right: 0 });
+  // const [cardWidth, setCardWidth] = useState(382);
+  // const gapSize = 20;
 
 
-  const totalContentWidth = window.innerWidth < 768 ? 2 : 3
+  const totalContentWidth = window.innerWidth < 768 ? 1 : 3
   return (
     <div className="w-full overflow-hidden px-[16px] md:px-[100px] my-[80px] md:my-[150px]">
       <div className="w-full mb-[40px] md:mb-[50px]">

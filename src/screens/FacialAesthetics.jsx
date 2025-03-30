@@ -12,6 +12,7 @@ import ImageComparisonSlider from "../components/image-comparison-slider/ImageCo
 // Assets
 import bannerImage from "../assets/facial-aesthetics/banner.png";
 import intro from "../assets/facial-aesthetics/intro.png";
+import { storiesData } from "../../constants";
 
 const FacialAesthetics = () => {
   return (
@@ -143,32 +144,8 @@ const FacialAesthetics = () => {
         before="https://placehold.co/1312x642?text=Hello+World"
         after="https://placehold.co/1312x642?text=Hiiiii+World"
       />
-      <HorizontalStories
-        storiesData={[
-          {
-            name: "Frankie",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-          {
-            name: "John Doe",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-        ]}
-      />
+      <HorizontalStories storiesData={storiesData} />
+
       <ConsultationForm />
     </>
   );

@@ -11,6 +11,7 @@ import MeetOurExperts from "../components/meet-our-experts/MeetOurExperts";
 // Assets
 import bannerImage from "../assets/about-us/banner.jpeg";
 import intro from "../assets/about-us/intro.png";
+import { storiesData } from "../../constants";
 
 const AboutUs = () => {
   return (
@@ -43,32 +44,7 @@ const AboutUs = () => {
         imageAlt="Facial Aesthetics"
       />
 
-      <HorizontalStories
-        storiesData={[
-          {
-            name: "Frankie",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-          {
-            name: "John Doe",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-        ]}
-      />
+      <HorizontalStories storiesData={storiesData} />
 
       <MeetOurExperts />
 

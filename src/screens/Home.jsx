@@ -9,8 +9,9 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import TextAndDescription from "../components/text-and-description/TextAndDescription";
 
-//assets 
+//assets
 import intro from "../assets/home/intro.png";
+import { services, storiesData } from "../../constants";
 
 const Home = () => {
   return (
@@ -46,64 +47,13 @@ const Home = () => {
       <OurServices
         title="Our Services"
         description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
-        ourServicesData={[
-          {
-            rotate: 12,
-            service: "Dentistry",
-            url: "https://placehold.co/341x511",
-          },
-          {
-            rotate: -12,
-            service: "Facial aesthetics",
-            url: "https://placehold.co/341x511",
-          },
-          {
-            rotate: 12,
-            service: "Breast aesthetics",
-            url: "https://placehold.co/341x511",
-          },
-          {
-            rotate: -12,
-            service: "Body aesthetics",
-            url: "https://placehold.co/341x511",
-          },
-          {
-            rotate: 12,
-            service: "Genital aesthetics",
-            url: "https://placehold.co/341x511",
-          },
-        ]}
+        ourServicesData={services}
       />
 
       {/* Partners */}
       <Partners />
 
-      <HorizontalStories
-        storiesData={[
-          {
-            name: "Frankie",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-          {
-            name: "John Doe",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-        ]}
-      />
+      <HorizontalStories storiesData={storiesData} />
 
       <ScrollTimeline
         title="When Will I See Results?"

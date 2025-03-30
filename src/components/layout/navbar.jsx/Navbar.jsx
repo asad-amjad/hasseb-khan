@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logoWhite from "../../../assets/Logos/logo-white.png";
 import logoBlack from "../../../assets/Logos/logo-black.png";
-import { menuLinks } from "../../../constants/common";
+import { menuLinks } from "../../../../constants";
 import { Link } from "react-router-dom";
 import TopHeader from "../top-header/TopHeader";
 import CrossIcon from "../../icons/CrossIcon";

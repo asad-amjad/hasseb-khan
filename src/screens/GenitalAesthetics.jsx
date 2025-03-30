@@ -12,6 +12,7 @@ import ImageComparisonSlider from "../components/image-comparison-slider/ImageCo
 // assets
 import bannerImage from "../assets/genital-aesthetics/banner.png";
 import intro from "../assets/genital-aesthetics/intro.png";
+import { services, storiesData } from "../../constants";
 
 const GenitalAesthetics = () => {
   return (
@@ -93,32 +94,7 @@ const GenitalAesthetics = () => {
         before="https://placehold.co/1312x642?text=Hello+World"
         after="https://placehold.co/1312x642?text=Hiiiii+World"
       />
-      <HorizontalStories
-        storiesData={[
-          {
-            name: "Frankie",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-          {
-            name: "John Doe",
-            role: "New Parents",
-            des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
-            image: "https://placehold.co/383x330",
-            type: "story",
-          },
-          {
-            image: "https://placehold.co/383x330",
-            type: "image",
-          },
-        ]}
-      />
+      <HorizontalStories storiesData={storiesData} />
       <ConsultationForm />
     </>
   );

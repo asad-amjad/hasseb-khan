@@ -1,0 +1,4 @@
+/* Smooth scroll behavior for the entire app */
+html {
+    scroll-behavior: smooth;
+  }

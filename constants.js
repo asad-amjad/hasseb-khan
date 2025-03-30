@@ -1,5 +1,11 @@
 import story1 from "./src/assets/common/story-1.jpeg";
 import story2 from "./src/assets/common/story-2.jpeg";
+import genitalImage from "./src/assets/genital-aesthetics/intro.png";
+import bodyAestheticsImage from "./src/assets/body-aesthetics/intro.png";
+import breastAestheticsImage from "./src/assets/breast-aesthetics/intro.png";
+import facialAestheticsImage from "./src/assets/facial-aesthetics/intro.png";
+import dentalImage from "./src/assets/dental/intro.png";
+
 
 export const menuLinks = [
   { label: "About Us", href: "/about-us" },
@@ -40,26 +46,26 @@ export const services = [
   {
     rotate: 12,
     service: "Dentistry",
-    url: "https://placehold.co/341x511",
+    url: dentalImage,
   },
   {
     rotate: -12,
     service: "Facial aesthetics",
-    url: "https://placehold.co/341x511",
+    url: facialAestheticsImage,
   },
   {
     rotate: 12,
     service: "Breast aesthetics",
-    url: "https://placehold.co/341x511",
+    url: breastAestheticsImage,
   },
   {
     rotate: -12,
     service: "Body aesthetics",
-    url: "https://placehold.co/341x511",
+    url: bodyAestheticsImage,
   },
   {
     rotate: 12,
     service: "Genital aesthetics",
-    url: "https://placehold.co/341x511",
+    url: genitalImage,
   },
 ];

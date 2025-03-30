@@ -12,7 +12,7 @@ const services = [
 export default function Footer() {
   return (
     <>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <footer className="bg-[#1F385F] text-white py-[80px] px-[16px] md:px-[100px]">
         <div className="mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[200px] text-sm">
@@ -51,16 +51,7 @@ export default function Footer() {
   );
 }
 
-/* Scroll to Top Component */
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [pathname]);
-
-  return null;
-};
 
 /* Footer Column Wrapper */
 const FooterColumn = ({ title, children }) => (

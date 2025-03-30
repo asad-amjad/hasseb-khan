@@ -12,6 +12,7 @@ import TextAndDescription from "../components/text-and-description/TextAndDescri
 //assets
 import intro from "../assets/home/intro.png";
 import { services, storiesData } from "../../constants";
+import ParallaxImageScroll from "../components/ParallaxImageScroll";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
       />
+
       {/* <ScrollRevealGallery /> */}
       <div className="my-[80px] md:py-[250px]">
         <TextAndDescription
@@ -42,7 +44,7 @@ const Home = () => {
           <ScrollingText direction="right" />
         </div>
       </div>
-
+      {/* <ParallaxImageScroll/> */}
       {/* Our Services */}
       <OurServices
         title="Our Services"

@@ -8,6 +8,7 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
+import Image1 from "../assets/about-us/image-1.jpeg";
 
 const Dentistry = () => {
   return (

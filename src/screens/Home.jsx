@@ -9,6 +9,7 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import TextAndDescription from "../components/text-and-description/TextAndDescription";
 import Image1 from "../assets/about-us/image-1.jpeg";
+import ScrollRevealGallery from "../components/parallax-image/ParallaxImage";
 
 const Home = () => {
   return (
@@ -25,10 +26,10 @@ const Home = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-       imageSrc={Image1}
+        imageSrc={Image1}
         imageAlt="Facial Aesthetics"
       />
-
+      {/* <ScrollRevealGallery /> */}
       <div className="my-[80px] md:py-[250px]">
         <TextAndDescription
           title="Your Health Journey Starts Here"

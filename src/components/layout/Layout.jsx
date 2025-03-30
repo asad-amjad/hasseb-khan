@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import Footer from "./footer/Footer";
 import TopHeader from "./top-header/TopHeader";
+import CopyrightFooter from "./footer/CopyrightFooter";
 // import VideoHero from "../hero-section/VideoHero";
 
 export default function Layout() {
@@ -14,6 +15,7 @@ export default function Layout() {
 
       {/* Footer */}
       <Footer />
+      <CopyrightFooter />
     </>
   );
 }

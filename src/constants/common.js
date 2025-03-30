@@ -6,10 +6,6 @@ export const menuLinks = [
   { label: "Facial Aesthetics", href: "/facial-aesthetics" },
   { label: "Dentistry", href: "/dentistry" },
 
-  // { label: "Rhinoplasty", href: "/rhinoplasty" },
-  // { label: "Tummy Tuck", href: "/tummy-tuck" },
-  // { label: "Hair Transplant", href: "/hair-transplant" },
-  // { label: "Oncology", href: "/oncology" },
-  // { label: "Orthopedics", href: "/orthopedics" },
+
   { label: "Contact Us", href: "/contact-us" },
 ];

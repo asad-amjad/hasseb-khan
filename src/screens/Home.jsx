@@ -8,8 +8,9 @@ import TextWithImage from "../components/text-with-image/TextWithImage";
 import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import TextAndDescription from "../components/text-and-description/TextAndDescription";
-import Image1 from "../assets/about-us/image-1.jpeg";
-import ScrollRevealGallery from "../components/parallax-image/ParallaxImage";
+
+//assets 
+import intro from "../assets/home/intro.png";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc={Image1}
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
       />
       {/* <ScrollRevealGallery /> */}

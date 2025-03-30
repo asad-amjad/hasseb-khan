@@ -7,7 +7,10 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import Image1 from "../assets/about-us/image-1.jpeg";
+
+// Assets
+import bannerImage from "../assets/breast-aesthetics/banner.png";
+import intro from "../assets/breast-aesthetics/intro.png";
 
 const BreastAesthetics = () => {
   return (
@@ -18,7 +21,7 @@ const BreastAesthetics = () => {
       />
 
       <OfferSection
-        imageSrc={Image1}
+        imageSrc={bannerImage}
         tagText="What we offer"
         title="Enhance, Restore & Rejuvenate"
         description="Our expert breast aesthetic procedures, including augmentation, lifts, and reductions, offer natural-looking results tailored to your unique body goals and confidence needs."
@@ -34,7 +37,7 @@ const BreastAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-    imageSrc={Image1}
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[
           "Enhanced Shape – Achieve a fuller, sculpted look.",

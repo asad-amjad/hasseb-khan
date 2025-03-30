@@ -43,21 +43,22 @@ export default function Navbar({ lightMode = false }) {
 
         {/* Desktop Navigation */}
         <div className="hidden w-full md:flex md:justify-center gap-4 lg:gap-5 pt-[24px]">
-  {menuLinks.map(({ href, label }) => (
-    <Link
-      key={href}
-      to={href}
-      className={`relative transition-all duration-300 ease-in-out ${
-        lightMode ? "text-white hover:text-[#1F385F]" : "text-black hover:text-[#1F385F]"
-      }`}
-    >
-      <p className="body-2 relative pb-1 after:block after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
-        {label}
-      </p>
-    </Link>
-  ))}
-</div>
-
+          {menuLinks.map(({ href, label }) => (
+            <Link
+              key={href}
+              to={href}
+              className={`relative transition-all duration-300 ease-in-out ${
+                lightMode
+                  ? "text-white hover:text-[#1F385F]"
+                  : "text-black hover:text-[#1F385F]"
+              }`}
+            >
+              <p className="body-2 relative pb-1 after:block after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-300 after:ease-in-out hover:after:w-full">
+                {label}
+              </p>
+            </Link>
+          ))}
+        </div>
       </nav>
 
       {/* Mobile Menu Full-Screen */}

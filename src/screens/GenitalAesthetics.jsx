@@ -8,7 +8,10 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import Image1 from "../assets/about-us/image-1.jpeg";
+
+// assets
+import bannerImage from "../assets/genital-aesthetics/banner.png";
+import intro from "../assets/genital-aesthetics/intro.png";
 
 const GenitalAesthetics = () => {
   return (
@@ -19,7 +22,7 @@ const GenitalAesthetics = () => {
       />
 
       <OfferSection
-        imageSrc={Image1}
+        imageSrc={bannerImage}
         tagText="What we offer"
         title="Personalized Care for Confidence & Comfort"
         description="Our expert procedures focus on aesthetic enhancement and functional improvements, ensuring natural-looking results with minimal downtime and maximum satisfaction."
@@ -35,7 +38,7 @@ const GenitalAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc={Image1}
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[
           "Improved Appearance – Enhances symmetry and aesthetics.",

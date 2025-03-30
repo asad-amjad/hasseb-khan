@@ -8,7 +8,10 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import Image1 from "../assets/about-us/image-1.jpeg";
+
+// Assets
+import bannerImage from "../assets/facial-aesthetics/banner.png";
+import intro from "../assets/facial-aesthetics/intro.png";
 
 const FacialAesthetics = () => {
   return (
@@ -19,7 +22,7 @@ const FacialAesthetics = () => {
       />
 
       <OfferSection
-        imageSrc={Image1}
+        imageSrc={bannerImage}
         tagText="What we offer"
         title="Refine, Rejuvenate & Restore"
         description="Our expert facial aesthetic treatments include contouring, skin tightening, and volume restoration, delivering natural, youthful, and long-lasting results with precision."
@@ -35,7 +38,7 @@ const FacialAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc={Image1}
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[
           "Improved Facial Symmetry – Balanced and natural-looking contours.",

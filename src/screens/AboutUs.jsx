@@ -6,8 +6,11 @@ import HorizontalStories from "../components/horizontal-stories/HorizontalStorie
 
 import TextWithImage from "../components/text-with-image/TextWithImage";
 import PageHero from "../components/hero-section/PageHero";
-import Image1 from "../assets/about-us/image-1.jpeg";
 import MeetOurExperts from "../components/meet-our-experts/MeetOurExperts";
+
+// Assets
+import bannerImage from "../assets/about-us/banner.jpeg";
+import intro from "../assets/about-us/intro.png";
 
 const AboutUs = () => {
   return (
@@ -20,7 +23,7 @@ const AboutUs = () => {
       <div className="md:p-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={Image1}
+          src={bannerImage}
           alt="image"
         />
       </div>
@@ -36,7 +39,7 @@ const AboutUs = () => {
         ]}
         // buttonText="Schedule Free Consultation"
         // buttonAction={() => console.log("Clicked!")}
-        imageSrc="https://placehold.co/860x756"
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
       />
 

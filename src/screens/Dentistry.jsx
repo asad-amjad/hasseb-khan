@@ -8,7 +8,10 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import Image1 from "../assets/about-us/image-1.jpeg";
+
+// Assets
+import bannerImage from "../assets/dental/banner.png";
+import introImage from "../assets/dental/intro.png";
 
 const Dentistry = () => {
   return (
@@ -20,10 +23,10 @@ const Dentistry = () => {
       />
 
       <OfferSection
-        // imageSrc={Image1}
-        imageSrc={
-          "https://s3-alpha-sig.figma.com/img/63b0/cddb/39e84a3ff159180a0e5ea0a7dd306549?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HqLHQiDpW3S26MTAyrHDUIxkZUAf77Je3MeefctbQQEM07liAvJTMTJCz1QZDAI~GSLgYJBxr0MT8tJEBXNuDs2G13eAflNAVxITuImxxwxP0yEZmU1aR0qGrBefC5HZaTZyHv4KXgc-dkRSwH2exEAwGIwJ9KbQku2epU0PnfPcsHl7HKcGjcciBWg-Bwl3PPTtXSKzvOPNOx5CNaObSC9zUwRGKi0gcneplhJeIWBwB8GGH8G4dauVP051Mro-FGfu8Ro~UxbFl9LWnRI6UMdXoqnUzqe6ZlAQ~RoGRv4oFkfWUCzIhcSABN2WhaTFZQLLd1rw14bAAKv3me5uTg__"
-        }
+        imageSrc={bannerImage}
+        // imageSrc={
+        //   "https://s3-alpha-sig.figma.com/img/63b0/cddb/39e84a3ff159180a0e5ea0a7dd306549?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HqLHQiDpW3S26MTAyrHDUIxkZUAf77Je3MeefctbQQEM07liAvJTMTJCz1QZDAI~GSLgYJBxr0MT8tJEBXNuDs2G13eAflNAVxITuImxxwxP0yEZmU1aR0qGrBefC5HZaTZyHv4KXgc-dkRSwH2exEAwGIwJ9KbQku2epU0PnfPcsHl7HKcGjcciBWg-Bwl3PPTtXSKzvOPNOx5CNaObSC9zUwRGKi0gcneplhJeIWBwB8GGH8G4dauVP051Mro-FGfu8Ro~UxbFl9LWnRI6UMdXoqnUzqe6ZlAQ~RoGRv4oFkfWUCzIhcSABN2WhaTFZQLLd1rw14bAAKv3me5uTg__"
+        // }
         tagText="What we offer"
         title="Perfect Your Smile with Precision"
         description="Our aesthetic dentistry services provide customized treatments, including teeth whitening, veneers, and smile makeovers, ensuring natural-looking, long-lasting results."
@@ -39,7 +42,7 @@ const Dentistry = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc={Image1}
+        imageSrc={introImage}
         imageAlt="Facial Aesthetics"
         items={[
           "Whiter Teeth – Professional whitening for a brighter smile.",

@@ -8,7 +8,10 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import Image1 from "../assets/about-us/image-1.jpeg";
+
+// Assets
+import bannerImage from "../assets/body-aesthetics/banner.png";
+import intro from "../assets/body-aesthetics/intro.png";
 
 const BodyAesthetics = () => {
   return (
@@ -20,7 +23,7 @@ const BodyAesthetics = () => {
       />
 
       <OfferSection
-        imageSrc={Image1}
+        imageSrc={bannerImage}
         tagText="What we offer"
         title="Transform Your Body with Confidence"
         description="Our expert team provides customized aesthetic treatments, including body lifts, sculpting, and fat reduction, ensuring natural-looking, long-lasting results tailored to your goals."
@@ -36,7 +39,7 @@ const BodyAesthetics = () => {
         ]}
         buttonText="Schedule Free Consultation"
         buttonAction={() => console.log("Clicked!")}
-        imageSrc={Image1}
+        imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[
           "Enhanced Body Shape – Sculpt and define your physique.",

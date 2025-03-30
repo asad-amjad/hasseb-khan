@@ -28,13 +28,3 @@ export default function StoryCard({ item }) {
   );
 }
 
-// if (item.type === "image") {
-//   return (
-//     <div className="w-[279px] md:w-[382px]">
-//       <img src={item.image} alt="review-pfp" className="" />
-//     </div>
-//   );
-// }
-
-// return null; // Return null if `type` is not "story" or "image"
-// }

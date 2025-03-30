@@ -5,7 +5,5 @@ export const menuLinks = [
   { label: "Breast Aesthetics", href: "/breast-aesthetics" },
   { label: "Facial Aesthetics", href: "/facial-aesthetics" },
   { label: "Dentistry", href: "/dentistry" },
-
-
   { label: "Contact Us", href: "/contact-us" },
 ];

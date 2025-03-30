@@ -15,7 +15,7 @@ export const storiesData = [
   {
     name: "Frankie",
     role: "New Parents",
-    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
+    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus id malesuada erat. Vel a netus ultrices et interdum in. Lorem mauris ultrices enim ac diam. Sodales eget consequat mi congue nunc et molestie phasellus pharetra. Et cursus non quis at.",
     image: story1,
     type: "story",
   },
@@ -26,7 +26,7 @@ export const storiesData = [
   {
     name: "John Doe",
     role: "New Parents",
-    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus et malesuada erat.",
+    des: "Lorem ipsum dolor sit amet consectetur. Neque curabitur tellus id malesuada erat. Vel a netus ultrices et interdum in. Lorem mauris ultrices enim ac diam. Sodales eget consequat mi congue nunc et molestie phasellus pharetra. Et cursus non quis at.",
     image: story2,
     type: "story",
   },

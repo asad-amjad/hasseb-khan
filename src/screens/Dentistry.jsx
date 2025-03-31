@@ -16,7 +16,7 @@ import introImage from "../assets/dental/intro.png";
 import { storiesData } from "../../constants";
 
 const Dentistry = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       {/* Video Hero section */}
@@ -53,7 +53,6 @@ const Dentistry = () => {
           "Long-Lasting Results – Durable, natural aesthetics.",
         ]}
       />
-
       <OurServices
         title="Comprehensive Services"
         description="Our aesthetic dentistry solutions focus on enhancing smile aesthetics through advanced procedures like teeth whitening, veneers, bonding, and alignment correction. With cutting-edge techniques, we create beautifully natural, confident smiles that last."
@@ -62,36 +61,43 @@ const Dentistry = () => {
             rotate: 12,
             service: "Aesthetic dentistry",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/aesthetic-dentistry",
           },
           {
             rotate: -12,
             service: "Dental implants",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/dental-implants",
           },
           {
             rotate: 12,
-            service: "Surgical prosedures",
+            service: "Surgical procedures",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/surgical-procedures",
           },
           {
             rotate: -12,
             service: "Restorative treatments",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/restorative-treatments",
           },
           {
             rotate: 12,
             service: "Periodontics",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/periodontics",
           },
           {
             rotate: -12,
             service: "Orthodontics",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/orthodontics",
           },
           {
             rotate: 12,
             service: "Dental therapy",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/dental-therapy",
           },
         ]}
       />

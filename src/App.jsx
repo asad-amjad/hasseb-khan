@@ -27,7 +27,7 @@ const routes = createBrowserRouter([
       { path: "/about-us", element: <AboutUs /> },
       { path: "/contact-us", element: <ContactUs /> },
       { path: "/body-aesthetics", element: <BodyAesthetics /> },
-      { path: "/genital-aesthetics", element: <GenitalAesthetics /> },
+      { path: "/genital-aesthetic", element: <GenitalAesthetics /> },
       { path: "/breast-aesthetics", element: <BreastAesthetics /> },
       { path: "/facial-aesthetics", element: <FacialAesthetics /> },
       { path: "/dentistry", element: <Dentistry /> },

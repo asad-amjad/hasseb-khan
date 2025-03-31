@@ -12,10 +12,10 @@ import MeetOurExperts from "../components/meet-our-experts/MeetOurExperts";
 // Assets
 import bannerImage from "../assets/about-us/banner.jpeg";
 import intro from "../assets/about-us/intro.png";
-import { storiesData } from "../../constants";
+import { services, storiesData } from "../../constants";
 
 const AboutUs = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <PageHero
@@ -54,33 +54,7 @@ const AboutUs = () => {
       <OurServices
         title="Our Services"
         description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
-        ourServicesData={[
-          {
-            rotate: 12,
-            service: "Dentistry",
-            imageSrc: "https://placehold.co/341x511",
-          },
-          {
-            rotate: -12,
-            service: "Facial aesthetics",
-            imageSrc: "https://placehold.co/341x511",
-          },
-          {
-            rotate: 12,
-            service: "Breast aesthetics",
-            imageSrc: "https://placehold.co/341x511",
-          },
-          {
-            rotate: -12,
-            service: "Body aesthetics",
-            imageSrc: "https://placehold.co/341x511",
-          },
-          {
-            rotate: 12,
-            service: "Genital aesthetics",
-            imageSrc: "https://placehold.co/341x511",
-          },
-        ]}
+        ourServicesData={services}
       />
 
       <ScrollTimeline

@@ -1,16 +1,15 @@
 import story1 from "./src/assets/common/story-1.jpeg";
 import story2 from "./src/assets/common/story-2.jpeg";
-import genitalImage from "./src/assets/genital-aesthetics/intro.png";
+import genitalImage from "./src/assets/genital-aesthetic/intro.png";
 import bodyAestheticsImage from "./src/assets/body-aesthetics/intro.png";
 import breastAestheticsImage from "./src/assets/breast-aesthetics/intro.png";
 import facialAestheticsImage from "./src/assets/facial-aesthetics/intro.png";
 import dentalImage from "./src/assets/dental/intro.png";
 
-
 export const menuLinks = [
   { label: "About Us", href: "/about-us" },
   { label: "Body Aesthetics", href: "/body-aesthetics" },
-  { label: "Genital Aesthetics", href: "/genital-aesthetics" },
+  { label: "Genital Aesthetics", href: "/genital-aesthetic" },
   { label: "Breast Aesthetics", href: "/breast-aesthetics" },
   { label: "Facial Aesthetics", href: "/facial-aesthetics" },
   { label: "Dentistry", href: "/dentistry" },
@@ -47,25 +46,30 @@ export const services = [
     rotate: 12,
     service: "Dentistry",
     imageSrc: dentalImage,
+    url: "/dentistry",
   },
   {
     rotate: -12,
     service: "Facial aesthetics",
     imageSrc: facialAestheticsImage,
+    url: "/facial-aesthetics",
   },
   {
     rotate: 12,
     service: "Breast aesthetics",
     imageSrc: breastAestheticsImage,
+    url: "/breast-aesthetics",
   },
   {
     rotate: -12,
     service: "Body aesthetics",
     imageSrc: bodyAestheticsImage,
+    url: "/body-aesthetics",
   },
   {
     rotate: 12,
     service: "Genital aesthetics",
     imageSrc: genitalImage,
+    url: "/genital-aesthetics",
   },
 ];

@@ -16,7 +16,7 @@ import intro from "../assets/breast-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
 const BreastAesthetics = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       <PageHero
@@ -61,16 +61,19 @@ const BreastAesthetics = () => {
             rotate: 12,
             service: "Breast Augmentation (implant)",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/breast-augmentation",
           },
           {
             rotate: -12,
             service: "Breast Lift (mastopexy)",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/breast-lift",
           },
           {
             rotate: 12,
             service: "Breast Reduction",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/breast-reduction",
           },
         ]}
       />

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const services = [
   { label: "Body Aesthetics", href: "/body-aesthetics" },
-  { label: "Genital Aesthetics", href: "/genital-aesthetics" },
+  { label: "Genital Aesthetics", href: "/genital-aesthetic" },
   { label: "Breast Aesthetics", href: "/breast-aesthetics" },
   { label: "Facial Aesthetics", href: "/facial-aesthetics" },
   { label: "Dentistry", href: "/dentistry" },
@@ -38,11 +38,16 @@ export default function Footer() {
             <FooterColumn title="Contact">
               <p className="body-2 mt-4">(+971) 52 123 4567</p>
               <p className="body-2 mt-4">
-                <a href="mailto:info@domainname.com" className="hover:underline">
+                <a
+                  href="mailto:info@domainname.com"
+                  className="hover:underline"
+                >
                   info@domainname.com
                 </a>
               </p>
-              <p className="body-2 mt-4">123 Street, Dubai, United Arab Emirates</p>
+              <p className="body-2 mt-4">
+                123 Street, Dubai, United Arab Emirates
+              </p>
             </FooterColumn>
           </div>
         </div>
@@ -50,8 +55,6 @@ export default function Footer() {
     </>
   );
 }
-
-
 
 /* Footer Column Wrapper */
 const FooterColumn = ({ title, children }) => (

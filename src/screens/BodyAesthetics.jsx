@@ -16,7 +16,7 @@ import intro from "../assets/body-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
 const BodyAesthetics = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
       {/* Video Hero section */}
@@ -59,48 +59,57 @@ const BodyAesthetics = () => {
         ourServicesData={[
           {
             rotate: 12,
-            service: "Abdomnioplasty",
+            service: "Abdominoplasty",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/abdominoplasty",
           },
           {
             rotate: -12,
-            service: "360 Abdomnioplasty",
+            service: "360 Abdominoplasty",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/360-abdominoplasty",
           },
           {
             rotate: 12,
-            service: "Mini Abdomnioplasty",
+            service: "Mini Abdominoplasty",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/mini-abdominoplasty",
           },
           {
             rotate: -12,
             service: "Arm lift",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/arm-lift",
           },
           {
             rotate: 12,
             service: "Back lift",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/back-lift",
           },
           {
             rotate: -12,
             service: "Thigh lift",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/thigh-lift",
           },
           {
             rotate: 12,
             service: "Gynecomastia",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/gynecomastia",
           },
           {
             rotate: -12,
-            service: "Vaser Liposuction I reagion",
+            service: "Vaser Liposuction (1 region)",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/vaser-liposuction",
           },
           {
             rotate: 12,
             service: "BBL",
             imageSrc: "https://placehold.co/341x511",
+            url: "/services/bbl",
           },
         ]}
       />

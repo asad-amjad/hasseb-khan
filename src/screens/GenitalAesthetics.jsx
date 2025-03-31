@@ -11,8 +11,8 @@ import HorizontalStories from "../components/horizontal-stories/HorizontalStorie
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
 
 // assets
-import bannerImage from "../assets/genital-aesthetics/banner.png";
-import intro from "../assets/genital-aesthetics/intro.png";
+import bannerImage from "../assets/genital-aesthetic/banner.png";
+import intro from "../assets/genital-aesthetic/intro.png";
 import { services, storiesData } from "../../constants";
 
 const GenitalAesthetics = () => {
@@ -62,11 +62,13 @@ const GenitalAesthetics = () => {
             rotate: 12,
             service: "Labioplasty",
             imageSrc: "https://placehold.co/341x511",
+            url: "/genital-aesthetic/labioplasty",
           },
           {
             rotate: -12,
-            service: "Labium fat grafting",
+            service: "Labium Fat Grafting",
             imageSrc: "https://placehold.co/341x511",
+            url: "/genital-aesthetic/labium-fat-grafting",
           },
         ]}
       />

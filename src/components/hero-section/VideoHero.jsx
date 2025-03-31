@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Button from "../button/Button";
 import ButtonSecondary from "../button/ButtonSecondary";
@@ -6,6 +7,7 @@ import Navbar from "../layout/navbar.jsx/Navbar";
 import BannerVideo from "../../assets/hero-section/banner-video.mp4";
 
 export default function VideoHero() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="relative h-[97vh] md:h-[96vh] w-full flex flex-col">
@@ -39,7 +41,7 @@ export default function VideoHero() {
           <div className="flex flex-col gap-4 w-full md:flex-row md:justify-center mt-[60px]">
             <Button
               buttonText="Free Consultation"
-              onClick={() => console.log("Clicked!")}
+              onClick={() => navigate("/schedule-free-consultation")}
             />
             <ButtonSecondary
               buttonText="Find Your Procedure"

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import OurServices from "../components/our-services/OurServices";
 import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
@@ -14,6 +15,7 @@ import intro from "../assets/about-us/intro.png";
 import { storiesData } from "../../constants";
 
 const AboutUs = () => {
+    const navigate = useNavigate();
   return (
     <>
       <PageHero

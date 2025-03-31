@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import PageHero from "../components/hero-section/PageHero";
 import OurServices from "../components/our-services/OurServices";
@@ -15,6 +16,7 @@ import intro from "../assets/facial-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
 const FacialAesthetics = () => {
+    const navigate = useNavigate();
   return (
     <>
       <PageHero
@@ -28,7 +30,7 @@ const FacialAesthetics = () => {
         title="Refine, Rejuvenate & Restore"
         description="Our expert facial aesthetic treatments include contouring, skin tightening, and volume restoration, delivering natural, youthful, and long-lasting results with precision."
         buttonText="Schedule Free Consultation"
-        onButtonClick={() => console.log("Consultation Scheduled!")}
+        onButtonClick={() => navigate("/schedule-free-consultation")}
       />
 
       <TextWithImage
@@ -38,7 +40,7 @@ const FacialAesthetics = () => {
           "Achieve a radiant, youthful look with tailored treatments that enhance facial contours, smooth skin, and restore volume.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[

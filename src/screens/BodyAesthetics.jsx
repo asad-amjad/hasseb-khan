@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import PageHero from "../components/hero-section/PageHero";
 import OurServices from "../components/our-services/OurServices";
@@ -15,6 +16,7 @@ import intro from "../assets/body-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
 const BodyAesthetics = () => {
+    const navigate = useNavigate();
   return (
     <>
       {/* Video Hero section */}
@@ -29,7 +31,7 @@ const BodyAesthetics = () => {
         title="Transform Your Body with Confidence"
         description="Our expert team provides customized aesthetic treatments, including body lifts, sculpting, and fat reduction, ensuring natural-looking, long-lasting results tailored to your goals."
         buttonText="Schedule Free Consultation"
-        onButtonClick={() => console.log("Consultation Scheduled!")}
+        onButtonClick={() => navigate("/schedule-free-consultation")}
       />
 
       <TextWithImage
@@ -39,7 +41,7 @@ const BodyAesthetics = () => {
           "Achieve a contoured, youthful appearance with personalized treatments that enhance body shape, boost confidence, and improve overall well-being.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[

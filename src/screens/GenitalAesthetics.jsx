@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import PageHero from "../components/hero-section/PageHero";
 import OurServices from "../components/our-services/OurServices";
@@ -15,6 +16,7 @@ import intro from "../assets/genital-aesthetics/intro.png";
 import { services, storiesData } from "../../constants";
 
 const GenitalAesthetics = () => {
+  const navigate = useNavigate();
   return (
     <>
       <PageHero
@@ -28,7 +30,8 @@ const GenitalAesthetics = () => {
         title="Personalized Care for Confidence & Comfort"
         description="Our expert procedures focus on aesthetic enhancement and functional improvements, ensuring natural-looking results with minimal downtime and maximum satisfaction."
         buttonText="Schedule Free Consultation"
-        onButtonClick={() => console.log("Consultation Scheduled!")}
+        onButtonClick={() => navigate("/schedule-free-consultation")}
+        // buttonAction={() => navigate("/schedule-free-consultation")}
       />
 
       <TextWithImage
@@ -38,7 +41,7 @@ const GenitalAesthetics = () => {
           "Enhance aesthetics and function with tailored treatments that improve confidence, comfort, and overall intimate well-being.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[

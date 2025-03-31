@@ -1,4 +1,6 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import PageHero from "../components/hero-section/PageHero";
 import OurServices from "../components/our-services/OurServices";
 import OfferSection from "../components/offer-section/OfferSection";
@@ -14,6 +16,7 @@ import intro from "../assets/breast-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
 const BreastAesthetics = () => {
+    const navigate = useNavigate();
   return (
     <>
       <PageHero
@@ -27,7 +30,7 @@ const BreastAesthetics = () => {
         title="Enhance, Restore & Rejuvenate"
         description="Our expert breast aesthetic procedures, including augmentation, lifts, and reductions, offer natural-looking results tailored to your unique body goals and confidence needs."
         buttonText="Schedule Free Consultation"
-        onButtonClick={() => console.log("Consultation Scheduled!")}
+        onButtonClick={() => navigate("/schedule-free-consultation")}
       />
 
       <TextWithImage
@@ -37,7 +40,7 @@ const BreastAesthetics = () => {
           "Achieve a balanced, youthful look with customized treatments designed to enhance symmetry, shape, and overall body confidence.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
         items={[

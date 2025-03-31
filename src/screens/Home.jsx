@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import Partners from "../components/partners/Partners";
 import VideoHero from "../components/hero-section/VideoHero";
@@ -12,9 +13,11 @@ import TextAndDescription from "../components/text-and-description/TextAndDescri
 //assets
 import intro from "../assets/home/intro.png";
 import { services, storiesData } from "../../constants";
-import ParallaxImageScroll from "../components/ParallaxImageScroll";
+// import ParallaxImageScroll from "../components/ParallaxImageScroll";
 
 const Home = () => {
+  const navigate = useNavigate();
+  
   return (
     <>
       {/* Video Hero section */}
@@ -28,7 +31,7 @@ const Home = () => {
           "We believe that healthcare should be both effective and stress-free. That’s why we provide personalized treatment plans, cutting-edge technology, and top-tier medical expertise in a warm and welcoming environment.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
         imageAlt="Facial Aesthetics"
       />

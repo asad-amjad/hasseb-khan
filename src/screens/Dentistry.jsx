@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 import PageHero from "../components/hero-section/PageHero";
 import OurServices from "../components/our-services/OurServices";
@@ -15,6 +16,7 @@ import introImage from "../assets/dental/intro.png";
 import { storiesData } from "../../constants";
 
 const Dentistry = () => {
+    const navigate = useNavigate();
   return (
     <>
       {/* Video Hero section */}
@@ -29,7 +31,7 @@ const Dentistry = () => {
         title="Perfect Your Smile with Precision"
         description="Our aesthetic dentistry services provide customized treatments, including teeth whitening, veneers, and smile makeovers, ensuring natural-looking, long-lasting results."
         buttonText="Schedule Free Consultation"
-        onButtonClick={() => console.log("Consultation Scheduled!")}
+        onButtonClick={() => navigate("/schedule-free-consultation")}
       />
 
       <TextWithImage
@@ -39,7 +41,7 @@ const Dentistry = () => {
           "Transform your smile with expert treatments that enhance tooth appearance, boost confidence, and promote long-term oral health.",
         ]}
         buttonText="Schedule Free Consultation"
-        buttonAction={() => console.log("Clicked!")}
+        buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={introImage}
         imageAlt="Facial Aesthetics"
         items={[

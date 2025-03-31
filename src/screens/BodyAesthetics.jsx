@@ -60,47 +60,47 @@ const BodyAesthetics = () => {
           {
             rotate: 12,
             service: "Abdomnioplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "360 Abdomnioplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Mini Abdomnioplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Arm lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Back lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Thigh lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Gynecomastia",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Vaser Liposuction I reagion",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "BBL",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

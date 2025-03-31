@@ -17,7 +17,7 @@ import { services, storiesData } from "../../constants";
 
 const Home = () => {
   const navigate = useNavigate();
-  
+
   return (
     <>
       {/* Video Hero section */}
@@ -36,13 +36,14 @@ const Home = () => {
         imageAlt="Facial Aesthetics"
       />
 
-      {/* <ScrollRevealGallery /> */}
-      <div className="my-[80px] md:py-[250px]">
-        <TextAndDescription
-          title="Your Health Journey Starts Here"
-          description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
-        />
-        <div className="mt-[40px] md:mt-[60px]  space-y-[10px]">
+      <div className="my-[80px] md:py-[250px] md:flex md:flex-col md:items-center">
+        <div className="md:w-[1012px]">
+          <TextAndDescription
+            title="Your Health Journey Starts Here"
+            description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
+          />
+        </div>
+        <div className="mt-[40px] md:mt-[60px] w-full space-y-[10px]">
           <ScrollingText direction="left" />
           <ScrollingText direction="right" />
         </div>

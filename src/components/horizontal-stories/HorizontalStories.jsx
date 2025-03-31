@@ -12,7 +12,7 @@ export default function HorizontalStories({ storiesData }) {
   useEffect(() => {
     const handleResize = () => {
       const isMobile = window.innerWidth < 768;
-      setCardWidth(isMobile ? 290 : 450);
+      setCardWidth(isMobile ? 340 : 450);
 
       if (containerRef.current) {
         const containerWidth = containerRef.current.offsetWidth;
@@ -33,11 +33,11 @@ export default function HorizontalStories({ storiesData }) {
       ref={containerRef}
       className="w-full bg-background-2 overflow-hidden px-[16px] py-[80px] md:py-[100px] md:px-[100px]"
     >
-      <div className="w-full mb-2.5 md:mb-2.5">
+      <div className="w-full">
         <h2>Patient Stories</h2>
       </div>
 
-      <p className="body-2">
+      <p className="body-2 mt-[10px]">
         Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh
         fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo
         tincidunt nunc tempor.

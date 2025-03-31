@@ -60,38 +60,38 @@ const Dentistry = () => {
         ourServicesData={[
           {
             rotate: 12,
-            service: "aesthetic dentistry",
-            url: "https://placehold.co/341x511",
+            service: "Aesthetic dentistry",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
-            service: "dental implants",
-            url: "https://placehold.co/341x511",
+            service: "Dental implants",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
-            service: "surgical prosedures",
-            url: "https://placehold.co/341x511",
+            service: "Surgical prosedures",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
-            service: "restorative treatments",
-            url: "https://placehold.co/341x511",
+            service: "Restorative treatments",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
-            service: "periodontics",
-            url: "https://placehold.co/341x511",
+            service: "Periodontics",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Orthodontics",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Dental therapy",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

@@ -3,7 +3,7 @@ import React from "react";
 export default function StoryCard({ item }) {
   // if (item.type === "story") {
   return (
-    <div className="flex flex-col bg-white w-[279px] h-full max-h-[330px] md:w-[382px]">
+    <div className="flex flex-col bg-white w-[320px] h-full max-h-[330px] md:w-[382px]">
       {item.type === "story" ? (
         <div className="p-[30px]">
           <div className="flex justify-start items-center gap-[10px]">

@@ -17,7 +17,7 @@ const OfferSection = ({ imageSrc, tagText, title, description, buttonText, onBut
 
         <div className="md:text-center md:my-0 my-[30px]">
           <h2>{title}</h2>
-          <p className="body-2 w-full">{description}</p>
+          <p className="body-2 w-full mt-[10px]">{description}</p>
         </div>
       </div>
       <Button buttonText={buttonText} onClick={onButtonClick} className="ms-[16px] md:ms-0 w-fit" />

@@ -46,26 +46,26 @@ export const services = [
   {
     rotate: 12,
     service: "Dentistry",
-    url: dentalImage,
+    imageSrc: dentalImage,
   },
   {
     rotate: -12,
     service: "Facial aesthetics",
-    url: facialAestheticsImage,
+    imageSrc: facialAestheticsImage,
   },
   {
     rotate: 12,
     service: "Breast aesthetics",
-    url: breastAestheticsImage,
+    imageSrc: breastAestheticsImage,
   },
   {
     rotate: -12,
     service: "Body aesthetics",
-    url: bodyAestheticsImage,
+    imageSrc: bodyAestheticsImage,
   },
   {
     rotate: 12,
     service: "Genital aesthetics",
-    url: genitalImage,
+    imageSrc: genitalImage,
   },
 ];

@@ -58,27 +58,27 @@ const AboutUs = () => {
           {
             rotate: 12,
             service: "Dentistry",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Facial aesthetics",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Breast aesthetics",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Body aesthetics",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Genital aesthetics",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

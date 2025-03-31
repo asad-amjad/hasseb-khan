@@ -16,15 +16,15 @@ export default function OurServices({
     >
       {/* <div className="w-full flex flex-col gap-[10px]  px-[16px] md:px-[50px] "> */}
       <h2>{title}</h2>
-      <p className="body-2">{description}</p>
+      <p className="body-2 mt-[10px]">{description}</p>
       {/* </div> */}
       <div className="w-full flex flex-col gap-[50px] md:px-[16px] md:hidden mt-[50px]">
-        {ourServicesData.map(({ service, url }) => {
+        {ourServicesData.map(({ service, imageSrc }) => {
           return (
             <div key={service}>
               {/* <div className="mb-[50px]" /> */}
               <div className="w-full height-[492px] flex flex-col gap-[20px] ">
-                <img src={url} alt={`${service} image`} />
+                <img src={imageSrc} alt={`${service} image`} />
                 <h3 className="border-b-[1px] pb-[20px]">{service}</h3>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function OurServices({
           }, 500);
         }}
       >
-        {ourServicesData.map(({ service, url, rotate }) => (
+        {ourServicesData.map(({ service, imageSrc, rotate }) => (
           <div key={service}>
             <div
               className="md:relative border-b-[1px] cursor-pointer  w-full flex hover:bg-opacity-[0.2]" // Added margin-bottom
@@ -58,7 +58,7 @@ export default function OurServices({
                   <motion.img
                     key={service}
                     className="md:h-[400px] md:w-[275px] absolute right-20 top-[-100%] rotate-12 z-20"
-                    src={url}
+                    src={imageSrc}
                     initial={{
                       opacity: 0.5,
                       scale: 0,

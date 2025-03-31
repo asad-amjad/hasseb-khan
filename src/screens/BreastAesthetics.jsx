@@ -60,17 +60,17 @@ const BreastAesthetics = () => {
           {
             rotate: 12,
             service: "Breast Augmentation (implant)",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Breast Lift (mastopexy)",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Breast Reduction",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

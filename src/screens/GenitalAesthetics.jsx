@@ -61,12 +61,12 @@ const GenitalAesthetics = () => {
           {
             rotate: 12,
             service: "Labioplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Labium fat grafting",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

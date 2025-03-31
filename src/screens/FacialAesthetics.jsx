@@ -60,42 +60,42 @@ const FacialAesthetics = () => {
           {
             rotate: 12,
             service: "Endoscopic Brow Lift/Cat Eye",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Mid Face Lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Neck Lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Full Face Lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Upper Blepharoplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Lower Blepharoplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Rhinoplasty",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Chain Implant",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
@@ -105,17 +105,17 @@ const FacialAesthetics = () => {
           {
             rotate: -12,
             service: "Buccal Fat Removal",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: 12,
             service: "Double chin liposuction ",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
           {
             rotate: -12,
             service: "Lip lift",
-            url: "https://placehold.co/341x511",
+            imageSrc: "https://placehold.co/341x511",
           },
         ]}
       />

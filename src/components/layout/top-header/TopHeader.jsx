@@ -7,12 +7,13 @@ import LinkedIn from "../../icons/LinkedInIcon";
 import XIcon from "../../icons/XIcon";
 import InstagramIcon from "../../icons/InstagramIcon";
 import YoutubeIcon from "../../icons/YoutubeIcon";
-import DownIcon from "../../icons/DownIcon";
+// import DownIcon from "../../icons/DownIcon";
 
-import espWave from "../../../assets/flags/espWave.png";
-import rusWave from "../../../assets/flags/rusWave.png";
-import engWave from "../../../assets/flags/engWave.png";
-import ksaWave from "../../../assets/flags/ksaWave.png";
+import engWave from "../../../assets/flag-icons/eng.png";
+import espWave from "../../../assets/flag-icons/esp.png";
+import frWave from "../../../assets/flag-icons/fr.png";
+import ksaWave from "../../../assets/flag-icons/ksa.png";
+import rusWave from "../../../assets/flag-icons/rus.png";
 
 export default function TopHeader() {
   return (

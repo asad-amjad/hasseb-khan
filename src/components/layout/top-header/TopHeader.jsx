@@ -10,9 +10,9 @@ import YoutubeIcon from "../../icons/YoutubeIcon";
 import DownIcon from "../../icons/DownIcon";
 
 import espWave from "../../../assets/flags/espWave.png";
-import rusWave from "../../../assets/Flags/rusWave.png";
-import engWave from "../../../assets/Flags/engWave.png";
-import ksaWave from "../../../assets/Flags/ksaWave.png";
+import rusWave from "../../../assets/flags/rusWave.png";
+import engWave from "../../../assets/flags/engWave.png";
+import ksaWave from "../../../assets/flags/ksaWave.png";
 
 export default function TopHeader() {
   return (

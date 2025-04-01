@@ -36,7 +36,7 @@ const Home = () => {
         imageAlt="Facial Aesthetics"
       />
 
-      <div className="my-[80px] md:py-[250px] md:flex md:flex-col md:items-center">
+      <div className="my-[80px] md:py-[80px] md:flex md:flex-col md:items-center">
         <div className="md:w-[1012px]">
           <TextAndDescription
             title="Your Health Journey Starts Here"

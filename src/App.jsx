@@ -10,8 +10,18 @@ import BodyAesthetics from "./screens/BodyAesthetics";
 import GenitalAesthetics from "./screens/GenitalAesthetics";
 import BreastAesthetics from "./screens/BreastAesthetics";
 import FacialAesthetics from "./screens/FacialAesthetics";
-import Dentistry from "./screens/Dentistry";
 import ScrollToTop from "./utils/ScrollToTop";
+
+// Dentistry
+import Dentistry from "./screens/Dentistry";
+import AestheticDentistry from "./screens/dentistry/AestheticDentistry";
+import DentalImplants from "./screens/dentistry/DentalImplants";
+import SurgicalProcedures from "./screens/dentistry/SurgicalProcedures";
+import RestorativeTreatments from "./screens/dentistry/RestorativeTreatments";
+import Periodontics from "./screens/dentistry/Periodontics";
+import Orthodontics from "./screens/dentistry/Orthodontics";
+import DentalTherapy from "./screens/dentistry/DentalTherapy";
+
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +41,13 @@ const routes = createBrowserRouter([
       { path: "/breast-aesthetics", element: <BreastAesthetics /> },
       { path: "/facial-aesthetics", element: <FacialAesthetics /> },
       { path: "/dentistry", element: <Dentistry /> },
+      { path: "/dentistry/aesthetic-dentistry", element: <AestheticDentistry /> },
+      { path: "/dentistry/dental-implants", element: <DentalImplants /> },
+      { path: "/dentistry/surgical-procedures", element: <SurgicalProcedures /> },
+      { path: "/dentistry/restorative-treatments", element: <RestorativeTreatments /> },
+      { path: "/dentistry/periodontics", element: <Periodontics /> },
+      { path: "/dentistry/orthodontics", element: <Orthodontics /> },
+      { path: "/dentistry/dental-therapy", element: <DentalTherapy /> },
       {
         path: "/schedule-free-consultation",
         element: <ScheduleFreeConsultation />,

@@ -15,7 +15,7 @@ export default function Footer() {
       {/* <ScrollToTop /> */}
       <footer className="bg-[#1F385F] text-white py-[80px] px-[16px] md:px-[100px]">
         <div className="mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[200px] text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-[40px] md:gap-[175px] text-sm">
             {/* Quick Links */}
             <FooterColumn title="Quick Links">
               <FooterLink to="/">Home</FooterLink>

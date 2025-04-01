@@ -10,7 +10,7 @@ export default function VideoHero() {
   const navigate = useNavigate();
   return (
     <>
-      <div className="relative h-[97vh] md:h-[96vh] w-full flex flex-col">
+      <div className="relative h-[97vh] md:h-[96vh] w-full flex flex-col md:mb-[150px]">
         <video
           className="absolute inset-0 w-full h-full object-cover z-0"
           autoPlay
@@ -40,12 +40,20 @@ export default function VideoHero() {
 
           <div className="flex flex-col gap-4 w-full md:flex-row md:justify-center mt-[60px]">
             <Button
-              buttonText="Free Consultation"
+              buttonText="Free Consultation "
               onClick={() => navigate("/schedule-free-consultation")}
+              className="px-16"
             />
             <ButtonSecondary
               buttonText="Find Your Procedure"
-              onClick={() => console.log("Clicked!")}
+              // onClick={() => console.log("Clicked!")}
+              onClick={() => {
+                const section = document.getElementById("our-service");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              className="px-16"
             />
           </div>
         </section>

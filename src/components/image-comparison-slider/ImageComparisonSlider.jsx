@@ -5,7 +5,7 @@ const scrollingTexts = ["Happy Clients", "-", "Happy Clients"];
 
 const ImageComparisonSlider = ({ before, after }) => {
   return (
-    <div className="relative mb-[150px]">
+    <div className="relative my-[150px]">
       {/* Scrolling Text Animation */}
       <div className="overflow-hidden w-full bg-[#E55D48] md:bg-transparent">
         <motion.div

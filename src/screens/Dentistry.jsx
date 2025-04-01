@@ -15,7 +15,7 @@ import bannerImage from "../assets/dental/banner.png";
 import introImage from "../assets/dental/intro.png";
 import { storiesData } from "../../constants";
 
-const Dentistry = () => {
+const DentalTherapy = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -61,43 +61,43 @@ const Dentistry = () => {
             rotate: 12,
             service: "Aesthetic dentistry",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/aesthetic-dentistry",
+            url: "/dentistry/aesthetic-dentistry",
           },
           {
             rotate: -12,
             service: "Dental implants",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/dental-implants",
+            url: "/dentistry/dental-implants",
           },
           {
             rotate: 12,
             service: "Surgical procedures",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/surgical-procedures",
+            url: "/dentistry/surgical-procedures",
           },
           {
             rotate: -12,
             service: "Restorative treatments",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/restorative-treatments",
+            url: "/dentistry/restorative-treatments",
           },
           {
             rotate: 12,
             service: "Periodontics",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/periodontics",
+            url: "/dentistry/periodontics",
           },
           {
             rotate: -12,
             service: "Orthodontics",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/orthodontics",
+            url: "/dentistry/orthodontics",
           },
           {
             rotate: 12,
             service: "Dental therapy",
             imageSrc: "https://placehold.co/341x511",
-            url: "/services/dental-therapy",
+            url: "/dentistry/dental-therapy",
           },
         ]}
       />
@@ -136,4 +136,4 @@ const Dentistry = () => {
   );
 };
 
-export default Dentistry;
+export default DentalTherapy;

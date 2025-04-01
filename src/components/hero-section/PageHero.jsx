@@ -7,7 +7,7 @@ import BannerImage from "../../assets/hero-section/banner-image.png";
 export default function PageHero({ title, description }) {
   return (
     <>
-      <div className="relative  md:h-[418px] w-full flex flex-col">
+      <div className="relative  w-full flex flex-col">
         <img
           src={BannerImage}
           alt="review-pfp"

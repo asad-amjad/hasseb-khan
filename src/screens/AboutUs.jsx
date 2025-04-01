@@ -15,7 +15,7 @@ import intro from "../assets/about-us/intro.png";
 import { services, storiesData } from "../../constants";
 
 const AboutUs = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <PageHero

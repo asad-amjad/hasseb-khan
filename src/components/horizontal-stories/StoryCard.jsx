@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function StoryCard({ item }) {
-  // if (item.type === "story") {
   return (
     <div className="flex flex-col bg-white w-[320px] h-full max-h-[330px] md:w-[382px]">
       {item.type === "story" ? (
@@ -22,9 +21,12 @@ export default function StoryCard({ item }) {
           </p>
         </div>
       ) : (
-        <img src={item.image} alt="review-pfp" className="w-full h-full object-cover" />
+        <img
+          src={item.image}
+          alt="review-pfp"
+          className="w-full h-full object-cover"
+        />
       )}
     </div>
   );
 }
-

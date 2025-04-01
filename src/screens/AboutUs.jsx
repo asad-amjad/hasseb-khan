@@ -8,11 +8,17 @@ import HorizontalStories from "../components/horizontal-stories/HorizontalStorie
 import TextWithImage from "../components/text-with-image/TextWithImage";
 import PageHero from "../components/hero-section/PageHero";
 import MeetOurExperts from "../components/meet-our-experts/MeetOurExperts";
+import MeetOurExpert from "../components/meet-our-expert/MeetOurExpert";
+import { services, storiesData } from "../../constants";
 
 // Assets
 import bannerImage from "../assets/about-us/banner.jpeg";
 import intro from "../assets/about-us/intro.png";
-import { services, storiesData } from "../../constants";
+
+import expert1 from "../assets/about-us/expert-1.jpeg";
+import expert2 from "../assets/about-us/expert-2.jpeg";
+import expert3 from "../assets/about-us/expert-3.jpg";
+import expert4 from "../assets/about-us/expert-4.avif";
 
 const AboutUs = () => {
   // const navigate = useNavigate();
@@ -47,6 +53,35 @@ const AboutUs = () => {
       />
 
       <HorizontalStories storiesData={storiesData} />
+      <MeetOurExpert
+        storiesData={[
+          {
+            name: "Dr. Nayrouz Gezaf",
+            role: "Specialist Obstetrics & Gynecology",
+            image: expert1,
+          },
+          {
+            name: "Dr. Sulman",
+            role: "Specialist Obstetrics",
+            image: expert2,
+          },
+          {
+            name: "Dr. Khan",
+            role: "Specialist Obstetrics",
+            image: expert3,
+          },
+           {
+            name: "Dr. Jack",
+            role: "Specialist Obstetrics",
+            image: expert4,
+          },
+          // {
+          //   name: "Dr. Sulman",
+          //   role: "Specialist Obstetrics",
+          //   image: story2,
+          // },
+        ]}
+      />
 
       <MeetOurExperts />
 

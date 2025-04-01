@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function StoryCard({ item }) {
   return (
@@ -9,6 +10,7 @@ export default function StoryCard({ item }) {
             <img
               src={item.image}
               alt="review-pfp"
+              Ensures it follows parent dragging
               className="w-[70px] h-[70px] rounded-full object-cover"
             />
             <div className="flex flex-col justify-start items-start space-y-[10px] ">
@@ -21,10 +23,12 @@ export default function StoryCard({ item }) {
           </p>
         </div>
       ) : (
-        <img
+        <motion.img
           src={item.image}
           alt="review-pfp"
-          className="w-full h-full object-cover"
+          drag="x"
+          // dragPropagation={true} //
+          className="w-full h-full object-cover  pointer-events-none"
         />
       )}
     </div>

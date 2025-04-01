@@ -19,8 +19,8 @@ const Periodontics = () => {
     <>
       {/* Video Hero section */}
       <PageHero
-        title="Craft Your Perfect Smile"
-        description="Discover the art of creating beautiful, natural smiles through advanced aesthetic dentistry. From teeth whitening to comprehensive smile makeovers, we offer cutting-edge treatments tailored to your desires."
+        title="Revitalize Your Gum Health and Smile"
+        description="Our periodontics services ensure optimal gum health, enhancing both aesthetics and functionality. From deep cleaning to surgical procedures, we provide comprehensive care to treat gum-related issues and improve your smile."
       />
       <div className="md:pt-[100px]">
         <img
@@ -32,9 +32,9 @@ const Periodontics = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Aesthetic Dentistry"
+        title="About Periodontics"
         descriptions={[
-          "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
+          "Periodontics focuses on preventing, diagnosing, and treating gum-related issues to ensure healthy gums and a strong foundation for your teeth. With treatments ranging from deep cleaning to surgical solutions, we aim to restore gum health, enhance aesthetics, and prevent future complications.",
         ]}
         imageSrc={introImage}
       />
@@ -43,50 +43,27 @@ const Periodontics = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Hollywood Smile",
+            service: "Cleaning and Deep Cleaning",
             description:
-              "Achieve a red-carpet-ready smile with a custom-designed Hollywood Smile. Combining veneers, crowns, and teeth whitening, this comprehensive approach ensures a flawless, bright, and harmonious appearance.",
+              "Regular and deep cleaning procedures designed to remove plaque, tartar, and bacteria from teeth and gums. Deep cleaning targets areas below the gumline to prevent and treat gum disease.",
           },
           {
-            service: "Laminate Veneers",
+            service: "Gingivectomy",
             description:
-              "Ultra-thin shells designed to correct imperfections, providing a natural and durable enhancement to your smile with minimal tooth preparation.",
+              "A surgical procedure to remove excess or diseased gum tissue, improving aesthetics and promoting healthier gum structure. Often used to treat periodontal disease or enhance the appearance of the smile.",
           },
           {
-            service: "Zirconium Crowns",
+            service: "Gummy Smile Treatment",
             description:
-              "Metal-free, durable crowns offering exceptional strength and aesthetics, blending seamlessly with your natural teeth for a radiant smile.",
+              "Specialized procedures aimed at reshaping and contouring excess gum tissue to create a balanced, attractive smile. This treatment enhances both aesthetics and oral health.",
           },
           {
-            service: "Emax Crowns",
+            service: "Flap Operation",
             description:
-              "Known for their aesthetic excellence, Emax Crowns provide long-lasting results with superior translucency and durability. Ideal for front teeth restorations.",
+              "A surgical technique used to access and clean deep pockets of infection, followed by reshaping and securing gum tissue. Effective for treating advanced periodontal disease and promoting healing.",
           },
-          {
-            service: "Porcelain Crowns",
-            description:
-              "Classic crowns crafted to restore function and beauty, providing a natural appearance with high durability.",
-          },
-          {
-            service: "Teeth Whitening",
-            description:
-              "Brighten your smile with safe, professional treatments designed to remove stains and enhance your teeth’s radiance.",
-          },
-          {
-            service: "Pink Aesthetic (Gum Contouring)",
-            description:
-              "Reshape and enhance your gums for a balanced, symmetrical smile with natural beauty.",
-          },
-          {
-            service: "Personal Smile Makeover",
-            description:
-              "A comprehensive approach combining multiple treatments to achieve your ideal smile, tailored to your unique facial features and goals.",
-          },
-          {
-            service: "Bonding",
-            description:
-              "Quick and effective treatment for minor imperfections, enhancing the shape, color, and overall appearance of teeth.",
-          },
+          
+         
         ]}
       />
 

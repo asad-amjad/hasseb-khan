@@ -19,8 +19,8 @@ const Orthodontics = () => {
     <>
       {/* Video Hero section */}
       <PageHero
-        title="Craft Your Perfect Smile"
-        description="Discover the art of creating beautiful, natural smiles through advanced aesthetic dentistry. From teeth whitening to comprehensive smile makeovers, we offer cutting-edge treatments tailored to your desires."
+        title="Achieve a Perfectly Aligned Smile"
+        description="Our orthodontic treatments offer advanced solutions for teeth alignment and bite correction. From traditional braces to modern Invisalign, we provide tailored options to enhance your smile’s aesthetics and functionality."
       />
       <div className="md:pt-[100px]">
         <img
@@ -32,9 +32,9 @@ const Orthodontics = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Aesthetic Dentistry"
+        title="About Orthodontics"
         descriptions={[
-          "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
+          "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
         imageSrc={introImage}
       />
@@ -43,50 +43,15 @@ const Orthodontics = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Hollywood Smile",
+            service: "Damon Smile Braces",
             description:
-              "Achieve a red-carpet-ready smile with a custom-designed Hollywood Smile. Combining veneers, crowns, and teeth whitening, this comprehensive approach ensures a flawless, bright, and harmonious appearance.",
+              "Self-ligating braces designed to reduce friction and provide faster, more comfortable teeth alignment. They offer a cleaner, more discreet look compared to traditional braces while enhancing overall treatment efficiency.",
           },
           {
-            service: "Laminate Veneers",
+            service: "Invisalign",
             description:
-              "Ultra-thin shells designed to correct imperfections, providing a natural and durable enhancement to your smile with minimal tooth preparation.",
-          },
-          {
-            service: "Zirconium Crowns",
-            description:
-              "Metal-free, durable crowns offering exceptional strength and aesthetics, blending seamlessly with your natural teeth for a radiant smile.",
-          },
-          {
-            service: "Emax Crowns",
-            description:
-              "Known for their aesthetic excellence, Emax Crowns provide long-lasting results with superior translucency and durability. Ideal for front teeth restorations.",
-          },
-          {
-            service: "Porcelain Crowns",
-            description:
-              "Classic crowns crafted to restore function and beauty, providing a natural appearance with high durability.",
-          },
-          {
-            service: "Teeth Whitening",
-            description:
-              "Brighten your smile with safe, professional treatments designed to remove stains and enhance your teeth’s radiance.",
-          },
-          {
-            service: "Pink Aesthetic (Gum Contouring)",
-            description:
-              "Reshape and enhance your gums for a balanced, symmetrical smile with natural beauty.",
-          },
-          {
-            service: "Personal Smile Makeover",
-            description:
-              "A comprehensive approach combining multiple treatments to achieve your ideal smile, tailored to your unique facial features and goals.",
-          },
-          {
-            service: "Bonding",
-            description:
-              "Quick and effective treatment for minor imperfections, enhancing the shape, color, and overall appearance of teeth.",
-          },
+              "A clear aligner system that gradually shifts teeth into the desired position without the need for metal brackets or wires. Invisalign offers comfort, convenience, and a virtually invisible solution for achieving a straighter smile.",
+          }
         ]}
       />
 

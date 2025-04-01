@@ -7,11 +7,9 @@ import LinkedIn from "../../icons/LinkedInIcon";
 import XIcon from "../../icons/XIcon";
 import InstagramIcon from "../../icons/InstagramIcon";
 import YoutubeIcon from "../../icons/YoutubeIcon";
-// import DownIcon from "../../icons/DownIcon";
 
 import engWave from "../../../assets/flag-icons/eng.png";
 import espWave from "../../../assets/flag-icons/esp.png";
-import frWave from "../../../assets/flag-icons/fr.png";
 import ksaWave from "../../../assets/flag-icons/ksa.png";
 import rusWave from "../../../assets/flag-icons/rus.png";
 
@@ -29,21 +27,13 @@ export default function TopHeader() {
         </div>
       </div>
 
-      <div className="flex gap-[80px] items-center  w-full md:w-[364px] justify-between md:justify-start">
+      <div className="flex gap-[80px] items-center w-full md:w-1/3 justify-between md:justify-start">
         {/* Language Dropdown */}
         <div className="flex items-center gap-[20px]">
-          <div className="">
-            <img src={espWave} alt="flagImage" />
-          </div>
-          <div className="">
-            <img src={rusWave} alt="flagImage" />
-          </div>
-          <div className="">
-            <img src={engWave} alt="flagImage" />
-          </div>
-          <div className="">
-            <img src={ksaWave} alt="flagImage" />
-          </div>
+          <img src={espWave} alt="flagImage" />
+          <img src={rusWave} alt="flagImage" />
+          <img src={engWave} alt="flagImage" />
+          <img src={ksaWave} alt="flagImage" />
         </div>
 
         {/* Social Icons */}

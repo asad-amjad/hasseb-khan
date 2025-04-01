@@ -8,11 +8,13 @@ import HorizontalStories from "../../components/horizontal-stories/HorizontalSto
 import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
 
 // Assets
-import bannerImage from "../../assets/dental/banner.png";
+// import bannerImage from "../../assets/dental/banner.png";
 import introImage from "../../assets/dental/intro.png";
 import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
+
+import bannerImage from "../../assets/about-us/banner.jpeg";
 
 const AestheticDentistry = () => {
   return (

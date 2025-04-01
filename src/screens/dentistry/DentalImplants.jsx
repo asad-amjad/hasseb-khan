@@ -19,8 +19,8 @@ const DentalImplants = () => {
     <>
       {/* Video Hero section */}
       <PageHero
-        title="Craft Your Perfect Smile"
-        description="Discover the art of creating beautiful, natural smiles through advanced aesthetic dentistry. From teeth whitening to comprehensive smile makeovers, we offer cutting-edge treatments tailored to your desires."
+        title="Restore Your Smile with Dental Implants"
+        description="Dental implants offer a permanent, natural-looking solution for missing teeth. From single implants to full-mouth restoration, our advanced techniques provide comfort, durability, and aesthetic excellence. Achieve a confident smile that feels and functions like natural teeth."
       />
       <div className="md:pt-[100px]">
         <img
@@ -32,9 +32,9 @@ const DentalImplants = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Aesthetic Dentistry"
+        title="About Dental Implants"
         descriptions={[
-          "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
+          "Dental implants are a highly effective and durable solution for replacing missing teeth. They consist of titanium posts that are surgically placed into the jawbone, acting as artificial tooth roots. Once healed, they are topped with crowns or bridges, providing a natural appearance and functionality. Implants are known for their longevity, stability, and ability to preserve jawbone health.",
         ]}
         imageSrc={introImage}
       />
@@ -43,49 +43,19 @@ const DentalImplants = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Hollywood Smile",
+            service: "Single Dental Implant",
             description:
-              "Achieve a red-carpet-ready smile with a custom-designed Hollywood Smile. Combining veneers, crowns, and teeth whitening, this comprehensive approach ensures a flawless, bright, and harmonious appearance.",
+              "A single dental implant is designed to replace one missing tooth, providing a seamless and durable solution that blends naturally with your existing teeth. Ideal for those looking to restore their smile and chewing function with minimal disruption.",
           },
           {
-            service: "Laminate Veneers",
+            service: "All-on-4 / All-on-6 Implants",
             description:
-              "Ultra-thin shells designed to correct imperfections, providing a natural and durable enhancement to your smile with minimal tooth preparation.",
+              "Revolutionary full-arch restoration techniques using four or six implants to support a complete set of teeth. These procedures offer enhanced stability, immediate function, and a beautiful, natural-looking smile without the need for individual implants for each tooth.",
           },
           {
-            service: "Zirconium Crowns",
+            service: "Immediate Implants",
             description:
-              "Metal-free, durable crowns offering exceptional strength and aesthetics, blending seamlessly with your natural teeth for a radiant smile.",
-          },
-          {
-            service: "Emax Crowns",
-            description:
-              "Known for their aesthetic excellence, Emax Crowns provide long-lasting results with superior translucency and durability. Ideal for front teeth restorations.",
-          },
-          {
-            service: "Porcelain Crowns",
-            description:
-              "Classic crowns crafted to restore function and beauty, providing a natural appearance with high durability.",
-          },
-          {
-            service: "Teeth Whitening",
-            description:
-              "Brighten your smile with safe, professional treatments designed to remove stains and enhance your teeth’s radiance.",
-          },
-          {
-            service: "Pink Aesthetic (Gum Contouring)",
-            description:
-              "Reshape and enhance your gums for a balanced, symmetrical smile with natural beauty.",
-          },
-          {
-            service: "Personal Smile Makeover",
-            description:
-              "A comprehensive approach combining multiple treatments to achieve your ideal smile, tailored to your unique facial features and goals.",
-          },
-          {
-            service: "Bonding",
-            description:
-              "Quick and effective treatment for minor imperfections, enhancing the shape, color, and overall appearance of teeth.",
+              "Achieve instant results with immediate implants, where implants are placed right after tooth extraction. This innovative approach reduces treatment time and allows for quicker healing and immediate aesthetic improvements.",
           },
         ]}
       />

@@ -19,8 +19,8 @@ const SurgicalProcedures = () => {
     <>
       {/* Video Hero section */}
       <PageHero
-        title="Craft Your Perfect Smile"
-        description="Discover the art of creating beautiful, natural smiles through advanced aesthetic dentistry. From teeth whitening to comprehensive smile makeovers, we offer cutting-edge treatments tailored to your desires."
+        title="Surgical Solutions for Dental Restoration"
+        description="Our surgical procedures support successful dental implant treatments and jawbone health. From sinus lifting to bone grafting, we offer tailored solutions to ensure optimal results and long-term stability for your dental implants."
       />
       <div className="md:pt-[100px]">
         <img
@@ -32,9 +32,9 @@ const SurgicalProcedures = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Aesthetic Dentistry"
+        title="About Surgical Procedures"
         descriptions={[
-          "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
+          "Surgical procedures are essential for preparing the jawbone to receive dental implants, especially when bone quality or quantity is insufficient. Techniques like sinus lifting, bone augmentation, split osteotomy, and bone grafting are designed to enhance bone structure, promote healing, and ensure implant stability. Our experts utilize state-of-the-art methods for precision and comfort.",
         ]}
         imageSrc={introImage}
       />
@@ -43,50 +43,25 @@ const SurgicalProcedures = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Hollywood Smile",
+            service: "Sinus Lifting",
             description:
-              "Achieve a red-carpet-ready smile with a custom-designed Hollywood Smile. Combining veneers, crowns, and teeth whitening, this comprehensive approach ensures a flawless, bright, and harmonious appearance.",
+              "A procedure aimed at increasing bone height in the upper jaw by lifting the sinus membrane and placing bone graft material. This technique provides a solid foundation for successful implant placement in the posterior maxilla.",
           },
           {
-            service: "Laminate Veneers",
+            service: "Bone Augmentation",
             description:
-              "Ultra-thin shells designed to correct imperfections, providing a natural and durable enhancement to your smile with minimal tooth preparation.",
+              "A method to rebuild and strengthen bone in areas with insufficient volume. This procedure ensures the jawbone is robust enough to support dental implants, enhancing overall stability and longevity.",
           },
           {
-            service: "Zirconium Crowns",
+            service: "Split Osteotomy",
             description:
-              "Metal-free, durable crowns offering exceptional strength and aesthetics, blending seamlessly with your natural teeth for a radiant smile.",
+              "A specialized technique where the jawbone is divided and expanded to increase width, allowing for proper implant placement. Ideal for patients with narrow jawbones, providing enhanced stability and support.",
           },
           {
-            service: "Emax Crowns",
+            service: "Bone Grafting",
             description:
-              "Known for their aesthetic excellence, Emax Crowns provide long-lasting results with superior translucency and durability. Ideal for front teeth restorations.",
-          },
-          {
-            service: "Porcelain Crowns",
-            description:
-              "Classic crowns crafted to restore function and beauty, providing a natural appearance with high durability.",
-          },
-          {
-            service: "Teeth Whitening",
-            description:
-              "Brighten your smile with safe, professional treatments designed to remove stains and enhance your teeth’s radiance.",
-          },
-          {
-            service: "Pink Aesthetic (Gum Contouring)",
-            description:
-              "Reshape and enhance your gums for a balanced, symmetrical smile with natural beauty.",
-          },
-          {
-            service: "Personal Smile Makeover",
-            description:
-              "A comprehensive approach combining multiple treatments to achieve your ideal smile, tailored to your unique facial features and goals.",
-          },
-          {
-            service: "Bonding",
-            description:
-              "Quick and effective treatment for minor imperfections, enhancing the shape, color, and overall appearance of teeth.",
-          },
+              "A regenerative procedure that uses natural or synthetic materials to promote bone growth and strengthen areas with bone loss. Bone grafting ensures a durable, healthy foundation for implants and overall oral health.",
+          }
         ]}
       />
 

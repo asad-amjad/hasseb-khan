@@ -19,8 +19,8 @@ const RestorativeTreatments = () => {
     <>
       {/* Video Hero section */}
       <PageHero
-        title="Craft Your Perfect Smile"
-        description="Discover the art of creating beautiful, natural smiles through advanced aesthetic dentistry. From teeth whitening to comprehensive smile makeovers, we offer cutting-edge treatments tailored to your desires."
+        title="Restore Health and Function to Your Teeth"
+        description="Our restorative treatments address damaged or decayed teeth, ensuring optimal health, appearance, and functionality. From root canals to composite fillings, we provide effective solutions for long-lasting dental health."
       />
       <div className="md:pt-[100px]">
         <img
@@ -32,9 +32,9 @@ const RestorativeTreatments = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Aesthetic Dentistry"
+        title="About Restorative Treatments"
         descriptions={[
-          "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
+          "Restorative treatments are essential for repairing and saving damaged teeth, restoring their natural function and appearance. Whether through root canals, fillings, or advanced composite techniques, our procedures are designed to preserve oral health, prevent further damage, and enhance aesthetics.",
         ]}
         imageSrc={introImage}
       />
@@ -43,49 +43,24 @@ const RestorativeTreatments = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Hollywood Smile",
+            service: "Root Canal Treatment",
             description:
-              "Achieve a red-carpet-ready smile with a custom-designed Hollywood Smile. Combining veneers, crowns, and teeth whitening, this comprehensive approach ensures a flawless, bright, and harmonious appearance.",
+              "A procedure to save infected or damaged teeth by removing the infected pulp, cleaning, and sealing the root canal. This treatment relieves pain, prevents further damage, and preserves your natural tooth.",
           },
           {
-            service: "Laminate Veneers",
+            service: "Retreatment",
             description:
-              "Ultra-thin shells designed to correct imperfections, providing a natural and durable enhancement to your smile with minimal tooth preparation.",
+              "A follow-up procedure for previously treated root canals that require additional care. Retreatment ensures thorough cleaning and sealing, addressing complications and promoting long-term success.",
           },
           {
-            service: "Zirconium Crowns",
+            service: "Fillings",
             description:
-              "Metal-free, durable crowns offering exceptional strength and aesthetics, blending seamlessly with your natural teeth for a radiant smile.",
+              "Traditional fillings used to repair cavities and restore tooth structure. They prevent further decay by sealing and protecting damaged areas, ensuring durability and functionality.",
           },
           {
-            service: "Emax Crowns",
+            service: "Composite Fillings",
             description:
-              "Known for their aesthetic excellence, Emax Crowns provide long-lasting results with superior translucency and durability. Ideal for front teeth restorations.",
-          },
-          {
-            service: "Porcelain Crowns",
-            description:
-              "Classic crowns crafted to restore function and beauty, providing a natural appearance with high durability.",
-          },
-          {
-            service: "Teeth Whitening",
-            description:
-              "Brighten your smile with safe, professional treatments designed to remove stains and enhance your teeth’s radiance.",
-          },
-          {
-            service: "Pink Aesthetic (Gum Contouring)",
-            description:
-              "Reshape and enhance your gums for a balanced, symmetrical smile with natural beauty.",
-          },
-          {
-            service: "Personal Smile Makeover",
-            description:
-              "A comprehensive approach combining multiple treatments to achieve your ideal smile, tailored to your unique facial features and goals.",
-          },
-          {
-            service: "Bonding",
-            description:
-              "Quick and effective treatment for minor imperfections, enhancing the shape, color, and overall appearance of teeth.",
+              "Tooth-colored fillings that provide a natural-looking restoration for cavities or minor damage. Made from resin materials, they blend seamlessly with your natural teeth while offering strength and aesthetics.",
           },
         ]}
       />

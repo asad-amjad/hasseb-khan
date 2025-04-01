@@ -13,7 +13,7 @@ import FacialAesthetics from "./screens/FacialAesthetics";
 import ScrollToTop from "./utils/ScrollToTop";
 
 // Dentistry
-import Dentistry from "./screens/Dentistry";
+import Dentistry from "./screens/dentistry";
 import AestheticDentistry from "./screens/dentistry/AestheticDentistry";
 import DentalImplants from "./screens/dentistry/DentalImplants";
 import SurgicalProcedures from "./screens/dentistry/SurgicalProcedures";

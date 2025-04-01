@@ -1,19 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PageHero from "../components/hero-section/PageHero";
-import OurServices from "../components/our-services/OurServices";
-import OfferSection from "../components/offer-section/OfferSection";
-import TextWithImage from "../components/text-with-image/TextWithImage";
-import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
-import ConsultationForm from "../components/consultation-form/ConsultationForm";
-import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
-import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import { storiesData } from "../../constants";
+import PageHero from "../../components/hero-section/PageHero";
+import OurServices from "../../components/our-services/OurServices";
+import OfferSection from "../../components/offer-section/OfferSection";
+import TextWithImage from "../../components/text-with-image/TextWithImage";
+import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
+import ConsultationForm from "../../components/consultation-form/ConsultationForm";
+import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
+import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../../constants";
 
 // Assets
-import bannerImage from "../assets/dental/banner.png";
-import introImage from "../assets/dental/intro.png";
+import bannerImage from "../../assets/dental/banner.png";
+import introImage from "../../assets/dental/intro.png";
 
 // import dentalImplantsImage from "../assets/dental/banner-dental-implants.png";
 // import dentalTherapyImage from "../assets/dental/banner-dental-therapy.png";
@@ -22,13 +22,13 @@ import introImage from "../assets/dental/intro.png";
 // import restorativeTreatmentsImage from "../assets/dental/banner-restorative-treatments.png";
 // import surgicalProceduresImage from "../assets/dental/banner-surgical-procedures.png";
 
-import Image1 from "../assets/dental/1.png";
-import Image2 from "../assets/dental/2.png";
-import Image3 from "../assets/dental/3.png";
-import Image4 from "../assets/dental/4.png";
-import Image5 from "../assets/dental/5.png";
-import Image6 from "../assets/dental/6.png";
-import Image7 from "../assets/dental/7.png";
+import Image1 from "../../assets/dental/1.png";
+import Image2 from "../../assets/dental/2.png";
+import Image3 from "../../assets/dental/3.png";
+import Image4 from "../../assets/dental/4.png";
+import Image5 from "../../assets/dental/5.png";
+import Image6 from "../../assets/dental/6.png";
+import Image7 from "../../assets/dental/7.png";
 
 
 

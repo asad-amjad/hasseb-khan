@@ -42,7 +42,7 @@ export default function VideoHero() {
             <Button
               buttonText="Free Consultation "
               onClick={() => navigate("/schedule-free-consultation")}
-              className="px-16"
+              className="px-20"
             />
             <ButtonSecondary
               buttonText="Find Your Procedure"
@@ -53,7 +53,7 @@ export default function VideoHero() {
                   section.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="px-16"
+              className="px-20"
             />
           </div>
         </section>

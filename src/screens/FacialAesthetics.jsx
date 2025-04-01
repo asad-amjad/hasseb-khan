@@ -15,6 +15,19 @@ import bannerImage from "../assets/facial-aesthetics/banner.png";
 import intro from "../assets/facial-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
+import image1 from "../assets/facial-aesthetics/1.png";
+import image2 from "../assets/facial-aesthetics/2.png";
+import image3 from "../assets/facial-aesthetics/3.png";
+import image4 from "../assets/facial-aesthetics/4.png";
+import image5 from "../assets/facial-aesthetics/5.png";
+import image6 from "../assets/facial-aesthetics/6.png";
+import image7 from "../assets/facial-aesthetics/7.png";
+import image8 from "../assets/facial-aesthetics/8.png";
+import image9 from "../assets/facial-aesthetics/9.png";
+import image10 from "../assets/facial-aesthetics/10.png";
+import image11 from "../assets/facial-aesthetics/11.png";
+import image12 from "../assets/facial-aesthetics/12.png";
+
 const FacialAesthetics = () => {
   const navigate = useNavigate();
   return (
@@ -60,73 +73,73 @@ const FacialAesthetics = () => {
           {
             rotate: 12,
             service: "Endoscopic Brow Lift/Cat Eye",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image1,
             url: "/facial-aesthetics/endoscopic-brow-lift-cat-eye",
           },
           {
             rotate: -12,
             service: "Mid Face Lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image2,
             url: "/facial-aesthetics/mid-face-lift",
           },
           {
             rotate: 12,
             service: "Neck Lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image3,
             url: "/facial-aesthetics/neck-lift",
           },
           {
             rotate: -12,
             service: "Full Face Lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image4,
             url: "/facial-aesthetics/full-face-lift",
           },
           {
             rotate: 12,
             service: "Upper Blepharoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image5,
             url: "/facial-aesthetics/upper-blepharoplasty",
           },
           {
             rotate: -12,
             service: "Lower Blepharoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image6,
             url: "/facial-aesthetics/lower-blepharoplasty",
           },
           {
             rotate: 12,
             service: "Rhinoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image7,
             url: "/facial-aesthetics/rhinoplasty",
           },
           {
             rotate: -12,
             service: "Chin Implant",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image8,
             url: "/facial-aesthetics/chin-implant",
           },
           {
             rotate: 12,
             service: "Facial Fat Grafting",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image9,
             url: "/facial-aesthetics/facial-fat-grafting",
           },
           {
             rotate: -12,
             service: "Buccal Fat Removal",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image10,
             url: "/facial-aesthetics/buccal-fat-removal",
           },
           {
             rotate: 12,
             service: "Double Chin Liposuction",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image11,
             url: "/facial-aesthetics/double-chin-liposuction",
           },
           {
             rotate: -12,
             service: "Lip Lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image12,
             url: "/facial-aesthetics/lip-lift",
           },
         ]}

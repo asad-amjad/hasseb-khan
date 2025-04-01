@@ -9,11 +9,28 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../constants";
 
 // Assets
 import bannerImage from "../assets/dental/banner.png";
 import introImage from "../assets/dental/intro.png";
-import { storiesData } from "../../constants";
+
+// import dentalImplantsImage from "../assets/dental/banner-dental-implants.png";
+// import dentalTherapyImage from "../assets/dental/banner-dental-therapy.png";
+// import orthodonticsImage from "../assets/dental/banner-orthodontics.png";
+// import periodonticsImage from "../assets/dental/banner-periodontics.png";
+// import restorativeTreatmentsImage from "../assets/dental/banner-restorative-treatments.png";
+// import surgicalProceduresImage from "../assets/dental/banner-surgical-procedures.png";
+
+import Image1 from "../assets/dental/1.png";
+import Image2 from "../assets/dental/2.png";
+import Image3 from "../assets/dental/3.png";
+import Image4 from "../assets/dental/4.png";
+import Image5 from "../assets/dental/5.png";
+import Image6 from "../assets/dental/6.png";
+import Image7 from "../assets/dental/7.png";
+
+
 
 const DentalTherapy = () => {
   const navigate = useNavigate();
@@ -53,6 +70,7 @@ const DentalTherapy = () => {
           "Long-Lasting Results – Durable, natural aesthetics.",
         ]}
       />
+
       <OurServices
         title="Comprehensive Services"
         description="Our aesthetic dentistry solutions focus on enhancing smile aesthetics through advanced procedures like teeth whitening, veneers, bonding, and alignment correction. With cutting-edge techniques, we create beautifully natural, confident smiles that last."
@@ -60,43 +78,43 @@ const DentalTherapy = () => {
           {
             rotate: 12,
             service: "Aesthetic dentistry",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image1,
             url: "/dentistry/aesthetic-dentistry",
           },
           {
             rotate: -12,
             service: "Dental implants",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image2,
             url: "/dentistry/dental-implants",
           },
           {
             rotate: 12,
             service: "Surgical procedures",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image3,
             url: "/dentistry/surgical-procedures",
           },
           {
             rotate: -12,
             service: "Restorative treatments",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image4,
             url: "/dentistry/restorative-treatments",
           },
           {
             rotate: 12,
             service: "Periodontics",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image5,
             url: "/dentistry/periodontics",
           },
           {
             rotate: -12,
             service: "Orthodontics",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image6,
             url: "/dentistry/orthodontics",
           },
           {
             rotate: 12,
             service: "Dental therapy",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: Image7,
             url: "/dentistry/dental-therapy",
           },
         ]}

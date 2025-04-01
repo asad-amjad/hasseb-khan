@@ -14,6 +14,10 @@ import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 
+import introImage3 from "../../assets/dental/intro3.png";
+import surgicalProceduresImage from "../../assets/dental/banner-surgical-procedures.png";
+
+
 const SurgicalProcedures = () => {
   return (
     <>
@@ -25,7 +29,7 @@ const SurgicalProcedures = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={bannerImage}
+          src={surgicalProceduresImage}
           alt="image"
         />
       </div>
@@ -36,7 +40,7 @@ const SurgicalProcedures = () => {
         descriptions={[
           "Surgical procedures are essential for preparing the jawbone to receive dental implants, especially when bone quality or quantity is insufficient. Techniques like sinus lifting, bone augmentation, split osteotomy, and bone grafting are designed to enhance bone structure, promote healing, and ensure implant stability. Our experts utilize state-of-the-art methods for precision and comfort.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage3}
       />
 
       <ServiceDetails

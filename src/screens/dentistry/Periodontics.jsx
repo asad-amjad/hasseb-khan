@@ -13,6 +13,9 @@ import introImage from "../../assets/dental/intro.png";
 import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
+import introImage5 from "../../assets/dental/intro5.png";
+
+import periodonticsImage from "../../assets/dental/banner-periodontics.png";
 
 const Periodontics = () => {
   return (
@@ -25,7 +28,7 @@ const Periodontics = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={bannerImage}
+          src={periodonticsImage}
           alt="image"
         />
       </div>
@@ -36,7 +39,7 @@ const Periodontics = () => {
         descriptions={[
           "Periodontics focuses on preventing, diagnosing, and treating gum-related issues to ensure healthy gums and a strong foundation for your teeth. With treatments ranging from deep cleaning to surgical solutions, we aim to restore gum health, enhance aesthetics, and prevent future complications.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage5}
       />
 
       <ServiceDetails

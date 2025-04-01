@@ -25,7 +25,7 @@ export default function OurServices({
         {ourServicesData.map(({ service, imageSrc, url }) => (
           <div key={service}>
             <div className="w-full height-[492px] flex flex-col gap-[20px]">
-              <img src={imageSrc} alt={`${service} image`} />
+              <img src={imageSrc}  alt={`${service} image`} />
               <Link
                 to={url}
                 className="relative transition-all duration-300 ease-in-out text-black hover:text-[#1F385F]"
@@ -77,7 +77,7 @@ export default function OurServices({
                 {index === service && showImage && (
                   <motion.img
                     key={service}
-                    className="md:h-[400px] md:w-[275px] absolute right-20 top-[-100%] rotate-12 z-20"
+                    className="md:h-[400px] md:w-[275px] absolute right-20 top-[-100%] rotate-12 z-20 object-cover"
                     src={imageSrc}
                     initial={{ opacity: 0.5, scale: 0, rotate: 0 }}
                     animate={{ opacity: 1, scale: 1, rotate }}

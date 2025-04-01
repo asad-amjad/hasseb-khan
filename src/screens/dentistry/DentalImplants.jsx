@@ -14,6 +14,10 @@ import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 
+import introImage2 from "../../assets/dental/intro2.png";
+import dentalImplantsImage from "../../assets/dental/banner-dental-implants.png";
+// 
+
 const DentalImplants = () => {
   return (
     <>
@@ -25,7 +29,7 @@ const DentalImplants = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={bannerImage}
+          src={dentalImplantsImage}
           alt="image"
         />
       </div>
@@ -36,7 +40,7 @@ const DentalImplants = () => {
         descriptions={[
           "Dental implants are a highly effective and durable solution for replacing missing teeth. They consist of titanium posts that are surgically placed into the jawbone, acting as artificial tooth roots. Once healed, they are topped with crowns or bridges, providing a natural appearance and functionality. Implants are known for their longevity, stability, and ability to preserve jawbone health.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage2}
       />
 
       <ServiceDetails

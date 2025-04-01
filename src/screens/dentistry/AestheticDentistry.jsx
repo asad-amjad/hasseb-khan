@@ -14,6 +14,9 @@ import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 
+
+import introImage1 from "../../assets/dental/intro1.png";
+
 import bannerImage from "../../assets/about-us/banner.jpeg";
 
 const AestheticDentistry = () => {
@@ -38,7 +41,7 @@ const AestheticDentistry = () => {
         descriptions={[
           "Aesthetic Dentistry at Primed is dedicated to enhancing your smile’s appearance and health. Our team of experts utilizes innovative techniques and high-quality materials to achieve stunning, natural results. Whether you desire subtle improvements or a dramatic transformation, we ensure a comfortable and personalized journey.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage1}
       />
 
       <ServiceDetails

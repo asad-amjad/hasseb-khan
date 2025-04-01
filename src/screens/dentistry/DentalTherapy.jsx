@@ -1,5 +1,4 @@
 import React from "react";
-// import { useNavigate } from "react-router-dom";
 
 import PageHero from "../../components/hero-section/PageHero";
 import ConsultationForm from "../../components/consultation-form/ConsultationForm";
@@ -10,9 +9,16 @@ import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 
 // Assets
-
 import bannerImage from "../../assets/dental/banner.png";
 import introImage from "../../assets/dental/intro.png";
+import introImage7 from "../../assets/dental/intro7.png";
+
+// import dentalImplantsImage from "../assets/dental/banner-dental-implants.png";
+import dentalTherapyImage from "../../assets/dental/banner-dental-therapy.png";
+// import orthodonticsImage from "../assets/dental/banner-orthodontics.png";
+// import periodonticsImage from "../assets/dental/banner-periodontics.png";
+// import restorativeTreatmentsImage from "../assets/dental/banner-restorative-treatments.png";
+// import surgicalProceduresImage from "../assets/dental/banner-surgical-procedures.png";
 
 const DentalTherapy = () => {
   return (
@@ -25,7 +31,7 @@ const DentalTherapy = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={bannerImage}
+          src={dentalTherapyImage}
           alt="image"
         />
       </div>
@@ -36,7 +42,7 @@ const DentalTherapy = () => {
         descriptions={[
           "Dental therapy addresses functional and aesthetic concerns through targeted treatments aimed at pain relief, muscle relaxation, and dental protection. With advanced techniques like masseter Botox and customized night guards, we enhance oral health and improve quality of life.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage7}
       />
 
       <ServiceDetails

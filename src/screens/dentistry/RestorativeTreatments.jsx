@@ -13,6 +13,9 @@ import introImage from "../../assets/dental/intro.png";
 import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
+import introImage4 from "../../assets/dental/intro4.png";
+import restorativeTreatmentsImage from "../../assets/dental/banner-restorative-treatments.png";
+
 
 const RestorativeTreatments = () => {
   return (
@@ -25,7 +28,7 @@ const RestorativeTreatments = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={bannerImage}
+          src={restorativeTreatmentsImage}
           alt="image"
         />
       </div>
@@ -36,7 +39,7 @@ const RestorativeTreatments = () => {
         descriptions={[
           "Restorative treatments are essential for repairing and saving damaged teeth, restoring their natural function and appearance. Whether through root canals, fillings, or advanced composite techniques, our procedures are designed to preserve oral health, prevent further damage, and enhance aesthetics.",
         ]}
-        imageSrc={introImage}
+        imageSrc={introImage4}
       />
 
       <ServiceDetails

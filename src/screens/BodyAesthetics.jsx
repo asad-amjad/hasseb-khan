@@ -9,11 +9,21 @@ import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../constants";
 
 // Assets
 import bannerImage from "../assets/body-aesthetics/banner.png";
 import intro from "../assets/body-aesthetics/intro.png";
-import { storiesData } from "../../constants";
+
+import image1 from "../assets/body-aesthetics/1.png";
+import image2 from "../assets/body-aesthetics/2.png";
+import image3 from "../assets/body-aesthetics/3.png";
+import image4 from "../assets/body-aesthetics/4.png";
+import image5 from "../assets/body-aesthetics/5.png";
+import image6 from "../assets/body-aesthetics/6.png";
+import image7 from "../assets/body-aesthetics/7.png";
+import image8 from "../assets/body-aesthetics/8.png";
+import image9 from "../assets/body-aesthetics/9.png";
 
 const BodyAesthetics = () => {
   const navigate = useNavigate();
@@ -60,55 +70,55 @@ const BodyAesthetics = () => {
           {
             rotate: 12,
             service: "Abdominoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image1,
             url: "/body-aesthetics/abdominoplasty",
           },
           {
             rotate: -12,
             service: "360 Abdominoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image2,
             url: "/body-aesthetics/360-abdominoplasty",
           },
           {
             rotate: 12,
             service: "Mini Abdominoplasty",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image3,
             url: "/body-aesthetics/mini-abdominoplasty",
           },
           {
             rotate: -12,
             service: "Arm lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image4,
             url: "/body-aesthetics/arm-lift",
           },
           {
             rotate: 12,
             service: "Back lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image5,
             url: "/body-aesthetics/back-lift",
           },
           {
             rotate: -12,
             service: "Thigh lift",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image6,
             url: "/body-aesthetics/thigh-lift",
           },
           {
             rotate: 12,
             service: "Gynecomastia",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image7,
             url: "/body-aesthetics/gynecomastia",
           },
           {
             rotate: -12,
             service: "Vaser Liposuction (1 region)",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image8,
             url: "/body-aesthetics/vaser-liposuction",
           },
           {
             rotate: 12,
             service: "BBL",
-            imageSrc: "https://placehold.co/341x511",
+            imageSrc: image9,
             url: "/body-aesthetics/bbl",
           },
         ]}

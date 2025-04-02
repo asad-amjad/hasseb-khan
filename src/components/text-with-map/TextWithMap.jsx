@@ -16,15 +16,15 @@ const TextWithMap = ({
   reverse = false,
 }) => {
   const contactDetails = [
-    { icon: <PhoneIcon fill="black" />, text: "(+971) 52 123 4567" },
-    { icon: <MailIcon fill="black" />, text: "info@primemedistanbul.com" },
+    { icon: <PhoneIcon fill="black" />, text: "+44 745 9360 750" },
+    { icon: <MailIcon fill="black" />, text: "infor@infor.com" },
     {
       icon: <LocationIcon fill="black" />,
-      text: "123 Street, Dubai, United Arab Emirates",
+      text: "123,street 1234, 3745 Istanbul",
     },
     {
       icon: <TimeIcon fill="black" />,
-      text: "Hours: Mon-Fri, 8:00 AM - 6:00 PM",
+      text: "Hours: Mon-Fri, 8:00 AM - 20:00 PM",
     },
   ];
 

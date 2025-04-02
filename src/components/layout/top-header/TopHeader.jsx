@@ -19,11 +19,11 @@ export default function TopHeader() {
       <div className="hidden md:flex gap-[80px] items-center">
         <div className="flex items-center justify-center gap-2">
           <PhoneIcon />
-          <p className="small text-[#FFF]">+971 62 123 4567</p>
+          <p className="small text-[#FFF]">(+971) 52 123 4567</p>
         </div>
         <div className="flex items-center justify-center gap-2">
           <MailIcon />
-          <p className="small text-[#FFF]">info@domainname.com</p>
+          <p className="small text-[#FFF]">info@primemedistanbul.com</p>
         </div>
       </div>
 

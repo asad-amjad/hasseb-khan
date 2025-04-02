@@ -1,24 +1,24 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PageHero from "../../components/hero-section/PageHero";
-import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
-import ConsultationForm from "../../components/consultation-form/ConsultationForm";
-import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
-import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
+import PageHero from "../components/hero-section/PageHero";
+import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
+import ConsultationForm from "../components/consultation-form/ConsultationForm";
+import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
+import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
 
 // Assets
 // import bannerImage from "../../assets/dental/banner.png";
-import introImage from "../../assets/breast-aesthetics/intro.png";
-import { storiesData } from "../../../constants";
-import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
-import ServiceDetails from "../../components/service-details/ServiceDetails";
-import introImage6 from "../../assets/dental/intro6.png";
+import introImage from "../assets/breast-aesthetics/intro.png";
+import { storiesData } from "../../constants";
+// import IntroWithImage from "../components/intro-with-image/IntroWithImage";
+import ServiceDetails from "../components/service-details/ServiceDetails";
+// import introImage6 from "../../assets/dental/intro6.png";
 
 // import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
-import orthodonticsImage from "../../assets/breast-aesthetics/banner.png";
-import TextWithImage from "../../components/text-with-image/TextWithImage";
-import OfferSection from "../../components/offer-section/OfferSection";
+import orthodonticsImage from "../assets/breast-aesthetics/banner.png";
+import TextWithImage from "../components/text-with-image/TextWithImage";
+import OfferSection from "../components/offer-section/OfferSection";
 
 const BreastAesthetics = () => {
   return (

@@ -1,32 +1,32 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PageHero from "../../components/hero-section/PageHero";
-import OurServices from "../../components/our-services/OurServices";
-import OfferSection from "../../components/offer-section/OfferSection";
-import TextWithImage from "../../components/text-with-image/TextWithImage";
-import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
-import ConsultationForm from "../../components/consultation-form/ConsultationForm";
-import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
-import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
+import PageHero from "../components/hero-section/PageHero";
+import OurServices from "../components/our-services/OurServices";
+import OfferSection from "../components/offer-section/OfferSection";
+import TextWithImage from "../components/text-with-image/TextWithImage";
+import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
+import ConsultationForm from "../components/consultation-form/ConsultationForm";
+import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
+import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
 
 // Assets
-import bannerImage from "../../assets/facial-aesthetics/banner.png";
-import intro from "../../assets/facial-aesthetics/intro.png";
-import { storiesData } from "../../../constants";
+import bannerImage from "../assets/facial-aesthetics/banner.png";
+import intro from "../assets/facial-aesthetics/intro.png";
+import { storiesData } from "../../constants";
 
-import image1 from "../../assets/facial-aesthetics/1.png";
-import image2 from "../../assets/facial-aesthetics/2.png";
-import image3 from "../../assets/facial-aesthetics/3.png";
-import image4 from "../../assets/facial-aesthetics/4.png";
-import image5 from "../../assets/facial-aesthetics/5.png";
-import image6 from "../../assets/facial-aesthetics/6.png";
-import image7 from "../../assets/facial-aesthetics/7.png";
-import image8 from "../../assets/facial-aesthetics/8.png";
-import image9 from "../../assets/facial-aesthetics/9.png";
-import image10 from "../../assets/facial-aesthetics/10.png";
-import image11 from "../../assets/facial-aesthetics/11.png";
-import image12 from "../../assets/facial-aesthetics/12.png";
+import image1 from "../assets/facial-aesthetics/1.png";
+// import image2 from "../../assets/facial-aesthetics/2.png";
+// import image3 from "../../assets/facial-aesthetics/3.png";
+// import image4 from "../../assets/facial-aesthetics/4.png";
+import image5 from "../assets/facial-aesthetics/5.png";
+// import image6 from "../../assets/facial-aesthetics/6.png";
+import image7 from "../assets/facial-aesthetics/7.png";
+import image8 from "../assets/facial-aesthetics/8.png";
+// import image9 from "../../assets/facial-aesthetics/9.png";
+// import image10 from "../../assets/facial-aesthetics/10.png";
+// import image11 from "../../assets/facial-aesthetics/11.png";
+// import image12 from "../../assets/facial-aesthetics/12.png";
 
 const FacialAesthetics = () => {
   const navigate = useNavigate();
@@ -74,27 +74,27 @@ const FacialAesthetics = () => {
             rotate: 12,
             service: "Lift",
             imageSrc: image1,
-            url: "/aesthetics/facial-aesthetics/lift",
+            url: "/facial-aesthetics/lift",
           },
 
           {
             rotate: 12,
             service: "Blepharoplasty",
             imageSrc: image5,
-            url: "/aesthetics/facial-aesthetics/blepharoplasty",
+            url: "/facial-aesthetics/blepharoplasty",
           },
 
           {
             rotate: 12,
             service: "Rhinoplasty",
             imageSrc: image7,
-            url: "/aesthetics/facial-aesthetics/rhinoplasty",
+            url: "/facial-aesthetics/rhinoplasty",
           },
           {
             rotate: -12,
             service: "Chin Implant",
             imageSrc: image8,
-            url: "/aesthetics/facial-aesthetics/chin-implant",
+            url: "/facial-aesthetics/chin-implant",
           },
         ]}
       />

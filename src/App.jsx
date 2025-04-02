@@ -20,23 +20,23 @@ import Orthodontics from "./screens/dentistry/Orthodontics";
 import DentalTherapy from "./screens/dentistry/DentalTherapy";
 
 // Aesthetics Sub-screens
-import FacialAesthetics from "./screens/aesthetics/FacialAesthetics";
-import BodyAesthetics from "./screens/aesthetics/BodyAesthetics";
-import BreastAesthetics from "./screens/aesthetics/BreastAesthetics";
-import GenitalAesthetics from "./screens/aesthetics/GenitalAesthetics";
+import FacialAesthetics from "./screens/FacialAesthetics";
+import BodyAesthetics from "./screens/BodyAesthetics";
+import BreastAesthetics from "./screens/BreastAesthetics";
+import GenitalAesthetics from "./screens/GenitalAesthetics";
 
 // Body Aesthetics
-import Lift from "./screens/aesthetics/body-aesthetics/Lift";
-import Abdominoplasty from "./screens/aesthetics/body-aesthetics/Abdominoplasty";
-import Gynecomastia from "./screens/aesthetics/body-aesthetics/Gynecomastia";
-import LaserLiposuction from "./screens/aesthetics/body-aesthetics/LaserLiposuction";
-import Bbl from "./screens/aesthetics/body-aesthetics/Bbl";
+import Lift from "./screens/body-aesthetics/Lift";
+import Abdominoplasty from "./screens/body-aesthetics/Abdominoplasty";
+import Gynecomastia from "./screens/body-aesthetics/Gynecomastia";
+import LaserLiposuction from "./screens/body-aesthetics/LaserLiposuction";
+import Bbl from "./screens/body-aesthetics/Bbl";
 
 // Facial Aesthetics
-import FacialLift from "./screens/aesthetics/facial-aesthetics/LiftList";
-import Blepharoplasty from "./screens/aesthetics/facial-aesthetics/Blepharoplasty";
-import Rhinoplasty from "./screens/aesthetics/facial-aesthetics/Rhinoplasty";
-import ChinImplant from "./screens/aesthetics/facial-aesthetics/ChinImplant";
+import FacialLift from "./screens/facial-aesthetics/LiftList";
+import Blepharoplasty from "./screens/facial-aesthetics/Blepharoplasty";
+import Rhinoplasty from "./screens/facial-aesthetics/Rhinoplasty";
+import ChinImplant from "./screens/facial-aesthetics/ChinImplant";
 
 // Utilities and Components
 import ScrollToTop from "./utils/ScrollToTop";
@@ -62,37 +62,67 @@ const routes = createBrowserRouter([
         path: "/schedule-free-consultation",
         element: <ScheduleFreeConsultation />,
       },
-      
+
       // Aesthetics Routes
       { path: "/aesthetics", element: <Aesthetics /> },
-      
+
       // Body Aesthetics
-      { path: "/aesthetics/body-aesthetics", element: <BodyAesthetics /> },
-      { path: "/aesthetics/body-aesthetics/lift", element: <Lift /> },
-      { path: "/aesthetics/body-aesthetics/abdominoplasty", element: <Abdominoplasty /> },
-      { path: "/aesthetics/body-aesthetics/gynecomastia", element: <Gynecomastia /> },
-      { path: "/aesthetics/body-aesthetics/laser-liposuction", element: <LaserLiposuction /> },
-      { path: "/aesthetics/body-aesthetics/bbl", element: <Bbl /> },
-      
+      { path: "/body-aesthetics", element: <BodyAesthetics /> },
+      { path: "/body-aesthetics/lift", element: <Lift /> },
+      {
+        path: "/body-aesthetics/abdominoplasty",
+        element: <Abdominoplasty />,
+      },
+      {
+        path: "/body-aesthetics/gynecomastia",
+        element: <Gynecomastia />,
+      },
+      {
+        path: "/body-aesthetics/laser-liposuction",
+        element: <LaserLiposuction />,
+      },
+      { path: "/body-aesthetics/bbl", element: <Bbl /> },
+
       // Breast Aesthetics
-      { path: "/aesthetics/breast-aesthetics", element: <BreastAesthetics /> },
-      
+      { path: "/breast-aesthetics", element: <BreastAesthetics /> },
+
       // Genital Aesthetics
-      { path: "/aesthetics/genital-aesthetics", element: <GenitalAesthetics /> },
-      
+      {
+        path: "/genital-aesthetics",
+        element: <GenitalAesthetics />,
+      },
+
       // Facial Aesthetics
-      { path: "/aesthetics/facial-aesthetics", element: <FacialAesthetics /> },
-      { path: "/aesthetics/facial-aesthetics/lift", element: <FacialLift /> },
-      { path: "/aesthetics/facial-aesthetics/blepharoplasty", element: <Blepharoplasty /> },
-      { path: "/aesthetics/facial-aesthetics/rhinoplasty", element: <Rhinoplasty /> },
-      { path: "/aesthetics/facial-aesthetics/chin-implant", element: <ChinImplant /> },
-      
+      { path: "/facial-aesthetics", element: <FacialAesthetics /> },
+      { path: "/facial-aesthetics/lift", element: <FacialLift /> },
+      {
+        path: "/facial-aesthetics/blepharoplasty",
+        element: <Blepharoplasty />,
+      },
+      {
+        path: "/facial-aesthetics/rhinoplasty",
+        element: <Rhinoplasty />,
+      },
+      {
+        path: "/facial-aesthetics/chin-implant",
+        element: <ChinImplant />,
+      },
+
       // Dentistry Routes
       { path: "/dentistry", element: <Dentistry /> },
-      { path: "/dentistry/aesthetic-dentistry", element: <AestheticDentistry /> },
+      {
+        path: "/dentistry/aesthetic-dentistry",
+        element: <AestheticDentistry />,
+      },
       { path: "/dentistry/dental-implants", element: <DentalImplants /> },
-      { path: "/dentistry/surgical-procedures", element: <SurgicalProcedures /> },
-      { path: "/dentistry/restorative-treatments", element: <RestorativeTreatments /> },
+      {
+        path: "/dentistry/surgical-procedures",
+        element: <SurgicalProcedures />,
+      },
+      {
+        path: "/dentistry/restorative-treatments",
+        element: <RestorativeTreatments />,
+      },
       { path: "/dentistry/periodontics", element: <Periodontics /> },
       { path: "/dentistry/orthodontics", element: <Orthodontics /> },
       { path: "/dentistry/dental-therapy", element: <DentalTherapy /> },

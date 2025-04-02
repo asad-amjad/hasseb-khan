@@ -1,31 +1,31 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PageHero from "../../components/hero-section/PageHero";
-import OurServices from "../../components/our-services/OurServices";
-import OfferSection from "../../components/offer-section/OfferSection";
-import TextWithImage from "../../components/text-with-image/TextWithImage";
-import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
-import ConsultationForm from "../../components/consultation-form/ConsultationForm";
-import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
-import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
-import { storiesData } from "../../../constants";
+import PageHero from "../components/hero-section/PageHero";
+import OurServices from "../components/our-services/OurServices";
+import OfferSection from "../components/offer-section/OfferSection";
+import TextWithImage from "../components/text-with-image/TextWithImage";
+import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
+import ConsultationForm from "../components/consultation-form/ConsultationForm";
+import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
+import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../constants";
 
 // Assets
 // import bannerImage from "../../assets/body-aesthetics/banner.png";
-import bannerImage from "../../assets/genital-aesthetic/banner.png";
-import intro from "../../assets/genital-aesthetic/intro.png";
+import bannerImage from "../assets/genital-aesthetic/banner.png";
+import intro from "../assets/genital-aesthetic/intro.png";
 
-import image1 from "../../assets/body-aesthetics/1.png";
-import image2 from "../../assets/body-aesthetics/2.png";
-import image3 from "../../assets/body-aesthetics/3.png";
-import image4 from "../../assets/body-aesthetics/4.png";
-import image5 from "../../assets/body-aesthetics/5.png";
-import image6 from "../../assets/body-aesthetics/6.png";
-import image7 from "../../assets/body-aesthetics/7.png";
-import image8 from "../../assets/body-aesthetics/8.png";
-import image9 from "../../assets/body-aesthetics/9.png";
-import ServiceDetails from "../../components/service-details/ServiceDetails";
+// import image1 from "../../assets/body-aesthetics/1.png";
+// import image2 from "../../assets/body-aesthetics/2.png";
+// import image3 from "../../assets/body-aesthetics/3.png";
+// import image4 from "../../assets/body-aesthetics/4.png";
+// import image5 from "../../assets/body-aesthetics/5.png";
+// import image6 from "../../assets/body-aesthetics/6.png";
+// import image7 from "../../assets/body-aesthetics/7.png";
+// import image8 from "../../assets/body-aesthetics/8.png";
+// import image9 from "../../assets/body-aesthetics/9.png";
+import ServiceDetails from "../components/service-details/ServiceDetails";
 
 const GenitalAesthetics = () => {
   const navigate = useNavigate();
@@ -94,14 +94,12 @@ const GenitalAesthetics = () => {
           {
             heading: "Week 2-3",
             // title: "",
-            description:
-              "Swelling reduces, early shape improvements visible.",
+            description: "Swelling reduces, early shape improvements visible.",
           },
           {
             heading: "Week 4-6",
             // title: "",
-            description:
-              "Noticeable aesthetic and functional enhancement.",
+            description: "Noticeable aesthetic and functional enhancement.",
           },
         ]}
       />

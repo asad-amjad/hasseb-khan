@@ -71,25 +71,25 @@ const Aesthetics = () => {
             rotate: 12,
             service: "Body Aesthetics",
             imageSrc: image1,
-            url: "/aesthetics/body-aesthetics",
+            url: "/body-aesthetics",
           },
           {
             rotate: -12,
             service: "Breast Aesthetics",
             imageSrc: image2,
-            url: "/aesthetics/breast-aesthetics",
+            url: "/breast-aesthetics",
           },
           {
             rotate: 12,
             service: "Genital Aesthetics",
             imageSrc: image3,
-            url: "/aesthetics/genital-aesthetics",
+            url: "/genital-aesthetics",
           },
           {
             rotate: -12,
             service: "Facial Aesthetics",
             imageSrc: image4,
-            url: "/aesthetics/facial-aesthetics",
+            url: "/facial-aesthetics",
           },
         ]}
       />

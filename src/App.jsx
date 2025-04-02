@@ -21,23 +21,23 @@ import Orthodontics from "./screens/dentistry/Orthodontics";
 import DentalTherapy from "./screens/dentistry/DentalTherapy";
 
 // Aesthetics Sub-screens
-import FacialAesthetics from "./screens/aesthetics/FacialAesthetics.jsx";
-import BodyAesthetics from "./screens/aesthetics/BodyAesthetics.jsx";
-import BreastAesthetics from "./screens/aesthetics/BreastAesthetics.jsx";
-import GenitalAesthetics from "./screens/aesthetics/GenitalAesthetics.jsx";
+import FacialAesthetics from "./screens/aesthetics/FacialAesthetics";
+import BodyAesthetics from "./screens/aesthetics/BodyAesthetics";
+import BreastAesthetics from "./screens/aesthetics/BreastAesthetics";
+import GenitalAesthetics from "./screens/aesthetics/GenitalAesthetics";
 
 // Body Aesthetics
-import Lift from "./screens/aesthetics/body-aesthetics/Lift.jsx";
-import Abdominoplasty from "./screens/aesthetics/body-aesthetics/abdominoplasty.jsx";
-import Gynecomastia from "./screens/aesthetics/body-aesthetics/Gynecomastia.jsx";
-import LaserLiposuction from "./screens/aesthetics/body-aesthetics/LaserLiposuction.jsx";
+import Lift from "./screens/aesthetics/body-aesthetics/Lift";
+import Abdominoplasty from "./screens/aesthetics/body-aesthetics/abdominoplasty";
+import Gynecomastia from "./screens/aesthetics/body-aesthetics/Gynecomastia";
+import LaserLiposuction from "./screens/aesthetics/body-aesthetics/LaserLiposuction";
 import Bbl from "./screens/aesthetics/body-aesthetics/Bbl.jsx";
 
 // Facial Aesthetics
-import FacialLift from "./screens/aesthetics/facial-aesthetics/LiftList.jsx";
-import Blepharoplasty from "./screens/aesthetics/facial-aesthetics/Blepharoplasty.jsx";
-import Rhinoplasty from "./screens/aesthetics/facial-aesthetics/Rhinoplasty.jsx";
-import ChinImplant from "./screens/aesthetics/facial-aesthetics/ChinImplant.jsx";
+import FacialLift from "./screens/aesthetics/facial-aesthetics/LiftList";
+import Blepharoplasty from "./screens/aesthetics/facial-aesthetics/Blepharoplasty";
+import Rhinoplasty from "./screens/aesthetics/facial-aesthetics/Rhinoplasty";
+import ChinImplant from "./screens/aesthetics/facial-aesthetics/ChinImplant";
 
 // Utilities and Components
 import ScrollToTop from "./utils/ScrollToTop";

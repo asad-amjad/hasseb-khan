@@ -7,7 +7,7 @@ import ContactUs from "./screens/ContactUs";
 import ScheduleFreeConsultation from "./screens/ScheduleFreeConsultation";
 
 // Category Screens
-import Dentistry from "./screens/Dentistry.jsx";
+import Dentistry from "./screens/Dentistry";
 import Aesthetics from "./screens/Aesthetics";
 
 // Dentistry Sub-screens
@@ -30,7 +30,7 @@ import Lift from "./screens/aesthetics/body-aesthetics/Lift";
 import Abdominoplasty from "./screens/aesthetics/body-aesthetics/Abdominoplasty";
 import Gynecomastia from "./screens/aesthetics/body-aesthetics/Gynecomastia";
 import LaserLiposuction from "./screens/aesthetics/body-aesthetics/LaserLiposuction";
-import Bbl from "./screens/aesthetics/body-aesthetics/Bbl.jsx";
+import Bbl from "./screens/aesthetics/body-aesthetics/Bbl";
 
 // Facial Aesthetics
 import FacialLift from "./screens/aesthetics/facial-aesthetics/LiftList";

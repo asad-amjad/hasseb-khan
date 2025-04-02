@@ -10,7 +10,6 @@ export default function StoryCard({ item }) {
             <img
               src={item.image}
               alt="review-pfp"
-              Ensures it follows parent dragging
               className="w-[70px] h-[70px] rounded-full object-cover"
             />
             <div className="flex flex-col justify-start items-start space-y-[10px] ">

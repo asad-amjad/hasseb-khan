@@ -1,29 +1,29 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import PageHero from "../components/hero-section/PageHero";
-import OurServices from "../components/our-services/OurServices";
-import OfferSection from "../components/offer-section/OfferSection";
-import TextWithImage from "../components/text-with-image/TextWithImage";
-import ScrollTimeline from "../components/scroll-timeline/ScrollTimeline";
-import ConsultationForm from "../components/consultation-form/ConsultationForm";
-import HorizontalStories from "../components/horizontal-stories/HorizontalStories";
-import ImageComparisonSlider from "../components/image-comparison-slider/ImageComparisonSlider";
-import { storiesData } from "../../constants";
+import PageHero from "../../components/hero-section/PageHero";
+import OurServices from "../../components/our-services/OurServices";
+import OfferSection from "../../components/offer-section/OfferSection";
+import TextWithImage from "../../components/text-with-image/TextWithImage";
+import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
+import ConsultationForm from "../../components/consultation-form/ConsultationForm";
+import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
+import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../../constants";
 
 // Assets
-import bannerImage from "../assets/body-aesthetics/banner.png";
-import intro from "../assets/body-aesthetics/intro.png";
+import bannerImage from "../../assets/body-aesthetics/banner.png";
+import intro from "../../assets/body-aesthetics/intro.png";
 
-import image1 from "../assets/body-aesthetics/1.png";
-import image2 from "../assets/body-aesthetics/2.png";
-import image3 from "../assets/body-aesthetics/3.png";
-import image4 from "../assets/body-aesthetics/4.png";
-import image5 from "../assets/body-aesthetics/5.png";
-import image6 from "../assets/body-aesthetics/6.png";
-import image7 from "../assets/body-aesthetics/7.png";
-import image8 from "../assets/body-aesthetics/8.png";
-import image9 from "../assets/body-aesthetics/9.png";
+import image1 from "../../assets/body-aesthetics/1.png";
+import image2 from "../../assets/body-aesthetics/2.png";
+import image3 from "../../assets/body-aesthetics/3.png";
+import image4 from "../../assets/body-aesthetics/4.png";
+import image5 from "../../assets/body-aesthetics/5.png";
+import image6 from "../../assets/body-aesthetics/6.png";
+import image7 from "../../assets/body-aesthetics/7.png";
+import image8 from "../../assets/body-aesthetics/8.png";
+import image9 from "../../assets/body-aesthetics/9.png";
 
 const BodyAesthetics = () => {
   const navigate = useNavigate();
@@ -71,55 +71,33 @@ const BodyAesthetics = () => {
             rotate: 12,
             service: "Abdominoplasty",
             imageSrc: image1,
-            url: "/body-aesthetics/abdominoplasty",
+            url: "/aesthetics/body-aesthetics/abdominoplasty",
           },
+
           {
             rotate: -12,
-            service: "360 Abdominoplasty",
-            imageSrc: image2,
-            url: "/body-aesthetics/360-abdominoplasty",
-          },
-          {
-            rotate: 12,
-            service: "Mini Abdominoplasty",
-            imageSrc: image3,
-            url: "/body-aesthetics/mini-abdominoplasty",
-          },
-          {
-            rotate: -12,
-            service: "Arm lift",
+            service: "Lift",
             imageSrc: image4,
-            url: "/body-aesthetics/arm-lift",
+            url: "/aesthetics/body-aesthetics/lift",
           },
-          {
-            rotate: 12,
-            service: "Back lift",
-            imageSrc: image5,
-            url: "/body-aesthetics/back-lift",
-          },
-          {
-            rotate: -12,
-            service: "Thigh lift",
-            imageSrc: image6,
-            url: "/body-aesthetics/thigh-lift",
-          },
+
           {
             rotate: 12,
             service: "Gynecomastia",
             imageSrc: image7,
-            url: "/body-aesthetics/gynecomastia",
+            url: "/aesthetics/body-aesthetics/gynecomastia",
           },
           {
             rotate: -12,
-            service: "Vaser Liposuction (1 region)",
+            service: "Laser Liposuction (1 region)",
             imageSrc: image8,
-            url: "/body-aesthetics/vaser-liposuction",
+            url: "/aesthetics/body-aesthetics/laser-liposuction",
           },
           {
             rotate: 12,
             service: "BBL",
             imageSrc: image9,
-            url: "/body-aesthetics/bbl",
+            url: "/aesthetics/body-aesthetics/bbl",
           },
         ]}
       />

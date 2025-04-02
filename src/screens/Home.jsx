@@ -13,7 +13,6 @@ import TextAndDescription from "../components/text-and-description/TextAndDescri
 //assets
 import intro from "../assets/home/intro.png";
 import { services, storiesData } from "../../constants";
-// import ParallaxImageScroll from "../components/ParallaxImageScroll";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -48,7 +47,7 @@ const Home = () => {
           <ScrollingText direction="right" />
         </div>
       </div>
-      {/* <ParallaxImageScroll/> */}
+      
       {/* Our Services */}
       <OurServices
         title="Our Services"

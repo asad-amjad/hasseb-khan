@@ -10,7 +10,7 @@ export default function StoryCard({ item }) {
           alt="review-pfp"
           className="w-full h-full object-cover rounded-md pointer-events-none min-w-[279px] max-h-[256px]"
           drag="x"
-          dragPropagation={true} // Ensures it follows parent dragging
+          dragPropagation={true} 
         />
 
         <div className="flex flex-col justify-start items-start space-y-[4px] mt-[16px] touch-none">

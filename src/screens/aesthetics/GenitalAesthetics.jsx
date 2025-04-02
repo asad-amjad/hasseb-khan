@@ -2,22 +2,33 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 import PageHero from "../../components/hero-section/PageHero";
+import OurServices from "../../components/our-services/OurServices";
+import OfferSection from "../../components/offer-section/OfferSection";
+import TextWithImage from "../../components/text-with-image/TextWithImage";
 import ScrollTimeline from "../../components/scroll-timeline/ScrollTimeline";
 import ConsultationForm from "../../components/consultation-form/ConsultationForm";
 import HorizontalStories from "../../components/horizontal-stories/HorizontalStories";
 import ImageComparisonSlider from "../../components/image-comparison-slider/ImageComparisonSlider";
+import { storiesData } from "../../../constants";
 
 // Assets
-import bannerImage from "../../assets/dental/banner.png";
-import introImage from "../../assets/dental/intro.png";
-import { storiesData } from "../../../constants";
-import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
-import ServiceDetails from "../../components/service-details/ServiceDetails";
-import introImage6 from "../../assets/dental/intro6.png";
+// import bannerImage from "../../assets/body-aesthetics/banner.png";
+import bannerImage from "../../assets/genital-aesthetic/banner.png";
+import intro from "../../assets/genital-aesthetic/intro.png";
 
-import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
+import image1 from "../../assets/body-aesthetics/1.png";
+import image2 from "../../assets/body-aesthetics/2.png";
+import image3 from "../../assets/body-aesthetics/3.png";
+import image4 from "../../assets/body-aesthetics/4.png";
+import image5 from "../../assets/body-aesthetics/5.png";
+import image6 from "../../assets/body-aesthetics/6.png";
+import image7 from "../../assets/body-aesthetics/7.png";
+import image8 from "../../assets/body-aesthetics/8.png";
+import image9 from "../../assets/body-aesthetics/9.png";
+import ServiceDetails from "../../components/service-details/ServiceDetails";
 
 const GenitalAesthetics = () => {
+  const navigate = useNavigate();
   return (
     <>
       {/* Video Hero section */}
@@ -25,21 +36,34 @@ const GenitalAesthetics = () => {
         title="Genital Aesthetics"
         description="Enhance comfort, confidence, and function with advanced genital aesthetic procedures designed to improve appearance, symmetry, and overall well-being."
       />
-      <div className="md:pt-[100px]">
-        <img
-          className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={orthodonticsImage}
-          alt="image"
-        />
-      </div>
 
-      <IntroWithImage
-        badge="Introduction"
-        title="About Orthodontics"
+      <OfferSection
+        imageSrc={bannerImage}
+        tagText="What we offer"
+        title="Personalized Care for Confidence & Comfort"
+        description="Our expert procedures focus on aesthetic enhancement and functional improvements, ensuring natural-looking results with minimal downtime and maximum satisfaction."
+        buttonText="Schedule Free Consultation"
+        onButtonClick={() => navigate("/schedule-free-consultation")}
+      />
+
+      <TextWithImage
+        badge="Why Genital Aesthetics"
+        title="Benefits of Genital Aesthetics"
         descriptions={[
-          "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
+          "Enhance aesthetics and function with tailored treatments that improve confidence, comfort, and overall intimate well-being.",
         ]}
-        imageSrc={introImage6}
+        buttonText="Schedule Free Consultation"
+        buttonAction={() => navigate("/schedule-free-consultation")}
+        imageSrc={intro}
+        imageAlt="Facial Aesthetics"
+        items={[
+          "Improved Appearance – Enhances symmetry and aesthetics.",
+          "Boosted Confidence – Feel comfortable in your skin.",
+          "Functional Enhancement – Improves comfort and sensation.",
+          "Minimally Invasive – Quick procedures, faster recovery.",
+          "Custom Treatment Plans – Tailored to individual needs.",
+          "Long-Lasting Results – Sustainable improvements over time.",
+        ]}
       />
 
       <ServiceDetails
@@ -54,7 +78,31 @@ const GenitalAesthetics = () => {
             service: "Labium Fat Grafting",
             description:
               "Lorem A clear aligner system that gradually shifts teeth into the desired position without the need for metal brackets or wires. Invisalign offers comfort, convenience, and a virtually invisible solution for achieving a straighter smile.",
-          }
+          },
+        ]}
+      />
+
+      <ScrollTimeline
+        title="When will I see results?"
+        timelineData={[
+          {
+            heading: "Week 1",
+            // title: "",
+            description:
+              "Mild swelling and sensitivity, initial healing begins.",
+          },
+          {
+            heading: "Week 2-3",
+            // title: "",
+            description:
+              "Swelling reduces, early shape improvements visible.",
+          },
+          {
+            heading: "Week 4-6",
+            // title: "",
+            description:
+              "Noticeable aesthetic and functional enhancement.",
+          },
         ]}
       />
 
@@ -62,9 +110,7 @@ const GenitalAesthetics = () => {
         before="https://placehold.co/1312x642?text=Hello+World"
         after="https://placehold.co/1312x642?text=Hiiiii+World"
       />
-
       <HorizontalStories storiesData={storiesData} />
-
       <ConsultationForm />
     </>
   );

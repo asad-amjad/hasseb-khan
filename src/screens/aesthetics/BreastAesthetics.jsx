@@ -9,37 +9,60 @@ import ImageComparisonSlider from "../../components/image-comparison-slider/Imag
 
 // Assets
 // import bannerImage from "../../assets/dental/banner.png";
-// import introImage from "../../assets/dental/intro.png";
+import introImage from "../../assets/breast-aesthetics/intro.png";
 import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage6 from "../../assets/dental/intro6.png";
 
-import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
+// import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
+import orthodonticsImage from "../../assets/breast-aesthetics/banner.png";
+import TextWithImage from "../../components/text-with-image/TextWithImage";
+import OfferSection from "../../components/offer-section/OfferSection";
 
 const BreastAesthetics = () => {
   return (
     <>
       {/* Video Hero section */}
       <PageHero
-        title="breast aesthetics"
-        description="Our orthodontic treatments offer advanced solutions for teeth alignment and bite correction. From traditional braces to modern Invisalign, we provide tailored options to enhance your smile’s aesthetics and functionality."
+        title="Breast Aesthetics"
+        description="Enhance breast shape, size, and symmetry with advanced aesthetic procedures designed to restore confidence, balance, and a natural, youthful appearance."
       />
-      <div className="md:pt-[100px]">
+      {/* <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
           src={orthodonticsImage}
           alt="image"
         />
-      </div>
+      </div> */}
 
-      <IntroWithImage
-        badge="Introduction"
-        title="About Orthodontics"
+      <OfferSection
+        imageSrc={orthodonticsImage}
+        tagText="What we offer"
+        title="Enhance, Restore & Rejuvenate"
+        description="Our expert breast aesthetic procedures, including augmentation, lifts, and reductions, offer natural-looking results tailored to your unique body goals and confidence needs."
+        buttonText="Schedule Free Consultation"
+        onButtonClick={() => navigate("/schedule-free-consultation")}
+      />
+
+      <TextWithImage
+        badge="Why Breast Aesthetics"
+        title="Benefits of Breast Aesthetics"
         descriptions={[
-          "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
+          "Achieve a balanced, youthful look with customized treatments designed to enhance symmetry, shape, and overall body confidence.",
         ]}
-        imageSrc={introImage6}
+        buttonText="Schedule Free Consultation"
+        buttonAction={() => navigate("/schedule-free-consultation")}
+        imageSrc={introImage}
+        imageAlt="Facial Aesthetics"
+        items={[
+          "Enhanced Shape – Achieve a fuller, sculpted look.",
+          "Improved Symmetry – Balance for a natural appearance.",
+          "Boosted Confidence – Feel comfortable in your skin.",
+          "Customizable Options – Augmentation, lift, or reduction.",
+          "Long-Lasting Results – Sustainable aesthetic improvements.",
+          "Minimal Downtime – Faster recovery, lasting beauty.",
+        ]}
       />
 
       <ServiceDetails

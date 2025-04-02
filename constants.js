@@ -8,11 +8,11 @@ import dentalImage from "./src/assets/dental/intro.png";
 
 export const menuLinks = [
   { label: "About Us", href: "/about-us" },
-  { label: "Aesthetics", href: "/aesthetics" },
-  // { label: "Body Aesthetics", href: "/body-aesthetics" },
-  // { label: "Genital Aesthetics", href: "/genital-aesthetic" },
-  // { label: "Breast Aesthetics", href: "/breast-aesthetics" },
-  // { label: "Facial Aesthetics", href: "/facial-aesthetics" },
+  // { label: "Aesthetics", href: "/aesthetics" },
+  { label: "Body Aesthetics", href: "/aesthetics/body-aesthetics" },
+  { label: "Genital Aesthetics", href: "/aesthetics/genital-aesthetics" },
+  { label: "Breast Aesthetics", href: "/aesthetics/breast-aesthetics" },
+  { label: "Facial Aesthetics", href: "/aesthetics/facial-aesthetics" },
   { label: "Dentistry", href: "/dentistry" },
   { label: "Contact Us", href: "/contact-us" },
 ];

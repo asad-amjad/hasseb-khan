@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
 
 // Main Screens
 import Home from "./screens/Home";
@@ -28,7 +27,7 @@ import GenitalAesthetics from "./screens/aesthetics/GenitalAesthetics";
 
 // Body Aesthetics
 import Lift from "./screens/aesthetics/body-aesthetics/Lift";
-import Abdominoplasty from "./screens/aesthetics/body-aesthetics/abdominoplasty";
+import Abdominoplasty from "./screens/aesthetics/body-aesthetics/Abdominoplasty";
 import Gynecomastia from "./screens/aesthetics/body-aesthetics/Gynecomastia";
 import LaserLiposuction from "./screens/aesthetics/body-aesthetics/LaserLiposuction";
 import Bbl from "./screens/aesthetics/body-aesthetics/Bbl.jsx";
@@ -42,6 +41,8 @@ import ChinImplant from "./screens/aesthetics/facial-aesthetics/ChinImplant";
 // Utilities and Components
 import ScrollToTop from "./utils/ScrollToTop";
 import Layout from "./components/layout/Layout";
+
+import "./App.css";
 
 const routes = createBrowserRouter([
   {

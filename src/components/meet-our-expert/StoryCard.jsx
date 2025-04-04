@@ -8,7 +8,7 @@ export default function StoryCard({ item }) {
         <motion.img
           src={item.image}
           alt="review-pfp"
-          className="w-full h-full object-cover rounded-md pointer-events-none min-w-[279px] max-h-[256px]"
+          className="w-full h-full object-cover rounded-md pointer-events-none min-w-[279px] max-h-[330px]"
           drag="x"
           dragPropagation={true} 
         />

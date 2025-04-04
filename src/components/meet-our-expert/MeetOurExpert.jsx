@@ -55,7 +55,7 @@ export default function MeetOurExpert({ storiesData }) {
         ))}
       </motion.div>
 
-      <div className="w-full bg-white h-1.5 rounded-full overflow-hidden md:mt-[40px]">
+      <div className="w-full bg-white h-1.5 rounded-full overflow-hidden mt-[80px] md:mt-[80px]">
         <div className="h-full bg-primary w-1/5 md:w-1/12 rounded-full"></div>
       </div>
     </div>

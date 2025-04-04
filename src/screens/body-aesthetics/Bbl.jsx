@@ -10,7 +10,7 @@ import { storiesData } from "../../../constants";
 
 // Assets
 // import bannerImage from "../../assets/body-aesthetics/bbl.jpg";
-import introImage from "../../assets/body-aesthetics/bbl-1.jpg";
+// import introImage from "../../assets/body-aesthetics/bbl-1.jpg";
 
 const Bbl = () => {
   return (
@@ -28,14 +28,14 @@ const Bbl = () => {
         />
       </div> */}
 
-      <IntroWithImage
+      {/* <IntroWithImage
         badge="Introduction"
         title="About Orthodontics"
         descriptions={[
           "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
         imageSrc={introImage}
-      />
+      /> */}
 
       <ServiceDetails
         title="Comprehensive Services"

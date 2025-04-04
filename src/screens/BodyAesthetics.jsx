@@ -19,7 +19,7 @@ import bodyLiftImage from "../assets/body-aesthetics/Body Lift-1.jpg";
 import abdominoplastyImage from "../assets/body-aesthetics/abdominoplasty-1.jpg";
 import laserLiposuctionImage from "../assets/body-aesthetics/Laser Liposuction-1.jpg";
 import gynecomastiaImage from "../assets/body-aesthetics/Gynecomastia-1.jpg";
-// import bblImage from "../assets/body-aesthetics/Bbl-image-1.jpg";
+import bblImage from "../assets/body-aesthetics/Bbl-image-1.jpg";
 
 const BodyAesthetics = () => {
   const navigate = useNavigate();
@@ -89,12 +89,12 @@ const BodyAesthetics = () => {
             imageSrc: laserLiposuctionImage,
             url: "/body-aesthetics/laser-liposuction",
           },
-          // {
-          //   rotate: 12,
-          //   service: "BBL",
-          //   imageSrc: bblImage,
-          //   url: "/body-aesthetics/bbl",
-          // },
+          {
+            rotate: 12,
+            service: "BBL",
+            imageSrc: bblImage,
+            url: "/body-aesthetics/bbl",
+          },
         ]}
       />
 

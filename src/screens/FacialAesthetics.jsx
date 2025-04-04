@@ -15,14 +15,14 @@ import bannerImage from "../assets/facial-aesthetics/banner.png";
 import intro from "../assets/facial-aesthetics/intro.png";
 import { storiesData } from "../../constants";
 
-import image1 from "../assets/facial-aesthetics/1.png";
+// import image1 from "../assets/facial-aesthetics/1.png";
 // import image2 from "../../assets/facial-aesthetics/2.png";
 // import image3 from "../../assets/facial-aesthetics/3.png";
 // import image4 from "../../assets/facial-aesthetics/4.png";
-import image5 from "../assets/facial-aesthetics/5.png";
+// import image5 from "../assets/facial-aesthetics/5.png";
 // import image6 from "../../assets/facial-aesthetics/6.png";
-import image7 from "../assets/facial-aesthetics/7.png";
-import image8 from "../assets/facial-aesthetics/8.png";
+// import image7 from "../assets/facial-aesthetics/7.png";
+// import image8 from "../assets/facial-aesthetics/8.png";
 // import image9 from "../../assets/facial-aesthetics/9.png";
 // import image10 from "../../assets/facial-aesthetics/10.png";
 // import image11 from "../../assets/facial-aesthetics/11.png";
@@ -32,7 +32,6 @@ import rhinoplastyImage from "../assets/facial-aesthetics/rhinoplasty-1.jpg";
 import facialLiftImage from "../assets/facial-aesthetics/Facial Lift-1.jpg";
 import chinImplantImage from "../assets/facial-aesthetics/chin-implant-1.jpg";
 import blepharoplastyImage from "../assets/facial-aesthetics/Blepharoplasty-1.jpg";
-
 
 const FacialAesthetics = () => {
   const navigate = useNavigate();

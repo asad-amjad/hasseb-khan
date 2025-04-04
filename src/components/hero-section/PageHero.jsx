@@ -12,7 +12,7 @@ export default function PageHero({ title, description }) {
           src={BannerImage}
           alt="review-pfp"
           // className="w-[50px] h-[50px] rounded-[100%]"
-          className="absolute inset-0 w-full h-full object-cover z-0"
+          className="absolute inset-0 w-full h-full z-0"
         />
 
         {/* Navbar Component */}

@@ -31,7 +31,8 @@ const AboutUs = () => {
 
       <div className="md:p-[100px]">
         <img
-          className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
+          // className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
+          className="object-cover w-full md:max-h-[860px]"
           src={bannerImage}
           alt="image"
         />

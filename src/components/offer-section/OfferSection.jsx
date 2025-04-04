@@ -5,7 +5,8 @@ const OfferSection = ({ imageSrc, tagText, title, description, buttonText, onBut
   return (
     <div className="md:p-[100px] flex flex-col justify-center md:items-center">
       <img
-        className="object-cover w-full md:h-[860px] md:max-h-[860px]"
+        // className="object-cover w-full md:h-[860px] md:max-h-[860px]"
+        className="object-cover w-full md:max-h-[860px]"
         src={imageSrc}
         alt=""
         loading="lazy"

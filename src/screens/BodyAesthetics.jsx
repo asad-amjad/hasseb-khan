@@ -25,6 +25,12 @@ import image7 from "../assets/body-aesthetics/7.png";
 import image8 from "../assets/body-aesthetics/8.png";
 import image9 from "../assets/body-aesthetics/9.png";
 
+import bodyLiftImage from "../assets/body-aesthetics/Body Lift-1.jpg";
+import abdominoplastyImage from "../assets/body-aesthetics/abdominoplasty-1.jpg";
+import laserLiposuctionImage from "../assets/body-aesthetics/Laser Liposuction-1.jpg";
+import gynecomastiaImage from "../assets/body-aesthetics/Gynecomastia-1.jpg";
+import bblImage from "../assets/body-aesthetics/bbl-1.jpg";
+
 const BodyAesthetics = () => {
   const navigate = useNavigate();
   return (
@@ -70,33 +76,33 @@ const BodyAesthetics = () => {
           {
             rotate: 12,
             service: "Abdominoplasty",
-            imageSrc: image1,
+            imageSrc: abdominoplastyImage,
             url: "/body-aesthetics/abdominoplasty",
           },
 
           {
             rotate: -12,
             service: "Lift",
-            imageSrc: image4,
+            imageSrc: bodyLiftImage,
             url: "/body-aesthetics/lift",
           },
 
           {
             rotate: 12,
             service: "Gynecomastia",
-            imageSrc: image7,
+            imageSrc: gynecomastiaImage,
             url: "/body-aesthetics/gynecomastia",
           },
           {
             rotate: -12,
             service: "Laser Liposuction (1 region)",
-            imageSrc: image8,
+            imageSrc: laserLiposuctionImage,
             url: "/body-aesthetics/laser-liposuction",
           },
           {
             rotate: 12,
             service: "BBL",
-            imageSrc: image9,
+            imageSrc: bblImage,
             url: "/body-aesthetics/bbl",
           },
         ]}

@@ -15,8 +15,12 @@ import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage6 from "../../assets/dental/intro6.png";
 
-import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 
+import bannerImage from "../../assets/body-aesthetics/Laser Liposuction.jpg";
+import introImage from "../../assets/body-aesthetics/Laser Liposuction-1.jpg";
+
+import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
+// Laser Liposuction
 const LaserLiposuction = () => {
   return (
     <>
@@ -28,7 +32,7 @@ const LaserLiposuction = () => {
       <div className="md:pt-[100px]">
         <img
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
-          src={orthodonticsImage}
+          src={bannerImage}
           alt="image"
         />
       </div>
@@ -39,7 +43,7 @@ const LaserLiposuction = () => {
         descriptions={[
           "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
-        imageSrc={introImage6}
+        imageSrc={introImage}
       />
 
       <ServiceDetails

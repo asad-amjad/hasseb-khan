@@ -28,6 +28,12 @@ import image8 from "../assets/facial-aesthetics/8.png";
 // import image11 from "../../assets/facial-aesthetics/11.png";
 // import image12 from "../../assets/facial-aesthetics/12.png";
 
+import rhinoplastyImage from "../assets/facial-aesthetics/rhinoplasty-1.jpg";
+import facialLiftImage from "../assets/facial-aesthetics/Facial Lift-1.jpg";
+import chinImplantImage from "../assets/facial-aesthetics/chin-implant-1.jpg";
+import blepharoplastyImage from "../assets/facial-aesthetics/Blepharoplasty-1.jpg";
+
+
 const FacialAesthetics = () => {
   const navigate = useNavigate();
   return (
@@ -73,27 +79,27 @@ const FacialAesthetics = () => {
           {
             rotate: 12,
             service: "Lift",
-            imageSrc: image1,
+            imageSrc: facialLiftImage,
             url: "/facial-aesthetics/lift",
           },
 
           {
             rotate: 12,
             service: "Blepharoplasty",
-            imageSrc: image5,
+            imageSrc: blepharoplastyImage,
             url: "/facial-aesthetics/blepharoplasty",
           },
 
           {
             rotate: 12,
             service: "Rhinoplasty",
-            imageSrc: image7,
+            imageSrc: rhinoplastyImage,
             url: "/facial-aesthetics/rhinoplasty",
           },
           {
             rotate: -12,
             service: "Chin Implant",
-            imageSrc: image8,
+            imageSrc: chinImplantImage,
             url: "/facial-aesthetics/chin-implant",
           },
         ]}

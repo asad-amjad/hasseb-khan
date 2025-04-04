@@ -23,8 +23,8 @@ import Image5 from "../assets/dental/5.png";
 import Image6 from "../assets/dental/6.png";
 import Image7 from "../assets/dental/7.png";
 
-import beforeImage from "../assets/before-after/11-Before.jpg";
-import afterImage from "../assets/before-after/11-After.jpg";
+// import beforeImage from "../assets/before-after/11-Before.jpg";
+// import afterImage from "../assets/before-after/11-After.jpg";
 
 const Dentistry = () => {
   const navigate = useNavigate();
@@ -135,7 +135,7 @@ const Dentistry = () => {
           },
         ]}
       />
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

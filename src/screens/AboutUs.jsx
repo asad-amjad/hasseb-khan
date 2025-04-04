@@ -17,8 +17,8 @@ import intro from "../assets/about-us/intro.png";
 
 import expert1 from "../assets/about-us/expert-1.jpeg";
 import expert2 from "../assets/about-us/expert-2.jpeg";
-import expert3 from "../assets/about-us/expert-3.jpg";
-import expert4 from "../assets/about-us/expert-4.avif";
+import expert3 from "../assets/about-us/expert-3.jpeg";
+import expert4 from "../assets/about-us/expert-4.jpeg";
 
 const AboutUs = () => {
   // const navigate = useNavigate();
@@ -72,20 +72,15 @@ const AboutUs = () => {
             role: "Specialist Obstetrics",
             image: expert3,
           },
-           {
+          {
             name: "Dr. Jack",
             role: "Specialist Obstetrics",
             image: expert4,
           },
-          // {
-          //   name: "Dr. Sulman",
-          //   role: "Specialist Obstetrics",
-          //   image: story2,
-          // },
         ]}
       />
 
-      <MeetOurExperts />
+      {/* <MeetOurExperts /> */}
 
       {/* Our Services */}
       <OurServices

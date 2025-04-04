@@ -13,8 +13,7 @@ export default function PageHero({ title, description }) {
           alt="review-pfp"
           // className="w-[50px] h-[50px] rounded-[100%]"
           className="absolute inset-0 w-full h-full z-0"
-          loading="lazy" // Lazy loading enabled
-        />
+          />
 
         {/* Navbar Component */}
         <Navbar />

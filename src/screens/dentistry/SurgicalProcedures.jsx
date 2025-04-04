@@ -16,7 +16,8 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 
 import introImage3 from "../../assets/dental/intro3.png";
 import surgicalProceduresImage from "../../assets/dental/banner-surgical-procedures.png";
-
+import beforeImage from "../../assets/before-after/12-Before.jpg";
+import afterImage from "../../assets/before-after/12-After.jpg";
 
 const SurgicalProcedures = () => {
   return (
@@ -65,14 +66,11 @@ const SurgicalProcedures = () => {
             service: "Bone Grafting",
             description:
               "A regenerative procedure that uses natural or synthetic materials to promote bone growth and strengthen areas with bone loss. Bone grafting ensures a durable, healthy foundation for implants and overall oral health.",
-          }
+          },
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

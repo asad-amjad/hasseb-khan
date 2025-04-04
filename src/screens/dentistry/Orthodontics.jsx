@@ -17,6 +17,8 @@ import introImage6 from "../../assets/dental/intro6.png";
 
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 
+import beforeImage from "../../assets/before-after/15-Before.jpg";
+import afterImage from "../../assets/before-after/15-After.jpg";
 
 const Orthodontics = () => {
   return (
@@ -55,14 +57,11 @@ const Orthodontics = () => {
             service: "Invisalign",
             description:
               "A clear aligner system that gradually shifts teeth into the desired position without the need for metal brackets or wires. Invisalign offers comfort, convenience, and a virtually invisible solution for achieving a straighter smile.",
-          }
+          },
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

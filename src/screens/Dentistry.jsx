@@ -23,6 +23,9 @@ import Image5 from "../assets/dental/5.png";
 import Image6 from "../assets/dental/6.png";
 import Image7 from "../assets/dental/7.png";
 
+import beforeImage from "../assets/before-after/11-Before.jpg";
+import afterImage from "../assets/before-after/11-After.jpg";
+
 const Dentistry = () => {
   const navigate = useNavigate();
   return (
@@ -132,11 +135,7 @@ const Dentistry = () => {
           },
         ]}
       />
-
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

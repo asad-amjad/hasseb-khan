@@ -20,6 +20,9 @@ import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 import bannerImage from "../../assets/body-aesthetics/Body Lift.jpg";
 import introImage from "../../assets/body-aesthetics/Body Lift-1.jpg";
 
+import beforeImage from "../../assets/before-after/3-Before.jpg";
+import afterImage from "../../assets/before-after/3-After.jpg";
+
 const Lift = () => {
   return (
     <>
@@ -39,7 +42,7 @@ const Lift = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Orthodontics"
+        title="About Body Lift"
         descriptions={[
           "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
@@ -52,7 +55,7 @@ const Lift = () => {
           {
             service: "Arm lift",
             description:
-              "Lorem Self-ligating braces designed to reduce friction and provide faster, more comfortable teeth alignment. They offer a cleaner, more discreet look compared to traditional braces while enhancing overall treatment efficiency.",
+              "Body Lift Self-ligating braces designed to reduce friction and provide faster, more comfortable teeth alignment. They offer a cleaner, more discreet look compared to traditional braces while enhancing overall treatment efficiency.",
           },
           {
             service: "Back lift",
@@ -67,10 +70,7 @@ const Lift = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

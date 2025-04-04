@@ -33,6 +33,9 @@ import facialLiftImage from "../assets/facial-aesthetics/Facial Lift-1.jpg";
 import chinImplantImage from "../assets/facial-aesthetics/chin-implant-1.jpg";
 import blepharoplastyImage from "../assets/facial-aesthetics/Blepharoplasty-1.jpg";
 
+import beforeImage from "../assets/before-after/1-Before.jpg";
+import afterImage from "../assets/before-after/1-After.jpg";
+
 const FacialAesthetics = () => {
   const navigate = useNavigate();
   return (
@@ -125,11 +128,8 @@ const FacialAesthetics = () => {
           },
         ]}
       />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
       <HorizontalStories storiesData={storiesData} />
 
       <ConsultationForm />

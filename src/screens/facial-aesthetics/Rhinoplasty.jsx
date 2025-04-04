@@ -15,14 +15,15 @@ import introImage6 from "../../assets/dental/intro6.png";
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 import bannerImage from "../../assets/facial-aesthetics/rhinoplasty.jpg";
 import introImage from "../../assets/facial-aesthetics/rhinoplasty-1.jpg";
-
+import beforeImage from "../../assets/before-after/1-Before.jpg";
+import afterImage from "../../assets/before-after/1-After.jpg";
 
 const Rhinoplasty = () => {
   return (
     <>
       {/* Video Hero section */}
       <PageHero
-        title="rhinoplasty"
+        title="Rhinoplasty"
         description="Our orthodontic treatments offer advanced solutions for teeth alignment and bite correction. From traditional braces to modern Invisalign, we provide tailored options to enhance your smile’s aesthetics and functionality."
       />
       <div className="md:pt-[100px]">
@@ -36,9 +37,9 @@ const Rhinoplasty = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Orthodontics"
+        title="About Rhinoplasty"
         descriptions={[
-          "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
+          "Rhinoplasty focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
         imageSrc={introImage}
       />
@@ -47,17 +48,14 @@ const Rhinoplasty = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "Pending",
+            service: "Rhinoplasty",
             description:
               "Lorem A clear aligner system that gradually shifts teeth into the desired position without the need for metal brackets or wires. Invisalign offers comfort, convenience, and a virtually invisible solution for achieving a straighter smile.",
           },
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

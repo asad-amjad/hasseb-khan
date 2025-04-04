@@ -19,7 +19,8 @@ import dentalTherapyImage from "../../assets/dental/banner-dental-therapy.png";
 // import periodonticsImage from "../assets/dental/banner-periodontics.png";
 // import restorativeTreatmentsImage from "../assets/dental/banner-restorative-treatments.png";
 // import surgicalProceduresImage from "../assets/dental/banner-surgical-procedures.png";
-
+import beforeImage from "../../assets/before-after/15-Before.jpg";
+import afterImage from "../../assets/before-after/15-After.jpg";
 const DentalTherapy = () => {
   return (
     <>
@@ -61,10 +62,7 @@ const DentalTherapy = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

@@ -20,6 +20,9 @@ import orthodonticsImage from "../assets/breast-aesthetics/banner.png";
 import TextWithImage from "../components/text-with-image/TextWithImage";
 import OfferSection from "../components/offer-section/OfferSection";
 
+import beforeImage from "../assets/before-after/6-Before.jpg";
+import afterImage from "../assets/before-after/6-After.jpg";
+
 const BreastAesthetics = () => {
   return (
     <>
@@ -86,10 +89,7 @@ const BreastAesthetics = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

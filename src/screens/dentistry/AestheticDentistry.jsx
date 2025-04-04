@@ -14,10 +14,11 @@ import { storiesData } from "../../../constants";
 import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 
-
 import introImage1 from "../../assets/dental/intro1.png";
-
 import bannerImage from "../../assets/about-us/banner.jpeg";
+
+import beforeImage from "../../assets/before-after/11-Before.jpg";
+import afterImage from "../../assets/before-after/11-After.jpg";
 
 const AestheticDentistry = () => {
   return (
@@ -95,10 +96,7 @@ const AestheticDentistry = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

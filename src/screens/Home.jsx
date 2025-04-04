@@ -47,7 +47,7 @@ const Home = () => {
           <ScrollingText direction="right" />
         </div>
       </div>
-      
+
       {/* Our Services */}
       <OurServices
         title="Our Services"
@@ -77,12 +77,6 @@ const Home = () => {
           },
           {
             heading: "03",
-            title: "Plan Your Stay",
-            description:
-              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
-          },
-          {
-            heading: "04",
             title: "Plan Your Stay",
             description:
               "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",

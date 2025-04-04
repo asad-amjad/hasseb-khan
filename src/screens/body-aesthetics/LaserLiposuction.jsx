@@ -15,9 +15,10 @@ import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage6 from "../../assets/dental/intro6.png";
 
-
 import bannerImage from "../../assets/body-aesthetics/Laser Liposuction.jpg";
 import introImage from "../../assets/body-aesthetics/Laser Liposuction-1.jpg";
+import beforeImage from "../../assets/before-after/3-Before.jpg";
+import afterImage from "../../assets/before-after/3-After.jpg";
 
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 // Laser Liposuction
@@ -40,7 +41,7 @@ const LaserLiposuction = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Orthodontics"
+        title="About Laser Liposuction"
         descriptions={[
           "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
@@ -51,17 +52,14 @@ const LaserLiposuction = () => {
         title="Comprehensive Services"
         ourServicesData={[
           {
-            service: "PENDING",
+            service: "Laser Liposuction",
             description:
               "Lorem Self-ligating braces designed to reduce friction and provide faster, more comfortable teeth alignment. They offer a cleaner, more discreet look compared to traditional braces while enhancing overall treatment efficiency.",
           },
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

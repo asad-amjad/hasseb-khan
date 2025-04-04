@@ -16,6 +16,8 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage5 from "../../assets/dental/intro5.png";
 
 import periodonticsImage from "../../assets/dental/banner-periodontics.png";
+import beforeImage from "../../assets/before-after/15-Before.jpg";
+import afterImage from "../../assets/before-after/15-After.jpg";
 
 const Periodontics = () => {
   return (
@@ -65,15 +67,10 @@ const Periodontics = () => {
             description:
               "A surgical technique used to access and clean deep pockets of infection, followed by reshaping and securing gum tissue. Effective for treating advanced periodontal disease and promoting healing.",
           },
-          
-         
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

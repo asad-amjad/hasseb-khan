@@ -19,15 +19,15 @@ export default function TopHeader() {
       <div className="hidden md:flex gap-[80px] items-center">
         <div className="flex items-center justify-center gap-2">
           <PhoneIcon />
-          <p className="small text-[#FFF]">(+971) 52 123 4567</p>
+          <p className="small text-[#FFF]">+44 745 9360 750</p>
         </div>
         <div className="flex items-center justify-center gap-2">
           <MailIcon />
-          <p className="small text-[#FFF]">info@primemedistanbul.com</p>
+          <p className="small text-[#FFF]">infor@infor.com</p>
         </div>
       </div>
 
-      <div className="flex gap-[80px] items-center w-full md:w-1/3 justify-between md:justify-start">
+      <div className="flex gap-[80px] items-center w-full md:w-1/3 justify-between md:justify-end">
         {/* Language Dropdown */}
         <div className="flex items-center gap-[20px]">
           <img src={espWave} alt="flagImage" />
@@ -39,10 +39,10 @@ export default function TopHeader() {
         {/* Social Icons */}
         <div className="flex gap-[20px]">
           <FacebookIcon />
-          <LinkedIn />
-          <XIcon />
+          {/* <LinkedIn /> */}
+          {/* <XIcon /> */}
           <InstagramIcon />
-          <YoutubeIcon />
+          {/* <YoutubeIcon /> */}
         </div>
       </div>
     </div>

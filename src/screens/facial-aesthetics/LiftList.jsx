@@ -19,6 +19,8 @@ import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 
 import bannerImage from "../../assets/facial-aesthetics/Facial Lift.jpg";
 import introImage from "../../assets/facial-aesthetics/Facial Lift-1.jpg";
+import beforeImage from "../../assets/before-after/1-Before.jpg";
+import afterImage from "../../assets/before-after/1-After.jpg";
 
 const FacialLift = () => {
   return (
@@ -39,9 +41,9 @@ const FacialLift = () => {
 
       <IntroWithImage
         badge="Introduction"
-        title="About Orthodontics"
+        title="About Facial Lift"
         descriptions={[
-          "Orthodontics focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
+          "Facial Lift focuses on correcting misaligned teeth and jaw structures to improve oral health, aesthetics, and functionality. Through innovative treatments like Damon Smile Braces and Invisalign, we ensure effective and comfortable solutions for achieving a beautifully aligned smile.",
         ]}
         imageSrc={introImage}
       />
@@ -78,10 +80,7 @@ const FacialLift = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

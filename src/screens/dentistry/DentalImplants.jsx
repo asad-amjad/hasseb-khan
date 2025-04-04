@@ -16,7 +16,9 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 
 import introImage2 from "../../assets/dental/intro2.png";
 import dentalImplantsImage from "../../assets/dental/banner-dental-implants.png";
-// 
+
+import beforeImage from "../../assets/before-after/15-Before.jpg";
+import afterImage from "../../assets/before-after/15-After.jpg";
 
 const DentalImplants = () => {
   return (
@@ -64,10 +66,7 @@ const DentalImplants = () => {
         ]}
       />
 
-      <ImageComparisonSlider
-        before="https://placehold.co/1312x642?text=Hello+World"
-        after="https://placehold.co/1312x642?text=Hiiiii+World"
-      />
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

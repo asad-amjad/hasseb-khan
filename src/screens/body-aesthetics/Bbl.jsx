@@ -9,8 +9,8 @@ import ImageComparisonSlider from "../../components/image-comparison-slider/Imag
 import { storiesData } from "../../../constants";
 
 // Assets
-import bannerImage from "../../assets/body-aesthetics/bbl.jpg";
-import introImage from "../../assets/body-aesthetics/bbl-1.jpg";
+import bannerImage from "../../assets/body-aesthetics/Bbl-image.jpg";
+import introImage from "../../assets/body-aesthetics/Bbl-image-1.jpg";
 
 const Bbl = () => {
   return (

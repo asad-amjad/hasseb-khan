@@ -9,7 +9,7 @@ const OfferSection = ({ imageSrc, tagText, title, description, buttonText, onBut
         className="object-cover w-full md:max-h-[860px]"
         src={imageSrc}
         alt=""
-        loading="lazy"
+        loading="lazy" // Lazy loading enabled
       />
       <div className="md:my-[60px] mt-[80px] md:w-[1012px] mx-[16px] md:mx-0">
         <div className="flex justify-start md:justify-center w-full md:mb-[40px]">

@@ -61,6 +61,7 @@ const TextWithImage = ({
           className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
           src={imageSrc}
           alt={imageAlt}
+          loading="lazy" // Lazy loading enabled
         />
       </div>
     </div>

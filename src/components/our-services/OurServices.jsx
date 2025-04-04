@@ -14,7 +14,7 @@ export default function OurServices({
 
   return (
     <div
-    id="our-service" 
+      id="our-service"
       className={`flex flex-col bg-[${bgColor}] min-w-[360px] px-[16px] py-[80px] md:p-[100px]`}
     >
       <h2>{title}</h2>
@@ -25,7 +25,7 @@ export default function OurServices({
         {ourServicesData.map(({ service, imageSrc, url }) => (
           <div key={service}>
             <div className="w-full height-[492px] flex flex-col gap-[20px]">
-              <img src={imageSrc}  alt={`${service} image`} />
+              <img src={imageSrc} alt={`${service} image`} loading="lazy" />
               <Link
                 to={url}
                 className="relative transition-all duration-300 ease-in-out text-black hover:text-[#1F385F]"

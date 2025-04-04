@@ -19,7 +19,7 @@ const Partners = () => {
         }}
       >
         {[...images, ...images].map((src, index) => (
-          <img key={index} src={src} alt={`Logo ${index + 1}`} className="w-auto" />
+          <img key={index} src={src} alt={`Logo ${index + 1}`} className="w-auto" loading="lazy" />
         ))}
       </motion.div>
     </div>

@@ -11,6 +11,7 @@ export default function StoryCard({ item }) {
               src={item.image}
               alt="review-pfp"
               className="w-[70px] h-[70px] rounded-full object-cover"
+              loading="lazy" // Lazy loading enabled
             />
             <div className="flex flex-col justify-start items-start space-y-[10px] ">
               <h5 className="text-[#E55D48]">{item.name}</h5>

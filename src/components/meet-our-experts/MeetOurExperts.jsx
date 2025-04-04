@@ -22,6 +22,7 @@ const MeetOurExperts = () => {
             // className="object-cover w-full h-398px md:h-[860px] md:max-h-[860px]"
             className="w-full "
             src={Image2}
+            loading="lazy" // Lazy loading enabled
             // alt={imageAlt}
           />
         </div>

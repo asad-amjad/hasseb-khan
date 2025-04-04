@@ -10,7 +10,6 @@ const IntroWithImage = ({
 
   imageSrc,
   imageAlt = "Image",
-
 }) => {
   return (
     <div className={`flex flex-col md:flex-row w-full my-[80px] md:my-[100px]`}>
@@ -31,16 +30,14 @@ const IntroWithImage = ({
                 {desc}
               </p>
             ))}
-          
           </div>
-
-       
         </div>
       </div>
 
       {/* Right Side Image */}
       <div className="md:w-1/2 flex justify-center">
         <img
+          loading="lazy" // Lazy loading enabled
           className="object-cover w-full h-562px md:h-[562px] md:max-h-[562px] md:max-w-[504px] px-[16px] md:px-0"
           src={imageSrc}
           alt={imageAlt}

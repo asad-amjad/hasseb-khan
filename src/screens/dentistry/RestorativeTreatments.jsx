@@ -15,8 +15,8 @@ import IntroWithImage from "../../components/intro-with-image/IntroWithImage";
 import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage4 from "../../assets/dental/intro4.png";
 import restorativeTreatmentsImage from "../../assets/dental/banner-restorative-treatments.png";
-import beforeImage from "../../assets/before-after/13-Before.jpg";
-import afterImage from "../../assets/before-after/13-After.jpg";
+// import beforeImage from "../../assets/before-after/13-Before.jpg";
+// import afterImage from "../../assets/before-after/13-After.jpg";
 
 const RestorativeTreatments = () => {
   return (
@@ -69,7 +69,7 @@ const RestorativeTreatments = () => {
         ]}
       />
 
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

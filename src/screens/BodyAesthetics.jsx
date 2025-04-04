@@ -15,21 +15,11 @@ import { storiesData } from "../../constants";
 import bannerImage from "../assets/body-aesthetics/banner.png";
 import intro from "../assets/body-aesthetics/intro.png";
 
-import image1 from "../assets/body-aesthetics/1.png";
-// import image2 from "../../assets/body-aesthetics/2.png";
-// import image3 from "../../assets/body-aesthetics/3.png";
-import image4 from "../assets/body-aesthetics/4.png";
-// import image5 from "../../assets/body-aesthetics/5.png";
-// import image6 from "../../assets/body-aesthetics/6.png";
-import image7 from "../assets/body-aesthetics/7.png";
-import image8 from "../assets/body-aesthetics/8.png";
-import image9 from "../assets/body-aesthetics/9.png";
-
 import bodyLiftImage from "../assets/body-aesthetics/Body Lift-1.jpg";
 import abdominoplastyImage from "../assets/body-aesthetics/abdominoplasty-1.jpg";
 import laserLiposuctionImage from "../assets/body-aesthetics/Laser Liposuction-1.jpg";
 import gynecomastiaImage from "../assets/body-aesthetics/Gynecomastia-1.jpg";
-import bblImage from "../assets/body-aesthetics/bbl-1.jpg";
+// import bblImage from "../assets/body-aesthetics/bbl-1.jpg";
 
 const BodyAesthetics = () => {
   const navigate = useNavigate();
@@ -99,12 +89,12 @@ const BodyAesthetics = () => {
             imageSrc: laserLiposuctionImage,
             url: "/body-aesthetics/laser-liposuction",
           },
-          {
-            rotate: 12,
-            service: "BBL",
-            imageSrc: bblImage,
-            url: "/body-aesthetics/bbl",
-          },
+          // {
+          //   rotate: 12,
+          //   service: "BBL",
+          //   imageSrc: bblImage,
+          //   url: "/body-aesthetics/bbl",
+          // },
         ]}
       />
 

@@ -17,8 +17,8 @@ import introImage6 from "../../assets/dental/intro6.png";
 
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 
-// import beforeImage from "../../assets/before-after/15-Before.jpg";
-// import afterImage from "../../assets/before-after/15-After.jpg";
+import beforeImage from "../../assets/before-after/15-before.jpg";
+import afterImage from "../../assets/before-after/15-after.jpg";
 
 const Orthodontics = () => {
   return (
@@ -61,7 +61,7 @@ const Orthodontics = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

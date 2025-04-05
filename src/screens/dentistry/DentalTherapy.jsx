@@ -20,8 +20,9 @@ import dentalTherapyImage from "../../assets/dental/banner-dental-therapy.png";
 // import restorativeTreatmentsImage from "../assets/dental/banner-restorative-treatments.png";
 // import surgicalProceduresImage from "../assets/dental/banner-surgical-procedures.png";
 
-// import beforeImage from "../../assets/before-after/15-Before.jpg";
-// import afterImage from "../../assets/before-after/15-After.jpg";
+import beforeImage from "../../assets/before-after/15-before.jpg";
+import afterImage from "../../assets/before-after/15-after.jpg";
+
 const DentalTherapy = () => {
   return (
     <>
@@ -63,7 +64,7 @@ const DentalTherapy = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

@@ -16,8 +16,8 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 
 import introImage3 from "../../assets/dental/intro3.png";
 import surgicalProceduresImage from "../../assets/dental/banner-surgical-procedures.png";
-// import beforeImage from "../../assets/before-after/12-Before.jpg";
-// import afterImage from "../../assets/before-after/12-After.jpg";
+import beforeImage from "../../assets/before-after/12-before.jpg";
+import afterImage from "../../assets/before-after/12-after.jpg";
 
 const SurgicalProcedures = () => {
   return (
@@ -70,7 +70,7 @@ const SurgicalProcedures = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

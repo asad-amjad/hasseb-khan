@@ -17,8 +17,8 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage1 from "../../assets/dental/intro1.png";
 import bannerImage from "../../assets/about-us/banner.jpeg";
 
-// import beforeImage from "../../assets/before-after/11-Before.jpg";
-// import afterImage from "../../assets/before-after/11-After.jpg";
+import beforeImage from "../../assets/before-after/11-before.jpg";
+import afterImage from "../../assets/before-after/11-after.jpg";
 
 const AestheticDentistry = () => {
   return (
@@ -96,7 +96,7 @@ const AestheticDentistry = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

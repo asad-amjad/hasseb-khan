@@ -16,8 +16,9 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 import introImage5 from "../../assets/dental/intro5.png";
 
 import periodonticsImage from "../../assets/dental/banner-periodontics.png";
-// import beforeImage from "../../assets/before-after/15-Before.jpg";
-// import afterImage from "../../assets/before-after/15-After.jpg";
+
+import beforeImage from "../../assets/before-after/15-before.jpg";
+import afterImage from "../../assets/before-after/15-after.jpg";
 
 const Periodontics = () => {
   return (
@@ -70,7 +71,7 @@ const Periodontics = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

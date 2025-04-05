@@ -12,8 +12,8 @@ import { storiesData } from "../../../constants";
 import bannerImage from "../../assets/body-aesthetics/abdominoplasty.jpg";
 import introImage from "../../assets/body-aesthetics/abdominoplasty-1.jpg";
 
-// import beforeImage from "../../assets/before-after/3-Before.jpg";
-// import afterImage from "../../assets/before-after/3-After.jpg";
+import beforeImage from "../../assets/before-after/3-before.jpg";
+import afterImage from "../../assets/before-after/3-after.jpg";
 
 const Abdominoplasty = () => {
   return (
@@ -62,7 +62,7 @@ const Abdominoplasty = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
       <HorizontalStories storiesData={storiesData} />
 
       <ConsultationForm />

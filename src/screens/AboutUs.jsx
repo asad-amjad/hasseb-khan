@@ -26,7 +26,7 @@ const AboutUs = () => {
     <>
       <PageHero
         title="About Us"
-        description="Our acknowledged surgeons and aestheticians provide advanced and innovative techniques for both surgical and non-surgical solutions in Turkey."
+        description="We are PrimeMed Istanbul — a trusted medical travel partner offering expert-led aesthetic, dental, and hair restoration treatments. Combining world-class care with personalized service, we help international patients achieve life-changing results in one of the world’s leading health tourism destinations."
       />
 
       <div className="md:p-[100px]">
@@ -40,13 +40,13 @@ const AboutUs = () => {
       </div>
 
       <TextWithImage
-        badge="Welcome to Primemed"
+        badge="Welcome to PrimeMed"
         title="A Great Health Experience Awaits You"
         descriptions={[
-          "At Primed, we redefine medical tourism with excellence, offering world-class healthcare solutions tailored to your needs. Whether you seek aesthetic enhancements, specialized surgeries, or advanced medical treatments, our team of expert doctors and medical professionals ensures a seamless, safe, and comfortable journey from consultation to recovery.",
+          "At PrimeMed, we redefine medical tourism with excellence, offering world-class healthcare solutions tailored to your needs. Whether you seek aesthetic enhancements, specialized surgeries, or advanced medical treatments, our team of expert doctors and medical professionals ensures a seamless, safe, and comfortable journey from consultation to recovery.",
           "We believe that healthcare should be both effective and stress-free. That’s why we provide personalized treatment plans, cutting-edge technology, and top-tier medical expertise in a warm and welcoming environment. From initial consultation to post-treatment care, our team is dedicated to delivering a smooth experience with comprehensive support at every stage.",
           "Beyond exceptional medical care, we offer full-fledged assistance, including airport transfers, accommodation arrangements, and personalized concierge services. Our goal is to make your health journey effortless, ensuring that you can focus on your recovery while enjoying the beauty and cultural richness of Turkey.",
-          "With Primed, you’re not just choosing healthcare—you’re choosing quality, comfort, and a holistic approach to well-being. Let us guide you to a healthier, happier version of yourself.",
+          "With PrimeMed, you’re not just choosing healthcare—you’re choosing quality, comfort, and a holistic approach to well-being. Let us guide you to a healthier, happier version of yourself.",
         ]}
         // buttonText="Schedule Free Consultation"
         // buttonAction={() => console.log("Clicked!")}
@@ -58,23 +58,23 @@ const AboutUs = () => {
       <MeetOurExpert
         storiesData={[
           {
-            name: "Dr. Nayrouz Gezaf",
-            role: "Specialist Obstetrics & Gynecology",
+            name: "Buse Nur Gündüz",
+            role: "Specialist",
             image: expert1,
           },
           {
-            name: "Dr. Sulman",
-            role: "Specialist Obstetrics",
+            name: "Hadi Kubilay Altınok",
+            role: "Specialist",
             image: expert2,
           },
           {
-            name: "Dr. Khan",
-            role: "Specialist Obstetrics",
+            name: "Esat Doğancan Alosman",
+            role: "Specialist",
             image: expert3,
           },
           {
-            name: "Dr. Jack",
-            role: "Specialist Obstetrics",
+            name: "Fevzi Oğulcan Utlu",
+            role: "Specialist",
             image: expert4,
           },
         ]}
@@ -90,31 +90,31 @@ const AboutUs = () => {
       />
 
       <ScrollTimeline
-        title={"What’s Next? Your Health, Our Priority!"}
+        title="Your Journey with PrimeMed"
         timelineData={[
           {
             heading: "01",
-            title: "Choose your treatment",
+            title: "Select Your  Treatment",
             description:
-              "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
+              "Explore our range of medical and aesthetic services. From hair transplants to cosmetic surgery, our team will guide you to the perfect option tailored to your goals.",
           },
           {
             heading: "02",
-            title: "Get a Free Quote",
+            title: "Get a Treatment Plan",
             description:
-              "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
+              "Receive a customized plan crafted by our experienced medical team—including a transparent, detailed quote with no hidden costs. Quick, confidential and stress-free.",
           },
           {
             heading: "03",
-            title: "Plan Your Stay",
+            title: "Plan Your Trip with Ease",
             description:
-              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+              "Enjoy stress-free travel with our VIP service: curated hotel stays, airport pickup, and dedicated local support to ensure your comfort throughout your stay.",
           },
           {
             heading: "04",
-            title: "Plan Your Stay",
+            title: "Experience Care",
             description:
-              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+              "From the moment you arrive to your full recovery, PrimeMed ensures expert care, multilingual support, and a seamless, comfortable journey you can trust.",
           },
         ]}
       />

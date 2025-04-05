@@ -34,13 +34,16 @@ export default function MeetOurExpert({ storiesData }) {
       className="w-full bg-background-2 overflow-hidden px-[16px] py-[80px] md:py-[100px] md:px-[100px]"
     >
       <div className="w-full">
-        <h2>Meet our experts</h2>
+        <h2>Our Team of Distinguished Doctors</h2>
       </div>
 
       <p className="body-2 mt-[10px]">
-        Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh
-        fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo
-        tincidunt nunc tempor
+        At the heart of our organization are the brilliant minds who drive
+        compassionate care and innovation. Our doctors are highly skilled
+        professionals with years of experience, dedicated to improving lives and
+        providing exceptional care. Each member of our team brings a wealth of
+        knowledge and expertise, ensuring that we offer the best in healthcare.
+        Get to know the talented doctors who make a difference every day.
       </p>
 
       <motion.div

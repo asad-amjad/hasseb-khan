@@ -19,27 +19,30 @@ const Home = () => {
 
   return (
     <>
-      {/* Video Hero section */}
+      {/* Hero Section */}
       <VideoHero />
 
+      {/* Welcome Section */}
       <TextWithImage
-        badge="Welcome to Primemed"
-        title="A Great Health Experience Awaits You"
+        badge="Welcome to PrimeMed Istanbul"
+        title="Where Your Health Journey Begins with Comfort & Trust"
         descriptions={[
-          "At Primed, we redefine medical tourism with excellence, offering world-class healthcare solutions tailored to your needs. Whether you seek aesthetic enhancements, specialized surgeries, or advanced medical treatments, our team of expert doctors and medical professionals ensures a seamless, safe, and comfortable journey from consultation to recovery.",
-          "We believe that healthcare should be both effective and stress-free. That’s why we provide personalized treatment plans, cutting-edge technology, and top-tier medical expertise in a warm and welcoming environment.",
+          "Discover a new standard of care at PrimeMed Istanbul — your trusted partner in medical and aesthetic excellence. Nestled in the vibrant heart of Istanbul, we specialize in transformative facial and body procedures that blend advanced medical expertise with a warm, patient-first approach.",
+          "From the moment you reach out, our English-speaking team is dedicated to guiding you through a seamless experience: transparent pricing, JCI-accredited hospitals, tailored treatment plans, and holistic post-operative support. Whether you're seeking aesthetic refinement or life-enhancing surgery, your health, safety, and satisfaction are always our top priorities.",
+          "Let us help you feel confident, comfortable, and completely cared for — every step of the way.",
         ]}
-        buttonText="Schedule Free Consultation"
+        buttonText="Schedule Your Personalized Consultation"
         buttonAction={() => navigate("/schedule-free-consultation")}
         imageSrc={intro}
-        imageAlt="Facial Aesthetics"
+        imageAlt="PrimeMed Aesthetic Clinic Istanbul"
       />
 
+      {/* Health Journey Section */}
       <div className="my-[80px] md:py-[80px] md:flex md:flex-col md:items-center">
         <div className="md:w-[1012px]">
           <TextAndDescription
             title="Your Health Journey Starts Here"
-            description="From aesthetic transformations to life-changing medical treatments, we offer specialized healthcare solutions designed for you. Our advanced technology, expert specialists, and personalized approach ensure exceptional results, making your health and comfort our top priority."
+            description="We deliver specialized medical solutions tailored to your goals—be it cosmetic, restorative, or life-changing. From our advanced facilities to top-tier specialists and travel support, everything is designed to put your health and comfort first."
           />
         </div>
         <div className="mt-[40px] md:mt-[60px] w-full space-y-[10px]">
@@ -48,38 +51,46 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Our Services */}
+      {/* Our Services Section */}
       <OurServices
-        title="Our Services"
-        description="Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo tincidunt nunc tempor"
+        title="Redefine Beauty, Restore Confidence"
+        description="Discover a new standard of care with PrimeMed Istanbul — where medical expertise meets luxury. We offer a carefully curated selection of treatments designed to enhance your natural beauty and well-being. From life-changing hair transplants to advanced cosmetic surgery and smile-perfecting dental care, our internationally trusted team ensures exceptional results with comfort, safety, and style. Every service is delivered with precision, discretion, and a commitment to excellence"
         ourServicesData={services}
       />
 
-      {/* Partners */}
+      {/* Partners/Certifications */}
       <Partners />
 
+      {/* Patient Stories */}
       <HorizontalStories storiesData={storiesData} />
 
+      {/* Timeline: What to Expect */}
       <ScrollTimeline
-        title="When Will I See Results?"
+        title="Your Journey with PrimeMed"
         timelineData={[
           {
             heading: "01",
-            title: "Choose your treatment",
+            title: "Select Your  Treatment",
             description:
-              "We provide expert medical solutions tailored to your needs, combining cutting-edge technology with a highly skilled team for optimal results.",
+              "Explore our range of medical and aesthetic services. From hair transplants to cosmetic surgery, our team will guide you to the perfect option tailored to your goals.",
           },
           {
             heading: "02",
-            title: "Get a Free Quote",
+            title: "Get a Treatment Plan",
             description:
-              "Receive a detailed treatment plan designed by top specialists, including transparent pricing and comprehensive guidance—no hidden costs, just expert care.",
+              "Receive a customized plan crafted by our experienced medical team—including a transparent, detailed quote with no hidden costs. Quick, confidential and stress-free.",
           },
           {
             heading: "03",
-            title: "Plan Your Stay",
+            title: "Plan Your Trip with Ease",
             description:
-              "Explore our exclusive accommodation options with customized hotel packages, ensuring comfort and convenience during your medical journey.",
+              "Enjoy stress-free travel with our VIP service: curated hotel stays, airport pickup, and dedicated local support to ensure your comfort throughout your stay.",
+          },
+          {
+            heading: "04",
+            title: "Experience Care",
+            description:
+              "From the moment you arrive to your full recovery, PrimeMed ensures expert care, multilingual support, and a seamless, comfortable journey you can trust.",
           },
         ]}
       />

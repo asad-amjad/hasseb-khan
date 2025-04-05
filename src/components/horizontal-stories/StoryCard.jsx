@@ -18,7 +18,7 @@ export default function StoryCard({ item }) {
               <p className="body-2">{item.role}</p>
             </div>
           </div>
-          <p className="body-2 mt-[16px] md:mt-[30px] leading-[25px]">
+          <p className="body-2 mt-[16px] md:mt-[20px] leading-[25px]">
             {item.des}
           </p>
         </div>

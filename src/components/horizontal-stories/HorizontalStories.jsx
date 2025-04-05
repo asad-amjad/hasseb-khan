@@ -34,15 +34,15 @@ export default function HorizontalStories({ storiesData }) {
       className="w-full bg-background-2 overflow-hidden px-[16px] py-[80px] md:py-[100px] md:px-[100px]"
     >
       <div className="w-full">
-        <h2>Patient Stories</h2>
+        <h2>Real Journeys. Real Transformations.</h2>
       </div>
-
       <p className="body-2 mt-[10px]">
-        Lorem ipsum dolor sit amet consectetur. Turpis porta elementum nibh
-        fringilla. Porta in nunc tellus sit integer mauris. Dictum commodo
-        tincidunt nunc tempor.
+        Hear directly from those who trusted PrimeMed Istanbul with their health
+        and beauty. From life-changing procedures to unforgettable care, our
+        patients share their honest experiences and stunning results.Let their
+        stories inspire your own transformation.
       </p>
-
+      
       <motion.div
         className="flex cursor-grab active:cursor-grabbing gap-5 my-10"
         drag="x"
@@ -56,7 +56,6 @@ export default function HorizontalStories({ storiesData }) {
           </motion.div>
         ))}
       </motion.div>
-
       <div className="w-full bg-white h-1.5 rounded-full overflow-hidden">
         <div className="h-full bg-primary w-1/5 md:w-1/12 rounded-full"></div>
       </div>

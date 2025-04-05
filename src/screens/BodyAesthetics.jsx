@@ -21,8 +21,8 @@ import laserLiposuctionImage from "../assets/body-aesthetics/Laser Liposuction-1
 import gynecomastiaImage from "../assets/body-aesthetics/Gynecomastia-1.jpg";
 import bblImage from "../assets/body-aesthetics/Bbl-image-1.jpg";
 
-import beforeImage from "../assets/before-after/3-Before.jpg";
-import afterImage from "../assets/before-after/3-After.jpg";
+// import beforeImage from "../assets/before-after/3-Before.jpg";
+// import afterImage from "../assets/before-after/3-After.jpg";
 
 
 const BodyAesthetics = () => {
@@ -126,7 +126,7 @@ const BodyAesthetics = () => {
         ]}
       />
 
-<ImageComparisonSlider before={beforeImage} after={afterImage} />
+{/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
       <ConsultationForm />

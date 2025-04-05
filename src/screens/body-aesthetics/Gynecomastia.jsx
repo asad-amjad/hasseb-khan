@@ -13,8 +13,8 @@ import ServiceDetails from "../../components/service-details/ServiceDetails";
 import bannerImage from "../../assets/body-aesthetics/Gynecomastia.jpg";
 import introImage from "../../assets/body-aesthetics/Gynecomastia-1.jpg";
 
-import beforeImage from "../../assets/before-after/3-Before.jpg";
-import afterImage from "../../assets/before-after/3-After.jpg";
+// import beforeImage from "../../assets/before-after/3-Before.jpg";
+// import afterImage from "../../assets/before-after/3-After.jpg";
 
 const Gynecomastia = () => {
   return (
@@ -53,7 +53,7 @@ const Gynecomastia = () => {
         ]}
       />
 
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

@@ -20,8 +20,8 @@ import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 import bannerImage from "../../assets/body-aesthetics/Body Lift.jpg";
 import introImage from "../../assets/body-aesthetics/Body Lift-1.jpg";
 
-import beforeImage from "../../assets/before-after/3-Before.jpg";
-import afterImage from "../../assets/before-after/3-After.jpg";
+// import beforeImage from "../../assets/before-after/3-Before.jpg";
+// import afterImage from "../../assets/before-after/3-After.jpg";
 
 const Lift = () => {
   return (
@@ -70,7 +70,7 @@ const Lift = () => {
         ]}
       />
 
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

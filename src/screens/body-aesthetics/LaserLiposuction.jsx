@@ -17,8 +17,8 @@ import introImage6 from "../../assets/dental/intro6.png";
 
 import bannerImage from "../../assets/body-aesthetics/Laser Liposuction.jpg";
 import introImage from "../../assets/body-aesthetics/Laser Liposuction-1.jpg";
-import beforeImage from "../../assets/before-after/3-Before.jpg";
-import afterImage from "../../assets/before-after/3-After.jpg";
+// import beforeImage from "../../assets/before-after/3-Before.jpg";
+// import afterImage from "../../assets/before-after/3-After.jpg";
 
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 // Laser Liposuction
@@ -59,7 +59,7 @@ const LaserLiposuction = () => {
         ]}
       />
 
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

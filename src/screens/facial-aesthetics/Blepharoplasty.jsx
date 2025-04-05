@@ -19,8 +19,8 @@ import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 
 import bannerImage from "../../assets/facial-aesthetics/Blepharoplasty.jpg";
 import introImage from "../../assets/facial-aesthetics/Blepharoplasty-1.jpg";
-import beforeImage from "../../assets/before-after/1-Before.jpg";
-import afterImage from "../../assets/before-after/1-After.jpg";
+// import beforeImage from "../../assets/before-after/1-Before.jpg";
+// import afterImage from "../../assets/before-after/1-After.jpg";
 
 const Blepharoplasty = () => {
   return (
@@ -64,7 +64,7 @@ const Blepharoplasty = () => {
         ]}
       />
 
-      <ImageComparisonSlider before={beforeImage} after={afterImage} />
+      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
 
       <HorizontalStories storiesData={storiesData} />
 

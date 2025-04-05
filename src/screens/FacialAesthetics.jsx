@@ -33,8 +33,8 @@ import facialLiftImage from "../assets/facial-aesthetics/Facial Lift-1.jpg";
 import chinImplantImage from "../assets/facial-aesthetics/chin-implant-1.jpg";
 import blepharoplastyImage from "../assets/facial-aesthetics/Blepharoplasty-1.jpg";
 
-// import beforeImage from "../assets/before-after/1-Before.jpg";
-// import afterImage from "../assets/before-after/1-After.jpg";
+import beforeImage from "../assets/before-after/1-before.jpg";
+import afterImage from "../assets/before-after/1-after.jpg";
 
 const FacialAesthetics = () => {
   const navigate = useNavigate();
@@ -128,7 +128,7 @@ const FacialAesthetics = () => {
           },
         ]}
       />
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

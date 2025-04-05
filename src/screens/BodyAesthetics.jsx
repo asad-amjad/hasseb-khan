@@ -125,7 +125,6 @@ const BodyAesthetics = () => {
         ]}
       />
 
-
       <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />

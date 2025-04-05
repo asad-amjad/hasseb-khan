@@ -20,8 +20,8 @@ import orthodonticsImage from "../assets/breast-aesthetics/banner.png";
 import TextWithImage from "../components/text-with-image/TextWithImage";
 import OfferSection from "../components/offer-section/OfferSection";
 
-// import beforeImage from "../assets/before-after/6-Before.jpg";
-// import afterImage from "../assets/before-after/6-After.jpg";
+import beforeImage from "../assets/before-after/6-before.jpg";
+import afterImage from "../assets/before-after/6-after.jpg";
 
 const BreastAesthetics = () => {
   return (
@@ -89,7 +89,7 @@ const BreastAesthetics = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

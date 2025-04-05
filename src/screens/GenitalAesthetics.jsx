@@ -27,8 +27,8 @@ import intro from "../assets/genital-aesthetic/intro.png";
 // import image9 from "../../assets/body-aesthetics/9.png";
 import ServiceDetails from "../components/service-details/ServiceDetails";
 
-// import beforeImage from "../assets/before-after/4-Before.jpg";
-// import afterImage from "../assets/before-after/4-After.jpg";
+import beforeImage from "../assets/before-after/4-before.jpg";
+import afterImage from "../assets/before-after/4-after.jpg";
 
 const GenitalAesthetics = () => {
   const navigate = useNavigate();
@@ -107,11 +107,7 @@ const GenitalAesthetics = () => {
         ]}
       />
 
-   
-{/* <ImageComparisonSlider
-        before={beforeImage}
-        after={afterImage}
-      /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
       <ConsultationForm />

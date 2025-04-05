@@ -105,22 +105,28 @@ const BodyAesthetics = () => {
         title="When will I see results?"
         timelineData={[
           {
-            heading: "Week 1",
+            heading: "Week 02",
             // title: "",
             description:
-              "Initial healing phase with mild swelling and sensitivity.",
+              "Initial improvements in skin texture and tightening. Scar tissue begins to soften, and you may notice subtle changes in the overall appearance of your skin, with smoother, firmer areas starting to emerge.",
           },
           {
-            heading: "Week 2-3",
+            heading: "Week 04",
             // title: "",
             description:
-              "Visible reduction in swelling, early shape improvements.",
+              "Skin continues to firm, and scar appearance begins to fade. The tissue becomes more resilient, and the treated areas show early signs of smoother texture, with noticeable improvements in overall skin tone.",
           },
           {
-            heading: "Week 4-6",
+            heading: "Week 06",
             // title: "",
             description:
-              "Noticeable contouring, firmer skin, and improved body shape.",
+              "Further enhancement in skin elasticity and tone. Scar tissue continues to reduce in visibility, and the skin feels smoother and more refined, with noticeable improvements in the contour and texture of treated areas.",
+          },
+          {
+            heading: "Week 08",
+            // title: "",
+            description:
+              "Full results begin to show with tighter, more even skin. Scars are significantly reduced, and the tissue feels rejuvenated. The transformation is complete, leaving you with youthful and smooth skin",
           },
         ]}
       />

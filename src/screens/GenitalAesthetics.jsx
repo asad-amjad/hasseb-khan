@@ -37,7 +37,7 @@ const GenitalAesthetics = () => {
       {/* Video Hero section */}
       <PageHero
         title="Genital Aesthetics"
-        description="Enhance comfort, confidence, and function with advanced genital aesthetic procedures designed to improve appearance, symmetry, and overall well-being."
+        description="Enhance your confidence and well-being with our personalized genital aesthetic treatments. Tailored to address comfort, symmetry, and functionality, our procedures ensure natural, harmonious results with care and discretion."
       />
 
       <OfferSection

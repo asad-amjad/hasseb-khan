@@ -15,8 +15,8 @@ import introImage6 from "../../assets/dental/intro6.png";
 import orthodonticsImage from "../../assets/dental/banner-orthodontics.png";
 import bannerImage from "../../assets/facial-aesthetics/rhinoplasty.jpg";
 import introImage from "../../assets/facial-aesthetics/rhinoplasty-1.jpg";
-// import beforeImage from "../../assets/before-after/1-Before.jpg";
-// import afterImage from "../../assets/before-after/1-After.jpg";
+import beforeImage from "../../assets/before-after/1-before.jpg";
+import afterImage from "../../assets/before-after/1-after.jpg";
 
 const Rhinoplasty = () => {
   return (
@@ -55,7 +55,7 @@ const Rhinoplasty = () => {
         ]}
       />
 
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider before={beforeImage} after={afterImage} />
 
       <HorizontalStories storiesData={storiesData} />
 

@@ -31,14 +31,14 @@ const BodyAesthetics = () => {
       {/* Video Hero section */}
       <PageHero
         title="Body Aesthetics"
-        description="Enhance your body's appearance with advanced aesthetic procedures, including body lifts, sculpting, and contouring for a more youthful and confident look."
+        description="Experience cutting-edge body aesthetic treatments that shape your body and boost confidence. Our expert team uses the latest techniques to tighten skin, define contours, and target stubborn fat for natural, lasting results."
       />
 
       <OfferSection
         imageSrc={bannerImage}
         tagText="What we offer"
         title="Transform Your Body with Confidence"
-        description="Our expert team provides customized aesthetic treatments, including body lifts, sculpting, and fat reduction, ensuring natural-looking, long-lasting results tailored to your goals."
+        description="Unlock your ideal body with our advanced aesthetic treatments, designed to shape, define, and refine your physique. From fat removal to body contouring, we personalize every procedure to your unique goals, ensuring natural, long-lasting results. Experience a boost in confidence, enhanced physical appearance, and improved overall well-being."
         buttonText="Schedule Free Consultation"
         onButtonClick={() => navigate("/schedule-free-consultation")}
       />
@@ -63,8 +63,8 @@ const BodyAesthetics = () => {
       />
 
       <OurServices
-        title="Comprehensive Services"
-        description="We offer a range of advanced body aesthetic procedures tailored to enhance your shape and confidence. From targeted fat reduction to full-body contouring, our expert team ensures natural, long-lasting results with cutting-edge techniques and personalized treatment plans designed to meet your unique needs."
+        title="Transformative Treatments for Every Body"
+        description="Discover a path to a more confident you with our expertly designed treatments. Each solution is crafted to meet your unique goals, helping you enhance your natural beauty and achieve the body you've always desired. Explore our offerings below and take the first step towards a transformed, confident you"
         ourServicesData={[
           {
             rotate: 12,

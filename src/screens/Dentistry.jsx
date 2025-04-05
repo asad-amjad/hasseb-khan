@@ -135,7 +135,10 @@ const Dentistry = () => {
           },
         ]}
       />
-      {/* <ImageComparisonSlider before={beforeImage} after={afterImage} /> */}
+      <ImageComparisonSlider
+        before={"/before-after/1-Before.jpg"}
+        after={"/before-after/1-After.jpg"}
+      />
 
       <HorizontalStories storiesData={storiesData} />
 

@@ -10,7 +10,7 @@ const ImageWithForm = ({}) => {
         <img
           className="w-full  md:w-[520px] mx-auto"
           src={Image3}
-          loading="lazy" // Lazy loading enabled
+          // loading="lazy" // Lazy loading enabled
           alt={"imageAlt"}
         />
       </div>
